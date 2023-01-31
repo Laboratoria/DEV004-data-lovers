@@ -1,5 +1,4 @@
 // estas funciones son de ejemplo
-
 export const example = () => {
   return 'example';
 };
@@ -7,6 +6,19 @@ export const example = () => {
 export const anotherExample = () => {
   return 'OMG';
 };
+
+
+// funcionalidad de sort para ordenar columnas (sin terminar)
+const dataFunctions = {
+
+  sortData(data, sortBy, sortOrder) {
+    data = data.sort()
+    
+    
+  }
+
+}
+
 
 
 //(function () {
@@ -18,3 +30,4 @@ export const anotherExample = () => {
 
 
 
+export default dataFunctions
