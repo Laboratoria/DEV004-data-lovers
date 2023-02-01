@@ -21,23 +21,23 @@ console.log("pokemonDB[0].generation.name =")
 console.log(pokemonDB[0].generation.name)
 
 // funcionalidad sort para el nombre
-document.getElementById("headerName").addEventListener("click",sortName)
+document.getElementById("headerName").addEventListener("click", sortName)
 
 let sortOrder = false
 
 function sortName() {
-    if (sortOrder == false) {    
+    if (sortOrder == false) {
         pokemonDB = pokemonDB.sort(function (a, b) {
             if (a.name < b.name) return -1;
-            if (a.name > b.name) return 1;        
+            if (a.name > b.name) return 1;
             return 0;
         })
-        
+
     }
     if (sortOrder == true) {
         pokemonDB = pokemonDB.sort(function (a, b) {
             if (a.name < b.name) return 1;
-            if (a.name > b.name) return -1;    
+            if (a.name > b.name) return -1;
             return 0;
         })
     }
@@ -64,18 +64,20 @@ window.onload = () => {
 
 // la tabla
 function loadTable(pokemonDB) {
-    const htmlTablefull = document.getElementById("htmlTable") 
+    const htmlTablefull = document.getElementById("htmlTable")
     let datatoHTML = ""
-    for ( let pokemon of pokemonDB) {
+    for (let pokemon of pokemonDB) {
+      const pokename = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
         datatoHTML += `
             <tr>
-                <td>${pokemon.num}</td>
-                                
-                <td>${pokemon.name}</td>
+            <td> <img src="${pokemon.img}"></img> </td>
+            <td class = num >  ${pokemon.num} </td>             
+            <td> ${pokename} </td>               
             </tr>
         `
+        
     }
-    htmlTablefull.innerHTML= datatoHTML
+    htmlTablefull.innerHTML = datatoHTML
 }
 
 /*
@@ -113,5 +115,6 @@ function sortTextColumn(sort, columnName) {
     });
 }
 */
+
 
 
