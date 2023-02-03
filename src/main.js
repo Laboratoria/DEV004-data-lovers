@@ -7,7 +7,7 @@ import dataFunctions from './data.js';
 console.log(dataFunctions)
 console.log(anotherExample)
 
-let pokemonDB = data.pokemon
+const pokemonDB = data.pokemon
 
 
 // demostracion de datos de pokemon.js a main.js
@@ -26,6 +26,15 @@ document.getElementById("headerName").addEventListener("click", sortName)
 let sortOrder = false
 
 function sortName() {
+  dataFunctions.sortData(pokemonDB, "name", sortOrder)   
+  sortOrder = !sortOrder
+  console.log(sortOrder)
+  loadTable(pokemonDB)
+}
+
+/*
+function sortName(sortData) {
+    sortData(pokemonDB , name, sortOrder)
     if (sortOrder == false) {
         pokemonDB = pokemonDB.sort(function (a, b) {
             if (a.name < b.name) return -1;
@@ -41,10 +50,12 @@ function sortName() {
             return 0;
         })
     }
-    loadTable(pokemonDB)
+    
     sortOrder = !sortOrder
     console.log(sortOrder)
+    return loadTable(pokemonDB)
 }
+*/
 
 /*
 // intento de tabla de datos
@@ -59,25 +70,25 @@ document.getElementById("root").innerHTML = uniqueObjectArray
 
 // carga la tabla
 window.onload = () => {
-    loadTable(pokemonDB)
+  loadTable(pokemonDB)
 }
 
 // la tabla
 function loadTable(pokemonDB) {
-    const htmlTablefull = document.getElementById("htmlTable")
-    let datatoHTML = ""
-    for (let pokemon of pokemonDB) {
-      const pokename = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
-        datatoHTML += `
-            <tr>
+  const htmlTablefull = document.getElementById("htmlTable")
+  let datatoHTML = ""
+  for (const pokemon of pokemonDB) {
+    const pokename = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
+    datatoHTML += `
+        <tr>
             <td> <img src="${pokemon.img}"></img> </td>
             <td class = num >  ${pokemon.num} </td>             
             <td> ${pokename} </td>               
-            </tr>
-        `
+        </tr>
+    `
         
-    }
-    htmlTablefull.innerHTML = datatoHTML
+  }
+  htmlTablefull.innerHTML = datatoHTML
 }
 
 /*
