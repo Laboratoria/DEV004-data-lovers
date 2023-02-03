@@ -1,24 +1,29 @@
-import { anotherExample } from './data.js';
+// import { anotherExample } from './data.js';
 // npm start import data from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 import dataFunctions from './data.js';
 
+/*
+// funciones de ejemplo
 console.log(dataFunctions)
 console.log(anotherExample)
+*/
 
 const pokemonDB = data.pokemon
-
 
 // demostracion de datos de pokemon.js a main.js
 console.log("pokemonDB =")
 console.log(pokemonDB)
+/*
 console.log("pokemonDB[0] =")
 console.log(pokemonDB[0])
 console.log("pokemonDB[0].generation =")
 console.log(pokemonDB[0].generation)
 console.log("pokemonDB[0].generation.name =")
 console.log(pokemonDB[0].generation.name)
+*/
+
 
 // funcionalidad sort para el nombre
 document.getElementById("headerName").addEventListener("click", sortName)
@@ -91,6 +96,14 @@ function loadTable(pokemonDB) {
   htmlTablefull.innerHTML = datatoHTML
 }
 
+//funcionalidad para mostrar vista detallada
+const table = document.getElementById("detailedView");
+
+document.getElementById("detailedViewbButton").addEventListener("click", toggleView);
+     
+function toggleView() {
+  table.classList.toggle('table')
+}
 /*
 // intento ordenar archivos por numbero (sin terminar)
 document.getElementById("headerNumber").addEventListener("click",sortColumn)
