@@ -1,4 +1,5 @@
-export default {
+ 
+  const ghibli = {
   "studio": "Studio Ghibli Inc.",
   "films": [
     {
@@ -2432,4 +2433,6 @@ export default {
       "vehicles": []
     }
   ]
-}
+  }
+
+export default ghibli;
