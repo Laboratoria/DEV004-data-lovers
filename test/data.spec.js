@@ -1,6 +1,7 @@
 import { example, anotherExample } from '../src/data.js';
 import dataFunctions from '../src/data.js';
 
+
 describe('dataFunctions', () => {
 
   it('is an object', () => {

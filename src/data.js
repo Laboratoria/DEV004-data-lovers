@@ -8,7 +8,7 @@ export const anotherExample = () => {
 };
 
 
-// funcionalidad de sort para ordenar columnas (sin terminar)
+// funcionalidad de sort para ordenar columnas
 const dataFunctions = {
 
   sortData(data , sortType, sortOrder) {
