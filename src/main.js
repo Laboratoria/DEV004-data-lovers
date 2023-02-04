@@ -86,52 +86,54 @@ document.getElementById("root").innerHTML = uniqueObjectArray
 // carga la tabla
 window.onload = () => {
   loadTable(pokemonDB)
-}
+}   
 
-// la tabla
+
+
+//la tabla
 function loadTable(pokemonDB) {
-    const htmlTablefull = document.getElementById("htmlTable")
-    let datatoHTML = ""
-    for ( let i=0 ; i<pokemonDB.length ; i++) {
-      const pokename = pokemonDB[i].name.charAt(0).toUpperCase() + pokemonDB[i].name.slice(1)
-      // const pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
-      // console.log(pokevolution
-
-      let nextEvolution = false
-      if ( typeof pokemonDB[i].evolution['next-evolution'] === 'object') {
-        nextEvolution = true
-      } else {
-        nextEvolution = false
-      }
-      //console.log("typeof pokemonDB[i].evolution['next-evolution'] = "+typeof pokemonDB[i].evolution['next-evolution'])
-      console.log("nextEvolution = "+nextEvolution)
-
-      let pokevolution = ''
-      determinePokevolution(i)
-      function determinePokevolution(i) {
-        if (nextEvolution === true) {
-            pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
-        } else {
-            pokevolution ='N/A'
-        }
-      }
-      console.log("pokevolution = "+pokevolution)
-      datatoHTML +=
-          `<tr>
-              <td> <img src="${pokemonDB[i].img}"></img> </td>
-              <td class = num >  ${pokemonDB[i].num} </td>             
-              <td> ${pokename} </td> 
-              <td> ${pokemonDB[i].type} </td> 
-              <td> ${pokemonDB[i].weaknesses} </td> 
-              <td> ${pokemonDB[i].resistant} </td> 
-              <td> ${pokemonDB[i].egg} </td> 
-              <td> ${pokevolution} </td>
-          </tr>`        
+  const htmlTablefull = document.getElementById("htmlTable")
+  let datatoHTML = ""
+  for ( let i=0 ; i<pokemonDB.length ; i++) {
+    const pokename = pokemonDB[i].name.charAt(0).toUpperCase() + pokemonDB[i].name.slice(1)
+    //const pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
+    //console.log(pokevolution
+    if ( typeof pokemonDB[i].evolution['next-evolution'] === 'object') {
+      nextEvolution = true
+    } else {
+      nextEvolution = false
     }
-    //console.log(datatoHTML)
-    //console.log(pokemonDB[0].evolution['next-evolution'][0]['candy-cost'])
-    htmlTablefull.innerHTML = datatoHTML
+    //console.log("typeof pokemonDB[i].evolution['next-evolution'] = "+typeof pokemonDB[i].evolution['next-evolution'])
+    //console.log("nextEvolution = "+nextEvolution)
+    determinePokevolution(i)
+    //console.log("pokevolution = "+pokevolution)
+    datatoHTML +=
+      `<tr>
+        <td> <img src="${pokemonDB[i].img}"></img> </td>
+        <td class = num >  ${pokemonDB[i].num} </td>             
+        <td> ${pokename} </td> 
+        <td> ${pokemonDB[i].type} </td> 
+        <td> ${pokemonDB[i].weaknesses} </td> 
+        <td> ${pokemonDB[i].resistant} </td> 
+        <td> ${pokemonDB[i].egg} </td> 
+        <td> ${pokevolution} </td>
+      </tr>`        
+  }
+  //console.log(datatoHTML)
+  //console.log(pokemonDB[0].evolution['next-evolution'][0]['candy-cost'])
+  htmlTablefull.innerHTML = datatoHTML
 }
+
+let nextEvolution = false
+let pokevolution = ''
+function determinePokevolution(iteration) {
+  if (nextEvolution === true) {
+    pokevolution = pokemonDB[iteration].evolution['next-evolution'][0]['candy-cost']
+  } else {
+    pokevolution ='N/A'
+  }
+}
+
 /*
 function loadTable(pokemonDB) {
   const htmlTablefull = document.getElementById("htmlTable")
