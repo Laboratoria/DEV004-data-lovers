@@ -8,17 +8,27 @@ export const anotherExample = () => {
 };
 
 
-// funcionalidad de sort para ordenar columnas (sin terminar)
+// funcionalidad de sort para ordenar columnas
 const dataFunctions = {
 
-  sortData(data, sortBy, sortOrder) {
-    data = data.sort()
-    
-    
+  sortData(data , sortType, sortOrder) {
+    if (sortType === "name") {
+      if (sortOrder === false) {
+        data.sort((a, b) => {
+          if (a.name < b.name) return -1;
+        })
+      }
+      if (sortOrder === true) {
+        data.sort((a, b) => {
+          if (a.name > b.name) return -1;
+        })
+      }          
+    }
+    return data
   }
-
+  
 }
-
+console.log("el tipo de dataFunctions es = "+typeof dataFunctions)
 
 
 //(function () {
