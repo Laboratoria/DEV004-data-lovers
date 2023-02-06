@@ -1,17 +1,17 @@
 * {
     margin: 0px;
     padding: 0px;
-    
-  }
 
-  .box-1 {
+}
+
+.box-1 {
     font-size: 20px;
     padding: 50px;
     text-align: center;
 
-  margin: 50px;
+    margin: 50px;
 
-  }
+}
 
 
 
@@ -21,19 +21,19 @@
 
 }
 
-body{
+body {
     background-color: rgba(210, 210, 210, 0.155);
-    
+
 
 }
 
 #root {
-    color: black; 
+    color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    
-    
+
+
 }
 
 .table {
@@ -41,16 +41,61 @@ body{
 }
 
 table {
-margin: 0 auto;
-background-color: rgba(255, 255, 255, 0.984);
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.984);
 }
 
-.number,.name,.sprite{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: cadetblue;
+.number,
+.name,
+.sprite,
+.type,
+.weaknesses,
+.resistant,
+.egg,
+.candy-cost {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
 }
 
 .num {
     color: rgb(138, 138, 138);
-    font-family:sans-serif
+    font-family: sans-serif
+}
+
+.pokename {
+    color: rgba(255, 0, 0, 0.708);
+}
+
+
+
+
+td {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+    width: 25%;
+}
+
+td:first-child {
+    padding-left: 0;
+    background-color: rgb(226, 225, 225);
+}
+
+td:last-child {
+    padding-right: 0;
+}
+
+table {
+    margin: 40px;
+    width: calc(100% + 30px);
+    background: rgb(236, 236, 2);
+    border-collapse:collapse;
+    margin: 0px -15px;
+}
+
+.prod_img {
+    height: 100px;
+    width: 100px;
+    filter: drop-shadow(5px 5px 5px #646464);
 }

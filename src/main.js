@@ -96,6 +96,7 @@ function loadTable(pokemonDB) {
   let datatoHTML = ""
   for ( let i=0 ; i<pokemonDB.length ; i++) {
     const pokename = pokemonDB[i].name.charAt(0).toUpperCase() + pokemonDB[i].name.slice(1)
+   
     //const pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
     //console.log(pokevolution
     if ( typeof pokemonDB[i].evolution['next-evolution'] === 'object') {
@@ -109,7 +110,7 @@ function loadTable(pokemonDB) {
     //console.log("pokevolution = "+pokevolution)
     datatoHTML +=
       `<tr>
-        <td> <img src="${pokemonDB[i].img}"></img> </td>
+        <td> <img class="prod_img" src="${pokemonDB[i].img}"></img> </td>
         <td class = num >  ${pokemonDB[i].num} </td>             
         <td> ${pokename} </td> 
         <td> ${pokemonDB[i].type} </td> 
@@ -117,8 +118,11 @@ function loadTable(pokemonDB) {
         <td> ${pokemonDB[i].resistant} </td> 
         <td> ${pokemonDB[i].egg} </td> 
         <td> ${pokevolution} </td>
-      </tr>`        
+      </tr>` 
+         
   }
+ 
+  
   //console.log(datatoHTML)
   //console.log(pokemonDB[0].evolution['next-evolution'][0]['candy-cost'])
   htmlTablefull.innerHTML = datatoHTML
