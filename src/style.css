@@ -37,7 +37,7 @@ body{
 }
 
 .table {
-    visibility: visible;
+    visibility: hidden;
 }
 
 table {
