@@ -57,6 +57,13 @@ td:last-child {
     padding-right: 0;
 }
 
+.table {
+    visibility: collapse;
+}
+.pokedex {
+    visibility: visible;
+}
+
 table {
     margin: 40px;
     width: calc(100% + 30px);
@@ -143,11 +150,11 @@ h1 {
         transform: translateY(0);
     }
 }
-
+/*
 #detailedView {
     display: none
 }
-
+*/
 .button {
  margin-bottom: 8px;
   background-color: #533b3b; /* Green */

@@ -10,6 +10,36 @@ console.log("pokemonDB =")
 console.log(pokemonDB)
 
 
+// carga la tabla y tarjetas
+window.onload = () => {
+  loadTable(pokemonDB);
+  LoadCards();
+}   
+
+//funcionalidad para mostrar vista detallada
+const pokedex = document.getElementById("pokedex");
+const table = document.getElementById("detailedView");
+document.getElementById("detailedViewbButton").addEventListener("click", () => {
+  table.classList.toggle('table')
+  if (pokedex.style.display == "none" || pokedex.style.display == "") {
+    pokedex.style.dislpay = "grid";
+
+  } else {
+    pokedex.style.display = "none";
+
+
+  }
+});
+
+//funcionalidad de busqueda
+let searchInput = ''
+document.getElementById("detailedViewbButton").addEventListener("click", search)
+
+function search() {
+  searchInput = document.getElementById("search").value.toLowerCase();
+  loadTable(pokemonDB)
+}
+
 
 // funcionalidad sort para el nombre
 let sortOrder = false
@@ -32,40 +62,6 @@ function sortNumber() {
   loadTable(pokemonDB)
 }
 
-//funcionalidad de busqueda
-let searchInput = ''
-document.querySelector(".button").addEventListener("click", search)
-
-function search() {
-  searchInput = document.getElementById("search").value.toLowerCase();
-  loadTable(pokemonDB)
-}
-
-// carga la tabla
-window.onload = () => {
-document.getElementById("pokedex").style.display = "grid";
-document.getElementById("detailedView").style.display = "none";
-
-loadTable(pokemonDB);
-LoadCards();
-}   
-
-
-document.getElementById("detailedViewbButton").addEventListener("click", () => {
-  let pokedex = document.getElementById("pokedex");
-  let table = document.getElementById("detailedView");
-
-  if (pokedex.style.display == "none" || pokedex.style.display == "") {
-    pokedex.style.dislpay = "grid";
-    table.style.display = "none";
-  } else {
-    pokedex.style.display = "none";
-    table.style.display = "block";
-
-  }
-
-});
-
 //determina texto para la columna de caramelos
 let nextEvolution = false
 let pokevolution = ''
@@ -78,6 +74,7 @@ function determinePokevolution(i) {
   }
 }
 
+//funcion para generar las tarjetas
 function LoadCards(){
   let pokedex = document.getElementById("pokedex");
 
@@ -92,6 +89,7 @@ function LoadCards(){
   }
 }
 
+//funcion para generar la tabla
 function loadTable(pokemonDB) {
   const htmlTablefull = document.getElementById("htmlTable")
   let datatoHTML = ""
