@@ -60,9 +60,6 @@ td:last-child {
 .table {
     visibility: collapse;
 }
-.pokedex {
-    visibility: visible;
-}
 
 table {
     margin: 40px;

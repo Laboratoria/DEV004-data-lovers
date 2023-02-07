@@ -21,13 +21,10 @@ const pokedex = document.getElementById("pokedex");
 const table = document.getElementById("detailedView");
 document.getElementById("detailedViewbButton").addEventListener("click", () => {
   table.classList.toggle('table')
-  if (pokedex.style.display == "none" || pokedex.style.display == "") {
-    pokedex.style.dislpay = "grid";
-
+    if (pokedex.style.display === "none") {
+    pokedex.style.display = "grid";
   } else {
     pokedex.style.display = "none";
-
-
   }
 });
 
