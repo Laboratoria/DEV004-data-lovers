@@ -19,8 +19,11 @@ window.onload = () => {
 //funcionalidad para mostrar vista detallada
 const pokedex = document.getElementById("pokedex");
 const table = document.getElementById("detailedView");
+const searchDiv = document.getElementById("searchID")
 document.getElementById("detailedViewbButton").addEventListener("click", () => {
+  searchDiv.classList.toggle('searchBTNclass')
   table.classList.toggle('table')
+  
     if (pokedex.style.display === "none") {
     pokedex.style.display = "grid";
   } else {
@@ -30,7 +33,7 @@ document.getElementById("detailedViewbButton").addEventListener("click", () => {
 
 //funcionalidad de busqueda
 let searchInput = ''
-document.getElementById("detailedViewbButton").addEventListener("click", search)
+document.getElementById("searchButton").addEventListener("click", search)
 
 function search() {
   searchInput = document.getElementById("search").value.toLowerCase();
@@ -59,17 +62,6 @@ function sortNumber() {
   loadTable(pokemonDB)
 }
 
-//determina texto para la columna de caramelos
-let nextEvolution = false
-let pokevolution = ''
-
-function determinePokevolution(i) {
-  if (nextEvolution === true) {
-    pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
-  } else {
-    pokevolution ='N/A'
-  }
-}
 
 //funcion para generar las tarjetas
 function LoadCards(){
@@ -83,6 +75,18 @@ function LoadCards(){
      <p class = "card-subtitle">Type: ${data.pokemon[i].type}</p>
     </li>
     `;
+  }
+}
+
+//determina texto para la columna de caramelos
+let nextEvolution = false
+let pokevolution = ''
+
+function determinePokevolution(i) {
+  if (nextEvolution === true) {
+    pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
+  } else {
+    pokevolution ='N/A'
   }
 }
 
@@ -128,8 +132,6 @@ function loadTable(pokemonDB) {
     } else {
       prevEvolutionFilter = null
     }
-
-
 
     //generacion de la tabla
     if (pokemonDB[i].name.includes(searchInput)||pokemonDB[i].num.includes(searchInput)||nextEvolutionFilter||nextNextEvolutionFilter||prevEvolutionFilter||prevPrevEvolutionFilter) {
