@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .columna {
+    float: left;
+    width: 25%;
+    padding-right: 5px;
+    padding-bottom: 24px;
+  }
+  
+  .cuadricula::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
