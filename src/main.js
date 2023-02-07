@@ -1,14 +1,15 @@
 
 import data from './data/pokemon/pokemon.js';
+import dataFunctions from './data.js';
 
 
-
+const pokemonDB = data.pokemon
 
 // demostracion de datos de pokemon.js a main.js
 console.log("pokemonDB =")
 console.log(pokemonDB)
 
-const pokemonDB = data.pokemon
+
 
 // funcionalidad sort para el nombre
 let sortOrder = false
@@ -74,6 +75,8 @@ function determinePokevolution(i) {
     pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
   } else {
     pokevolution ='N/A'
+  }
+}
 
 function LoadCards(){
   let pokedex = document.getElementById("pokedex");
@@ -150,11 +153,10 @@ function loadTable(pokemonDB) {
     } else {continue}
   }
 
-
+ htmlTablefull.innerHTML = datatoHTML
          
-  }
-
-
-  htmlTablefull.innerHTML = datatoHTML
-
 }
+
+
+ 
+
