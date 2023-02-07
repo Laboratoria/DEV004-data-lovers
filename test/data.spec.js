@@ -14,12 +14,20 @@ describe('dataFunctions', () => {
       expect(typeof dataFunctions.sortData).toBe('function');
     });
    
-    it('Ascending sorting executed', () => {
+    it('Ascending name sorting executed', () => {
       expect(dataFunctions.sortData([{"name":"a"},{"name":"c"},{"name":"b"}], "name", false)).toStrictEqual([{"name":"a"},{"name":"b"},{"name":"c"}]);
     });
 
-    it('Descending sorting executed', () => {
+    it('Descending name sorting executed', () => {
       expect(dataFunctions.sortData([{"name":"a"},{"name":"c"},{"name":"b"}], "name", true)).toStrictEqual([{"name":"c"},{"name":"b"},{"name":"a"}]);
+    });
+       
+    it('Ascending number sorting executed', () => {
+      expect(dataFunctions.sortData([{"num":"1"},{"num":"3"},{"num":"2"}], "num", false)).toStrictEqual([{"num":"1"},{"num":"2"},{"num":"3"}]);
+    });
+
+    it('Descending number sorting executed', () => {
+      expect(dataFunctions.sortData([{"num":"1"},{"num":"3"},{"num":"2"}], "num", true)).toStrictEqual([{"num":"3"},{"num":"2"},{"num":"1"}]);
     });
 
   });

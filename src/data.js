@@ -23,9 +23,20 @@ const dataFunctions = {
           if (a.name > b.name) return -1;
         })
       }          
+    } else { 
+      if (sortOrder === false) {
+        data.sort((a, b) => {
+          if (a.num < b.num) return -1;
+        })
+      }
+      if (sortOrder === true) {
+        data.sort((a, b) => {
+          if (a.num > b.num) return -1;
+        })
+      }       
     }
     return data
-  }
+  }  
   
 }
 
