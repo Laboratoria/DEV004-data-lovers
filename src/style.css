@@ -2,8 +2,8 @@
 
 * {
     box-sizing: border-box;
+
   }
-  
   .columna {
     float: left;
     width: 25%;
@@ -14,7 +14,13 @@
   .cuadricula::after {
     content: "";
     clear: both;
-    display: table;
+    display: flex;
+  }
+  .cuadricula {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color:#001858;
+  font-size: 1.4em;
   }
   
   .title {
@@ -36,10 +42,6 @@ header {
     left: -90px;
     margin-left: 1050px;
     display: relative;
-    
-   
-  
-    
   }
 header,footer {
   background-color:#f3d2c1;
@@ -49,18 +51,10 @@ footer{
   font-family:'Libre Bodoni', serif;
   min-height: 5em;
   }
-
-.cuadricula {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  color:#001858;
-  font-size: 1.4em;
-}
 #footer{
   text-align: center;
   padding: 2em;
 }
-
 main {
   background-color:#fef6e4 ;
 }
@@ -68,7 +62,6 @@ main {
   
   top: 50%;
   left: 90%;
-
 }
 .btn{
   top: 50%;
@@ -126,12 +119,16 @@ a:hover:after{
   margin-bottom: -.5em;
 }
 
-img {
+.posterStyle {
   width: 200px;
   height: 284px;
-  border: 1px solid #000;
-  
+  border: 5px solid #000;
+}
 
+.posterTitle {
+margin-top: 3em;
+padding-bottom:2em;
+}
 
 
 

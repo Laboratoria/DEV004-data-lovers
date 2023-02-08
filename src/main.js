@@ -16,12 +16,14 @@ function showTitleImage() {
       divColumna.setAttribute('class', 'columna');
 
       creaDiv.innerHTML = ghibli.films[i].title;
+      creaDiv.classList.add("posterTitle");
+
       // console.log(ghibli)
       // console.log(ghibli.films)
       // console.log(ghibli.films[i])
       // console.log(ghibli.films[i].title)
       creaimg.setAttribute('src', ghibli.films[i].poster)
-
+      creaimg.classList.add("posterStyle");
       divColumna.appendChild(creaDiv);
       divColumna.appendChild(creaimg);
       principal.appendChild(divColumna);
