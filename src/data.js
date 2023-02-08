@@ -36,9 +36,17 @@ const dataFunctions = {
       }       
     }
     return data
-  }  
-  
+  },
+
+  filterData(data,condition)  {
+    console.log(data)
+    data = data.filter(value=>value.type.includes(condition))
+    console.log(data)
+    return data
+    
+  }
 }
+
 
 
 export default dataFunctions
