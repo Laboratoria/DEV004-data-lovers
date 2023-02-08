@@ -90,9 +90,10 @@ function LoadCards(pokemonDB) {
   let pokedexDataHTML = ''
   for (let i = 0; i < pokemonDB.length; i++) {
     pokedexDataHTML += `
-    <li class = "card">
+    <li class = "${pokemonDB[i].type[0]}">
       <img class = "card-image" src ="${pokemonDB[i].img}"/>
-      <h2 class = "card-title">${pokemonDB[i].num}.${pokemonDB[i].name}</h2>
+      <h2 class = "card-title">${pokemonDB[i].num}
+      <br>${pokemonDB[i].name}</h2>
      <p class = "card-subtitle">Type: ${pokemonDB[i].type}</p>
     </li>
     `;
