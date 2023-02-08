@@ -1,9 +1,10 @@
 
+
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
 
 
-const pokemonDB = data.pokemon
+
 
 // demostracion de datos de pokemon.js a main.js
 console.log("pokemonDB =")
@@ -87,6 +88,18 @@ function determinePokevolution(i) {
     pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
   } else {
     pokevolution ='N/A'
+
+function LoadCards(){
+  let pokedex = document.getElementById("pokedex");
+
+  for (let i = 0; i < data.pokemon.length; i++) {
+    pokedex.innerHTML += `
+    <li class = "card">
+      <img class = "card-image" src ="${data.pokemon[i].img}"/>
+      <h2 class = "card-title">${data.pokemon[i].num}.${data.pokemon[i].name}</h2>
+     <p class = "card-subtitle">Type: ${data.pokemon[i].type}</p>
+    </li>
+    `;
   }
 }
 
