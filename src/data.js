@@ -26,12 +26,12 @@ const dataFunctions = {
     } else { 
       if (sortOrder === false) {
         data.sort((a, b) => {
-          if (a.num < b.num) return -1;
+          if (a.num > b.num) return -1;
         })
       }
       if (sortOrder === true) {
         data.sort((a, b) => {
-          if (a.num > b.num) return -1;
+          if (a.num < b.num) return -1;
         })
       }       
     }
@@ -39,17 +39,6 @@ const dataFunctions = {
   }  
   
 }
-
-console.log("el tipo de dataFunctions es = "+typeof dataFunctions)
-
-
-//(function () {
-// var bsa_optimize = document.createElement('script');
-//bsa_optimize.defer = true;
-//bsa_optimize.src = 'https://cdn4.buysellads.net/pub/pokemondb.js?' + (new Date() - new Date() % 600000);
-//(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
-//})();
-
 
 
 export default dataFunctions

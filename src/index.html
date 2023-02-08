@@ -1,27 +1,33 @@
 
 <!DOCTYPE html>
-<html>
+<html lang = "es">
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
-    <div class="box-1">  
-    <div class="pokedex-container">
-      <div class="pokedex__header">
-          <div class="pokedex__header-title">
-              <h1>POKEGOHELPERS</h1>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div id="root">
+
+      
+     
+          <div class="container">
+            <h1>POKEGOHELPERS</h1>
+  <h2> Guia para Entrenadores en PokemonGo</h2>
+  <br>
+  <br>
+  <div id="searchID" class="searchBTNclass">
       <input class="input" placeholder="Search Pokemon" id="search" type="text" maxlength = "32"/>
-      <button id="searchButton" class="button">Search</button>
-      <button id="detailedViewbButton" class="button">Vista detallada</button>
+             <button id="searchButton" class="button2">Search</button><br>
+  </div>
+             <button id="detailedViewbButton" class="button">Tabla Informatica</button>
+
+            <ul  id = "pokedex">
+          <!--  Esto va a ser llenado por el Javascript -->   
+        </ul>
+       
+
       <table class="table" id="detailedView">
         <thread>        
           <tr>
@@ -32,13 +38,15 @@
             <th id="headerWeaknesses" class = "weaknesses">Weaknesses</th>
             <th id="headerResistant" class = "resistant">Resistances</th>
             <th id="headerEgg" class = "egg">Hatch Egg (Km)</th>
-            <th id="headerCandyCost" class = "candy-cost">Evolution / Candy Cost</th>  
-                    
+            <th id="headerCandyCost" class = "candy-cost">Evolution / Candy Cost</th>          
           </tr>
         </thread>
         <tbody id="htmlTable"></tbody>
+        <!--Esto va a ser llenado en el Javascript-->
       </table>
-    </div>
+    </div> 
+  </div> 
+  
     <script src="main.js" type="module"></script>
   </body>
 </html>

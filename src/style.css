@@ -1,56 +1,186 @@
 * {
     margin: 0px;
     padding: 0px;
-    
-  }
-
-  .box-1 {
-    font-size: 20px;
-    padding: 50px;
-    text-align: center;
-
-  margin: 50px;
-
-  }
-
-
-
-.pokedex__header-title {
-    font-family: Arial, Helvetica, sans-serif;
-
-
-}
-
-body{
-    background-color: rgba(210, 210, 210, 0.155);
-    
 
 }
 
 #root {
-    color: black; 
+    color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    
-    
+   
+
+
 }
 
 .table {
-    visibility: hidden;
+    visibility: visible;
 }
 
 table {
-margin: 0 auto;
-background-color: rgba(255, 255, 255, 0.984);
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.984);
 }
 
-.number,.name,.sprite{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: cadetblue;
+.number,
+.name,
+.sprite,
+.type,
+.weaknesses,
+.resistant,
+.egg,
+.candy-cost {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
 }
 
 .num {
     color: rgb(138, 138, 138);
-    font-family:sans-serif
+    font-family: sans-serif
 }
+
+td {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+    width: 25%;
+}
+
+td:first-child {
+    padding-left: 0;
+    background-color: rgb(226, 225, 225);
+}
+
+td:last-child {
+    padding-right: 0;
+}
+
+.table {
+    visibility: collapse;
+}
+
+.searchBTNclass {
+    visibility: collapse;
+}
+
+
+table {
+    margin: 40px;
+    width: calc(100% + 30px);
+    background: rgb(236, 236, 2);
+    border-collapse:collapse;
+    margin: 0px -15px;
+}
+
+.prod_img {
+    height: 100px;
+    width: 100px;
+    filter: drop-shadow(5px 5px 5px #646464);
+}
+
+
+
+body {
+    background-color: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: rubik;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+  text-align: center;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 180px;
+   width: 180px;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*
+#detailedView {
+    display: none
+}
+*/
+.button {
+ margin-bottom: 8px;
+  background-color: #533b3b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button2 {
+    margin-bottom: 8px;
+     background-color: #8e8c8c; /* Green */
+     border: none;
+     color: white;
+     padding: 10px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }
+
+
+
+
