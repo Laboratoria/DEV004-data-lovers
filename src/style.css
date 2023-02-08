@@ -4,6 +4,8 @@
     box-sizing: border-box;
 
   }
+  
+    
   .columna {
     float: left;
     width: 25%;
@@ -35,12 +37,9 @@ header {
   margin-bottom: -4em;
 }
   #barnerImg {
-    width: 400px;
-    height: 240px;
+    width: 1024px;
+    height: 426px;
     position: relative;
-    top: -90px; 
-    left: -90px;
-    margin-left: 1050px;
     display: relative;
   }
 header,footer {
