@@ -126,6 +126,11 @@ a:hover:after{
   margin-bottom: -.5em;
 }
 
+img {
+  width: 200px;
+  height: 284px;
+  border: 1px solid #000;
+  
 
 
 
