@@ -487,3 +487,12 @@ h1 {
     Position: Relative;
     Margin: 20px Auto;
   }
+
+  
+  .logopokego {
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px #000000);
+    max-width: 100%;
+    height: auto;
+}
+  
