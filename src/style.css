@@ -19,25 +19,25 @@
   
   .title {
     font-family:'Libre Bodoni', serif; 
-    font-size: 3em;
+    font-size: 2.5em;
     color:#001858;
     position: relative;
-    top: 2em;
+    top: 3em;
     text-align: center;
-
-    
-    
-  }
+}
+header {
+  margin-bottom: -4em;
+}
   #barnerImg {
-    width: 230px;
-    height: 210px;
+    width: 400px;
+    height: 240px;
     position: relative;
-    top: -110px; 
-    left: -5px;
+    top: -90px; 
+    left: -90px;
     margin-left: 1050px;
-    border:2px solid #fff;
     display: relative;
-    float:top;
+    
+   
   
     
   }
@@ -119,6 +119,11 @@ a:hover{
 
 a:hover:after{
   width: 100%;
+}
+#orderIcon {
+  width: 25px;
+  height: 25px;
+  margin-bottom: -.5em;
 }
 
 
