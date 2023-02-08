@@ -1,13 +1,16 @@
 
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 
 
 let pokemonDB = data.pokemon
 
+
 // demostracion de datos de pokemon.js a main.js
 console.log("pokemonDB =")
 console.log(pokemonDB)
+
 
 
 // carga la tabla y tarjetas
@@ -70,8 +73,16 @@ function determinePokevolution(i) {
     pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
   } else {
     pokevolution ='N/A'
+
   }
 }
+
+function createPokemonCard (data) {
+  const PokemonEl = document.createElement('div');
+  PokemonE1.classList.add('pokemon');
+  
+  
+}  
 
 //funcion para generar las tarjetas
 function LoadCards(pokemonDB) {
@@ -86,8 +97,9 @@ function LoadCards(pokemonDB) {
     </li>
     `;
   }
+  
   pokedexFull.innerHTML = pokedexDataHTML
-  console.log(pokedexDataHTML)
+
 }
 
 //funcion para generar la tabla
