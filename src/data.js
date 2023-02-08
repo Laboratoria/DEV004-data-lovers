@@ -26,20 +26,20 @@ const dataFunctions = {
     } else { 
       if (sortOrder === false) {
         data.sort((a, b) => {
-          if (a.num > b.num) return -1;
+          if (a.num < b.num) return -1;
         })
       }
       if (sortOrder === true) {
         data.sort((a, b) => {
-          if (a.num < b.num) return -1;
+          if (a.num > b.num) return -1;
         })
       }       
     }
     return data
   },
 
+  // funcionalidad de filtrado por tipo para los botones
   filterData(data,condition)  {
-    console.log(data)
     data = data.filter(value=>value.type.includes(condition))
     console.log(data)
     return data

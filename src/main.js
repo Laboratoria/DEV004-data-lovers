@@ -13,7 +13,7 @@ console.log(pokemonDB)
 // carga la tabla y tarjetas
 window.onload = () => {
   loadTable(pokemonDB);
-  LoadCards();
+  LoadCards(pokemonDB);
 }   
 
 //funcionalidad para mostrar vista detallada
@@ -23,8 +23,7 @@ const searchDiv = document.getElementById("searchID")
 document.getElementById("detailedViewbButton").addEventListener("click", () => {
   searchDiv.classList.toggle('searchBTNclass')
   table.classList.toggle('table')
-  
-    if (pokedex.style.display === "none") {
+  if (pokedex.style.display === "none") {
     pokedex.style.display = "grid";
   } else {
     pokedex.style.display = "none";
@@ -62,22 +61,6 @@ function sortNumber() {
   loadTable(pokemonDB)
 }
 
-
-//funcion para generar las tarjetas
-function LoadCards(){
-  let pokedex = document.getElementById("pokedex");
-
-  for (let i = 0; i < data.pokemon.length; i++) {
-    pokedex.innerHTML += `
-    <li class = "card">
-      <img class = "card-image" src ="${data.pokemon[i].img}"/>
-      <h2 class = "card-title">${data.pokemon[i].num}.${data.pokemon[i].name}</h2>
-     <p class = "card-subtitle">Type: ${data.pokemon[i].type}</p>
-    </li>
-    `;
-  }
-}
-
 //determina texto para la columna de caramelos
 let nextEvolution = false
 let pokevolution = ''
@@ -88,6 +71,23 @@ function determinePokevolution(i) {
   } else {
     pokevolution ='N/A'
   }
+}
+
+//funcion para generar las tarjetas
+function LoadCards(pokemonDB) {
+  const pokedexFull = document.getElementById("pokedex");
+  let pokedexDataHTML = ''
+  for (let i = 0; i < pokemonDB.length; i++) {
+    pokedexDataHTML += `
+    <li class = "card">
+      <img class = "card-image" src ="${pokemonDB[i].img}"/>
+      <h2 class = "card-title">${pokemonDB[i].num}.${pokemonDB[i].name}</h2>
+     <p class = "card-subtitle">Type: ${pokemonDB[i].type}</p>
+    </li>
+    `;
+  }
+  pokedexFull.innerHTML = pokedexDataHTML
+  console.log(pokedexDataHTML)
 }
 
 //funcion para generar la tabla
@@ -150,8 +150,8 @@ function loadTable(pokemonDB) {
     } else {continue}
   }
 
- htmlTablefull.innerHTML = datatoHTML
-         
+  htmlTablefull.innerHTML = datatoHTML
+
 }
 
 //funcion de filtrado por tipo
@@ -177,96 +177,116 @@ document.getElementById("fairyButton").addEventListener("click", fairyFilter)
 
 function resetFilters() {
   pokemonDB = data.pokemon
-  loadTable(data.pokemon)
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function grassFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"grass")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function fireFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"fire")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function waterFilter() {
   pokemonDB = dataFunctions. filterData(pokemonDB,"water")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function bugFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"bug")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function normalFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"normal")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function flyingFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"flying")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function poisonFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"poison")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function electricFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"electric")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function groundFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"ground")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
+  
 }
 
 function fightFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"fighting")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function psychicFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"psychic")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function rockFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"rock")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function ghostFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"ghost")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function iceFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"ice")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function dragonFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"dragon")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function darkFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"dark")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function steelFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"steel")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
 function fairyFilter() {
   pokemonDB = dataFunctions.filterData(pokemonDB,"fairy")
   loadTable(pokemonDB)
+  LoadCards(pokemonDB)
 }
 
