@@ -1,6 +1,7 @@
 
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 
 
 const pokemonDB = data.pokemon
@@ -10,10 +11,11 @@ console.log("pokemonDB =")
 console.log(pokemonDB)
 
 
+
 // carga la tabla y tarjetas
 window.onload = () => {
   loadTable(pokemonDB);
-  LoadCards();
+LoadCards();
 }   
 
 //funcionalidad para mostrar vista detallada
@@ -62,21 +64,29 @@ function sortNumber() {
   loadTable(pokemonDB)
 }
 
+function createPokemonCard (data) {
+  const PokemonEl = document.createElement('div');
+  PokemonE1.classList.add('pokemon');
 
+
+}
 //funcion para generar las tarjetas
 function LoadCards(){
-  let pokedex = document.getElementById("pokedex");
 
+let pokedex = document.getElementById("pokedex");
   for (let i = 0; i < data.pokemon.length; i++) {
     pokedex.innerHTML += `
-    <li class = "card">
+    <li class = "${data.pokemon[i].type[0]}">
       <img class = "card-image" src ="${data.pokemon[i].img}"/>
-      <h2 class = "card-title">${data.pokemon[i].num}.${data.pokemon[i].name}</h2>
-     <p class = "card-subtitle">Type: ${data.pokemon[i].type}</p>
+      <h2 class = "card-title">${data.pokemon[i].num}<br>${data.pokemon[i].name}</h2>
+     <p class = "card-subtitle" " > Type: ${data.pokemon[i].type} </p>
     </li>
     `;
+    
   }
-}
+ 
+};
+
 
 //determina texto para la columna de caramelos
 let nextEvolution = false
