@@ -36,9 +36,17 @@ const dataFunctions = {
       }       
     }
     return data
-  }  
-  
+  },
+
+  // funcionalidad de filtrado por tipo para los botones
+  filterData(data,condition)  {
+    data = data.filter(value=>value.type.includes(condition))
+    console.log(data)
+    return data
+    
+  }
 }
+
 
 
 export default dataFunctions
