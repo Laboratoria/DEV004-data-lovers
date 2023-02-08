@@ -88,6 +88,8 @@ function determinePokevolution(i) {
     pokevolution = pokemonDB[i].evolution['next-evolution'][0]['candy-cost']
   } else {
     pokevolution ='N/A'
+  }
+}
 
 function LoadCards(){
   let pokedex = document.getElementById("pokedex");
@@ -103,7 +105,7 @@ function LoadCards(){
   }
 }
 
-//funcion para generar la tabla
+// funcion para generar la tabla
 function loadTable(pokemonDB) {
   const htmlTablefull = document.getElementById("htmlTable")
   let datatoHTML = ""
@@ -163,7 +165,7 @@ function loadTable(pokemonDB) {
     } else {continue}
   }
 
- htmlTablefull.innerHTML = datatoHTML
+   htmlTablefull.innerHTML = datatoHTML
          
 }
 
