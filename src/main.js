@@ -1,10 +1,9 @@
 
-
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
 
 
-
+const pokemonDB = data.pokemon
 
 // demostracion de datos de pokemon.js a main.js
 console.log("pokemonDB =")
@@ -70,7 +69,7 @@ function LoadCards(){
 
   for (let i = 0; i < data.pokemon.length; i++) {
     pokedex.innerHTML += `
-    <li class = "card">
+    <li class = "${data.pokemon[i].type[0]}">
       <img class = "card-image" src ="${data.pokemon[i].img}"/>
       <h2 class = "card-title">${data.pokemon[i].num}.${data.pokemon[i].name}</h2>
      <p class = "card-subtitle">Type: ${data.pokemon[i].type}</p>
@@ -91,21 +90,7 @@ function determinePokevolution(i) {
   }
 }
 
-function LoadCards(){
-  let pokedex = document.getElementById("pokedex");
-
-  for (let i = 0; i < data.pokemon.length; i++) {
-    pokedex.innerHTML += `
-    <li class = "card">
-      <img class = "card-image" src ="${data.pokemon[i].img}"/>
-      <h2 class = "card-title">${data.pokemon[i].num}.${data.pokemon[i].name}</h2>
-     <p class = "card-subtitle">Type: ${data.pokemon[i].type}</p>
-    </li>
-    `;
-  }
-}
-
-// funcion para generar la tabla
+//funcion para generar la tabla
 function loadTable(pokemonDB) {
   const htmlTablefull = document.getElementById("htmlTable")
   let datatoHTML = ""
@@ -165,7 +150,7 @@ function loadTable(pokemonDB) {
     } else {continue}
   }
 
-   htmlTablefull.innerHTML = datatoHTML
+ htmlTablefull.innerHTML = datatoHTML
          
 }
 
