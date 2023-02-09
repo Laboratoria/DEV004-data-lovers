@@ -14,7 +14,7 @@
 .boxBanner{
   display:flex;
   background-color: yellow;
-  justify-content: space-around;
+  justify-content: space-between;
   
 }
 .icon{
@@ -30,7 +30,7 @@
   #grid {
     height: 100px; 
     display: grid;
-    grid-template-areas: "a a a";
+    grid-template-areas: "a a a ";
     grid-gap: 50px;
     grid-auto-columns: 200px;
     justify-content: center;
