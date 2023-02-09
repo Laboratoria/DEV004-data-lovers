@@ -1,11 +1,74 @@
+header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+   
+  footer {
+    grid-area: footer;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+  }
 
 
-* {
+/* header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #fef6e4;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+.banner,.nombrePagina{
+    height: 50px;
+    margin-right: 10px;
+
+}
+body{
+    font-family: 'Libre Bodoni', serif;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color:  #001858;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+nav a:hover{
+    color: bisque;
+}
+@media (max-width: 700px){ 
+    header{flex-direction: column;}
+}
+nav{
+    padding: 10px 0px;
+} */
+
+
+
+/* * {
     box-sizing: border-box;
 
   }
-  
-    
+     
   .columna {
     float: left;
     width: 25%;
@@ -18,6 +81,7 @@
     clear: both;
     display: flex;
   }
+ 
   .cuadricula {
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -134,4 +198,4 @@ padding-bottom:2em;
 
   /* font-family: 'Cinzel', serif;
 font-family: 'Libre Bodoni', serif;
-font-family: 'Playfair Display', serif; */
+font-family: 'Playfair Display', serif; */ 
