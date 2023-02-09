@@ -1,68 +1,49 @@
-header {
-    grid-area: header;
+
+/* voy a experimentar utilizando flexbox en el layout */
+
+#boxTotoro {
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+ #totoro {
+  display: flex;
+   }
+
+.boxBanner{
+  display:flex;
+  background-color: yellow;
+  justify-content: space-between;
+  
+}
+.icon{
+  width: 3em;
+  height:3em;
+  justify-content: center;
+  
+}
+ a{
+  text-decoration: none;
+  justify-content: center;
   }
-  main {
-    grid-area: main;
-  }
-   
-  footer {
-    grid-area: footer;
+  #grid {
+    height: 100px; 
+    display: grid;
+    grid-template-areas: "a a a ";
+    grid-gap: 50px;
+    grid-auto-columns: 200px;
+    justify-content: center;
   }
   
-  .container {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      "header header header header"
-      "main main . sidebar"
-      "footer footer footer footer";
+  #grid > div {
+    background-color: lime;
   }
-
-
-/* header{
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
-    background-color: #fef6e4;
-    align-items: center;
-    padding: 10px;
-}
-
-.banner{
-    display: flex;
-    align-items: center;
-}
-.banner,.nombrePagina{
-    height: 50px;
-    margin-right: 10px;
-
-}
-body{
-    font-family: 'Libre Bodoni', serif;
-    margin: 0;
-
-}
-a{
-    text-decoration: none;
-    color:  #001858;
-}
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-
-}
-nav a:hover{
-    color: bisque;
-}
-@media (max-width: 700px){ 
-    header{flex-direction: column;}
-}
-nav{
-    padding: 10px 0px;
-} */
-
-
+  .posterStyle {
+    width: 200px;
+    height: 284px;
+  }
+  
 
 /* * {
     box-sizing: border-box;
@@ -105,6 +86,15 @@ header {
     height: 426px;
     position: relative;
     display: relative;
+  }
+
+  @media (min-width: 640px){
+   
+     #barnerImg {
+      width: 512px;
+      height: 213px;
+     }
+   
   }
 header,footer {
   background-color:#f3d2c1;
@@ -198,4 +188,5 @@ padding-bottom:2em;
 
   /* font-family: 'Cinzel', serif;
 font-family: 'Libre Bodoni', serif;
-font-family: 'Playfair Display', serif; */ 
+font-family: 'Playfair Display', serif; */
+ 
