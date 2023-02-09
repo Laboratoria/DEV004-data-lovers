@@ -1,0 +1,192 @@
+
+/* voy a experimentar utilizando flexbox en el layout */
+
+#boxTotoro {
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+ #totoro {
+  display: flex;
+   }
+
+.boxBanner{
+  display:flex;
+  background-color: yellow;
+  justify-content: space-between;
+  
+}
+.icon{
+  width: 3em;
+  height:3em;
+  justify-content: center;
+  
+}
+ a{
+  text-decoration: none;
+  justify-content: center;
+  }
+  #grid {
+    height: 100px; 
+    display: grid;
+    grid-template-areas: "a a a ";
+    grid-gap: 50px;
+    grid-auto-columns: 200px;
+    justify-content: center;
+  }
+  
+  #grid > div {
+    background-color: lime;
+  }
+  .posterStyle {
+    width: 200px;
+    height: 284px;
+  }
+  
+
+/* * {
+    box-sizing: border-box;
+
+  }
+  
+    
+  .columna {
+    float: left;
+    width: 25%;
+    padding-right: 5px;
+    padding-bottom: 24px;
+  }
+  
+  .cuadricula::after {
+    content: "";
+    clear: both;
+    display: flex;
+  }
+  .cuadricula {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color:#001858;
+  font-size: 1.4em;
+  }
+  
+  .title {
+    font-family:'Libre Bodoni', serif; 
+    font-size: 2.5em;
+    color:#001858;
+    position: relative;
+    top: 3em;
+    text-align: center;
+}
+header {
+  margin-bottom: -4em;
+}
+  #barnerImg {
+    width: 1024px;
+    height: 426px;
+    position: relative;
+    display: relative;
+  }
+
+  @media (min-width: 640px){
+   
+     #barnerImg {
+      width: 512px;
+      height: 213px;
+     }
+   
+  }
+header,footer {
+  background-color:#f3d2c1;
+}
+footer{
+  color:#001858;
+  font-family:'Libre Bodoni', serif;
+  min-height: 5em;
+  }
+#footer{
+  text-align: center;
+  padding: 2em;
+}
+main {
+  background-color:#fef6e4 ;
+}
+.btn2 {
+  
+  top: 50%;
+  left: 90%;
+}
+.btn{
+  top: 50%;
+  left: 10%;
+}
+.btn, .btn2 {
+  padding-top: 1em;
+  padding-bottom: -3em;
+  position:absolute;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  display: block;
+  width: 150px;
+  height: 3em;
+  line-height: 40px;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif; ;
+  text-decoration: none;
+  color:#001858;
+  border: 2px solid #f582ae;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #f582ae;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #001858;
+}
+
+a:hover:after{
+  width: 100%;
+}
+#orderIcon {
+  width: 25px;
+  height: 25px;
+  margin-bottom: -.5em;
+}
+
+.posterStyle {
+  width: 200px;
+  height: 284px;
+  border: 5px solid #000;
+}
+
+.posterTitle {
+margin-top: 3em;
+padding-bottom:2em;
+}
+
+
+
+
+  /* font-family: 'Cinzel', serif;
+font-family: 'Libre Bodoni', serif;
+font-family: 'Playfair Display', serif; */
+ */
