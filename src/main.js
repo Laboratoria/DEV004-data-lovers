@@ -77,12 +77,6 @@ function determinePokevolution(i) {
   }
 }
 
-function createPokemonCard (data) {
-  const PokemonEl = document.createElement('div');
-  PokemonE1.classList.add('pokemon');
-  
-  
-}  
 
 //funcion para generar las tarjetas
 function LoadCards(pokemonDB) {
@@ -303,3 +297,27 @@ function fairyFilter() {
   LoadCards(pokemonDB)
 }
 
+// kanto [0,151]
+// Johto [152,251]
+//for  (let i = 0; i < 151 ; i++);
+
+document.getElementById("nationaldex").addEventListener("click", function() {
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 251);
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
+  // Render the filtered nationalPokemon on the page
+}); 
+
+document.getElementById("kantodex").addEventListener("click", function() {
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
+  // Render the filtered kantoPokemon on the page
+});
+
+document.getElementById("johtodex").addEventListener("click", function() {
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
+  // Render the filtered johtoPokemon on the page
+});
