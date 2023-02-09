@@ -1,7 +1,6 @@
 
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
 
 
 let pokemonDB = data.pokemon
@@ -324,24 +323,24 @@ function fairyFilter() {
 
 
 document.getElementById("kantodex").addEventListener("click", function() {
-pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
-pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
-loadTable(pokemonDB)
+  pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
+  loadTable(pokemonDB)
   LoadCards(pokemonDB)
   // Render the filtered kantoPokemon on the page
 });
 
 
 document.getElementById("nationaldex").addEventListener("click", function() {
-pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
+  pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
   loadTable(pokemonDB)
   LoadCards(pokemonDB)
 });
 
 document.getElementById("johto").addEventListener("click", function() {
-pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
-pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
-loadTable(pokemonDB)
- LoadCards(pokemonDB)
+  pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
   // Render the filtered kantoPokemon on the page
 });
