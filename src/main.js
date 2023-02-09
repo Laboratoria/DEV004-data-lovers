@@ -77,12 +77,6 @@ function determinePokevolution(i) {
   }
 }
 
-function createPokemonCard (data) {
-  const PokemonEl = document.createElement('div');
-  PokemonE1.classList.add('pokemon');
-  
-  
-}  
 
 //funcion para generar las tarjetas
 function LoadCards(pokemonDB) {
@@ -90,9 +84,10 @@ function LoadCards(pokemonDB) {
   let pokedexDataHTML = ''
   for (let i = 0; i < pokemonDB.length; i++) {
     pokedexDataHTML += `
-    <li class = "card">
+    <li class = "${pokemonDB[i].type[0]}">
       <img class = "card-image" src ="${pokemonDB[i].img}"/>
-      <h2 class = "card-title">${pokemonDB[i].num}.${pokemonDB[i].name}</h2>
+      <h2 class = "card-title">${pokemonDB[i].num}
+      <br>${pokemonDB[i].name}</h2>
      <p class = "card-subtitle">Type: ${pokemonDB[i].type}</p>
     </li>
     `;
@@ -302,3 +297,31 @@ function fairyFilter() {
   LoadCards(pokemonDB)
 }
 
+// kanto [0,151]
+// Johto [152,251]
+//for  (let i = 0; i < 151 ; i++);
+
+
+
+document.getElementById("kantodex").addEventListener("click", function() {
+pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
+loadTable(pokemonDB)
+  LoadCards(pokemonDB)
+  // Render the filtered kantoPokemon on the page
+});
+
+
+document.getElementById("nationaldex").addEventListener("click", function() {
+pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
+});
+
+document.getElementById("johto").addEventListener("click", function() {
+pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
+loadTable(pokemonDB)
+ LoadCards(pokemonDB)
+  // Render the filtered kantoPokemon on the page
+});

@@ -84,6 +84,7 @@ table {
 
 body {
     background-image: linear-gradient(90deg, #c1e4ff 0%, #bca4f7 35%, #aff0fd 100%);    color: rgb(0, 60, 255);
+   
     margin: 0;
     font-family: rubik;
 }
@@ -93,10 +94,12 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+h2 {
     text-transform: uppercase;
+    color: #456ca4;
     text-align: center;
-    font-size: 54px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
 }
 
 #pokedex {
@@ -110,7 +113,7 @@ h1 {
 .grass {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     background-color:#9bfd8729;
 
 }
@@ -122,7 +125,7 @@ h1 {
 .bug {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   
     background-color:#7ca4782c;
@@ -136,7 +139,7 @@ h1 {
 .dragon {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
    
     background-color:#27028d37;
@@ -150,7 +153,7 @@ h1 {
 .electric {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
    
     background-color:#f2cc0d32;
@@ -164,7 +167,7 @@ h1 {
 .fairy {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
    
     background-color:#e65f972c;
@@ -178,7 +181,7 @@ h1 {
 .fighting {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#6604042f;
@@ -192,7 +195,7 @@ h1 {
 .fire {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
    
     background-color:#f6890d2c;
@@ -206,7 +209,7 @@ h1 {
 .flying {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   
     background-color:#a4c8c82c;
@@ -220,7 +223,7 @@ h1 {
 .ground {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#a0701832;
@@ -234,7 +237,7 @@ h1 {
 .ghost {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#41067c2b;
@@ -249,7 +252,7 @@ h1 {
 .ice {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#ccddee28;
@@ -263,7 +266,7 @@ h1 {
 .normal {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
    
     background-color:#cbcbcb27;
@@ -277,7 +280,7 @@ h1 {
 .poison {
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#8400ff19;
@@ -291,9 +294,8 @@ h1 {
 .psychic {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
-    
     background-color:#c502ae2b;
 
 }
@@ -305,7 +307,7 @@ h1 {
 .rock {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#432c1432;
@@ -319,7 +321,7 @@ h1 {
 .water {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#9bd3fe2d;
@@ -333,7 +335,7 @@ h1 {
 .dark {
     box-shadow: 0 4px 8px 0 rgba(43, 39, 39, 0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#4d4c4c2d;
@@ -347,7 +349,7 @@ h1 {
 .steel {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
     
     background-color:#5c5c5c32;
@@ -365,7 +367,7 @@ h1 {
     Width: 100%;
     Padding: 30px 20px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
-    Border-Radius: 10px;
+    Border-Radius: px;
 }
 
 .card-title {
@@ -441,7 +443,7 @@ h1 {
 */
 .button {
  margin-bottom: 8px;
-  background-color: #533b3b; /* Green */
+  background-color: #6509d77a;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -464,7 +466,6 @@ h1 {
      font-size: 16px;
    }
 
-
    .Btndesign {
     filter: drop-shadow(5px 5px 5px #000000);
     Margin: 20px Auto;
@@ -472,7 +473,6 @@ h1 {
     ;
 
    }
-
 
 
    #Card {
@@ -489,3 +489,22 @@ h1 {
     Position: Relative;
     Margin: 20px Auto;
   }
+
+  
+  .logopokego {
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px #000000);
+    max-width: 100%;
+    height: auto;
+}
+
+#nationaldex {
+    height: 60px;
+    padding-right: 3%;
+    
+}
+.botonsdex{
+    filter: drop-shadow(5px 5px 5px #646464);
+}
+
+
