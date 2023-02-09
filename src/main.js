@@ -301,23 +301,27 @@ function fairyFilter() {
 // Johto [152,251]
 //for  (let i = 0; i < 151 ; i++);
 
-document.getElementById("nationaldex").addEventListener("click", function() {
-  pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 251);
-  loadTable(pokemonDB)
-  LoadCards(pokemonDB)
-  // Render the filtered nationalPokemon on the page
-}); 
+
 
 document.getElementById("kantodex").addEventListener("click", function() {
-  pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
-  loadTable(pokemonDB)
+pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
+loadTable(pokemonDB)
   LoadCards(pokemonDB)
   // Render the filtered kantoPokemon on the page
 });
 
-document.getElementById("johtodex").addEventListener("click", function() {
-  pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
+
+document.getElementById("nationaldex").addEventListener("click", function() {
+pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
   loadTable(pokemonDB)
   LoadCards(pokemonDB)
-  // Render the filtered johtoPokemon on the page
+});
+
+document.getElementById("johto").addEventListener("click", function() {
+pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
+loadTable(pokemonDB)
+ LoadCards(pokemonDB)
+  // Render the filtered kantoPokemon on the page
 });
