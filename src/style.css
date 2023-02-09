@@ -507,4 +507,7 @@ h2 {
     filter: drop-shadow(5px 5px 5px #646464);
 }
 
+.undefinedText{
+    display:none
+}
 
