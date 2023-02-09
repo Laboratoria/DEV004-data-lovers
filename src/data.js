@@ -1,11 +1,3 @@
-// estas funciones son de ejemplo
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
 
 
 // funcionalidad de sort para ordenar columnas
@@ -41,10 +33,9 @@ const dataFunctions = {
   // funcionalidad de filtrado por tipo para los botones
   filterData(data,condition)  {
     data = data.filter(value=>value.type.includes(condition))
-    console.log(data)
     return data
-    
   }
+  
 }
 
 

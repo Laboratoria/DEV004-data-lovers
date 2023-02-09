@@ -1,7 +1,6 @@
 
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
 
 
 let pokemonDB = data.pokemon
@@ -82,13 +81,16 @@ function determinePokevolution(i) {
 function LoadCards(pokemonDB) {
   const pokedexFull = document.getElementById("pokedex");
   let pokedexDataHTML = ''
-  for (let i = 0; i < pokemonDB.length; i++) {
+  for (let i = 0; i < pokemonDB.length; i++) {  
     pokedexDataHTML += `
     <li class = "${pokemonDB[i].type[0]}">
       <img class = "card-image" src ="${pokemonDB[i].img}"/>
       <h2 class = "card-title">${pokemonDB[i].num}
       <br>${pokemonDB[i].name}</h2>
-     <p class = "card-subtitle">Type: ${pokemonDB[i].type}</p>
+        <p class = "card-subtitle">
+          <div class="${pokemonDB[i].type[0]}Text">${pokemonDB[i].type[0]}</div>
+          <div class="${pokemonDB[i].type[1]}Text">${pokemonDB[i].type[1]}</div>
+        </p>
     </li>
     `;
   }
@@ -147,9 +149,26 @@ function loadTable(pokemonDB) {
         <td> <img class="prod_img" src="${pokemonDB[i].img}"></img> </td>
         <td class = num >  ${pokemonDB[i].num} </td>             
         <td> ${pokename} </td> 
-        <td> ${pokemonDB[i].type} </td> 
-        <td> ${pokemonDB[i].weaknesses} </td> 
-        <td> ${pokemonDB[i].resistant} </td> 
+        <td>
+          <div class="${pokemonDB[i].type[0]}Text">${pokemonDB[i].type[0]}</div>
+          <div class="${pokemonDB[i].type[1]}Text">${pokemonDB[i].type[1]}</div>
+        </td> 
+        <td> 
+          <div class="${pokemonDB[i].weaknesses[0]}Text">${pokemonDB[i].weaknesses[0]}</div>
+          <div class="${pokemonDB[i].weaknesses[1]}Text">${pokemonDB[i].weaknesses[1]}</div>
+          <div class="${pokemonDB[i].weaknesses[2]}Text">${pokemonDB[i].weaknesses[2]}</div>
+          <div class="${pokemonDB[i].weaknesses[3]}Text">${pokemonDB[i].weaknesses[3]}</div>
+          <div class="${pokemonDB[i].weaknesses[4]}Text">${pokemonDB[i].weaknesses[4]}</div>
+          <div class="${pokemonDB[i].weaknesses[5]}Text">${pokemonDB[i].weaknesses[5]}</div>
+        </td> 
+        <td>
+          <div class="${pokemonDB[i].resistant[0]}Text">${pokemonDB[i].resistant[0]}</div>
+          <div class="${pokemonDB[i].resistant[1]}Text">${pokemonDB[i].resistant[1]}</div>
+          <div class="${pokemonDB[i].resistant[2]}Text">${pokemonDB[i].resistant[2]}</div>
+          <div class="${pokemonDB[i].resistant[3]}Text">${pokemonDB[i].resistant[3]}</div>
+          <div class="${pokemonDB[i].resistant[4]}Text">${pokemonDB[i].resistant[4]}</div>
+          <div class="${pokemonDB[i].resistant[5]}Text">${pokemonDB[i].resistant[5]}</div>
+        </td> 
         <td> ${pokemonDB[i].egg} </td> 
         <td> ${pokevolution}c</td>
       </tr>` 
@@ -304,24 +323,24 @@ function fairyFilter() {
 
 
 document.getElementById("kantodex").addEventListener("click", function() {
-pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
-pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
-loadTable(pokemonDB)
+  pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num <= 151);
+  loadTable(pokemonDB)
   LoadCards(pokemonDB)
   // Render the filtered kantoPokemon on the page
 });
 
 
 document.getElementById("nationaldex").addEventListener("click", function() {
-pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
+  pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
   loadTable(pokemonDB)
   LoadCards(pokemonDB)
 });
 
 document.getElementById("johto").addEventListener("click", function() {
-pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
-pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
-loadTable(pokemonDB)
- LoadCards(pokemonDB)
+  pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
+  pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
+  loadTable(pokemonDB)
+  LoadCards(pokemonDB)
   // Render the filtered kantoPokemon on the page
 });
