@@ -3,47 +3,80 @@
 
 #boxTotoro {
   display: flex;
-  justify-content: center;
- 
-  
+  justify-content: center;  
 }
- #totoro {
-  display: flex;
-   }
 
 .boxBanner{
   display:flex;
   background-color: yellow;
   justify-content: space-between;
-  
 }
+
 .icon{
   width: 3em;
   height:3em;
-  justify-content: center;
-  
+  justify-content: center;  
 }
- a{
+
+a {
   text-decoration: none;
   justify-content: center;
-  }
-  #grid {
-    height: 100px; 
+}
+  
+#grid > div {
+  background-color: lime;
+}
+
+.posterStyle {
+  width: 200px;
+  height: 284px;
+}
+
+@media screen and (min-width: 300px) {
+  .grid-container {
     display: grid;
-    grid-template-areas: "a a a ";
+    grid-template-columns: auto auto;
     grid-gap: 50px;
     grid-auto-columns: 200px;
     justify-content: center;
   }
-  
-  #grid > div {
-    background-color: lime;
+}
+
+@media screen and (min-width: 750px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    grid-auto-columns: 200px;
+    justify-content: center;
   }
-  .posterStyle {
-    width: 200px;
-    height: 284px;
+}
+
+@media screen and (min-width: 300px) {
+  #totoro {
+    height: 15rem;
   }
-  
+}
+
+@media screen and (min-width: 750px) {
+  #totoro {
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  .iconlabel {
+    display: none;
+  }
+}
+@media screen and (min-width: 750px) {
+  .iconlabel {
+    display: contents;
+  }
+}
+
+     
+    
+  /* //hasta la 55 esta comentado y es lo que funciona  */
 
 /* * {
     box-sizing: border-box;
