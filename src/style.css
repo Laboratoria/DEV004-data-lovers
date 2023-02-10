@@ -4,10 +4,11 @@
 
 }
 
+
 #root {
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
+    font-family: 'Lato', sans-serif;   
+     font-size: 15px;
     text-align: center;
    
 
@@ -31,13 +32,13 @@ table {
 .resistant,
 .egg,
 .candy-cost {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: cadetblue;
+    font-family: 'Lato', sans-serif;
+ color: cadetblue;
 }
 
 .num {
     color: rgb(138, 138, 138);
-    font-family: sans-serif
+    font-family: 'Lato', sans-serif;
 }
 
 td {
@@ -84,9 +85,8 @@ table {
 
 body {
     background-image: linear-gradient(90deg, #c1e4ff 0%, #bca4f7 35%, #aff0fd 100%);    color: rgb(0, 60, 255);
-   
+    font-family: 'Lato', sans-serif;
     margin: 0;
-    font-family: rubik;
 }
 
 .container {
@@ -98,7 +98,7 @@ h2 {
     text-transform: uppercase;
     color: #456ca4;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
 }
 
@@ -108,7 +108,13 @@ h2 {
     grid-gap: 20px;
     padding-inline-start: 0;
 }
+#poketype {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20%;
 
+}
 
 .grass {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -351,7 +357,6 @@ h2 {
     transition: 0.3s;
     border-radius: 100px;
     Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
-    
     background-color:#5c5c5c32;
 
 }
@@ -361,54 +366,21 @@ h2 {
 }
 
 
-
-.card {
-    Position: Relative;
-    Width: 100%;
-    Padding: 30px 20px;
-    Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
-    Border-Radius: px;
-}
-
 .card-title {
     text-transform: capitalize;
     color: #ffffff;
     Text-Align: Center;
     font-size: 30px ;
     Font-Weight: 600;
-    text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000,
-    0px 2px 0 #000,
-    0px -2px 0 #000,
-    -2px 0px 0 #000,
-    2px 0px 0 #000,
-    1px 2px 0 #000,
-    -1px 2px 0 #000,
-    1px -2px 0 #000,
-    -1px -2px 0 #000,
-    2px 1px 0 #000,
-    -2px 1px 0 #000,
-    2px -1px 0 #000,
-    -2px -1px 0 #000;
+
 }
 .card-subtitle {
     Display: Flex;
     text-transform: capitalize;
-    color: rgb(0, 0, 0);
-    font-size: 15px ;
- 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    Justify-Content: Space-Around;
+    font-size: 50px ;
+    color: whitesmoke;
+   font-family: 'Lato', sans-serif;    
+   Justify-Content: Space-Around;
     Margin: 20px 0 40px 0;
 }
 
@@ -436,11 +408,7 @@ h2 {
         transform: translateY(0);
     }
 }
-/*
-#detailedView {
-    display: none
-}
-*/
+
 .button {
  margin-bottom: 8px;
   background-color: #6509d77a;
@@ -456,7 +424,7 @@ h2 {
 
 .button2 {
     margin-bottom: 8px;
-     background-color: #8e8c8c; /* Green */
+     background-color: #8e8c8c;
      border: none;
      color: white;
      padding: 10px 15px;
@@ -466,31 +434,83 @@ h2 {
      font-size: 16px;
    }
 
+/* botones filtrado por tipo*/
    .Btndesign {
     filter: drop-shadow(5px 5px 5px #000000);
     Margin: 20px Auto;
-    padding: 30px;
-    ;
+    }
+    #resetButton {
+        height: 60px;
+        padding-bottom: 10px;
+    }
+    #grassButton {
+        padding: 3px;
+    }
+    #fireButton {
+        padding: 3px;
+    }
+    #waterButton {
+        padding: 3px;
+    }
+    #bugButton {
+        padding: 3px;
+    }
+    #normalButton {
+        padding: 3px;
+    }
+    #flyingButton {
+        padding: 3px;
+    }
+    #electricButton {
+        padding: 3px;
 
-   }
+    }
+    #poisonButton {
+        padding: 3px;
+
+    }
+    #groundButton {
+        padding: 3px;
+
+    } 
+    #fightButton {
+        padding: 3px;
+
+    } 
+    #psychicButton {
+        padding: 3px;
+
+    } 
+    #rockButton {
+        padding: 3px;
+
+    } 
+    #ghostButton {
+        padding: 3px;
+
+    } 
+    #iceButton {
+        padding: 3px;
+
+    } 
+    #dragonButton {
+        padding: 3px;
+
+    } 
+    #darkButton {
+        padding: 3px;
+
+    } 
+    #steelButton {
+        padding: 3px;
+
+    } 
+    #fairyButton {
+        padding: 3px;
+
+    } 
 
 
-   #Card {
-    Position: Relative;
-    Width: 100%;
-    Padding: 30px 20px;
-    Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
-    Border-Radius: 10px;
-  }
-  #Card Img {
-    Display: Block;
-    Width: 180px;
-    Max-Height: 200px;
-    Position: Relative;
-    Margin: 20px Auto;
-  }
-
-  
   .logopokego {
     text-align: center;
     filter: drop-shadow(5px 5px 5px #000000);
@@ -503,6 +523,7 @@ h2 {
     padding-right: 3%;
     
 }
+
 .botonsdex{
     filter: drop-shadow(5px 5px 5px #646464);
 }
@@ -511,3 +532,233 @@ h2 {
     display:none
 }
 
+/* poke types color */
+
+.grassText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+    background-color: #02bc21;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 3px;
+}
+
+.poisonText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(290, 91%, 42%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.fireText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(36, 95%, 44%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 3px;
+    
+}
+
+.flyingText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(203, 52%, 63%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3px;
+    
+}
+.waterText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(209, 91%, 42%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+.bugText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(80, 69%, 41%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.normalText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(0, 0%, 59%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.electricText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(51, 97%, 47%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+.groundText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(44, 68%, 38%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.fightingText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(0, 96%, 27%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.psychicText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(309, 99%, 44%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.rockText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(59, 22%, 39%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.iceText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(187, 57%, 76%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.ghostText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(264, 93%, 29%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+.dragonText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(256, 96%, 43%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.fairyText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(314, 78%, 75%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.darkText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(300, 2%, 22%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}
+
+.steelText {
+    display: inline;
+    color: whitesmoke;
+    font-size: medium;
+     background-color: hsl(0, 0%, 70%);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    
+}

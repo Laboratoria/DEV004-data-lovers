@@ -83,12 +83,12 @@ function LoadCards(pokemonDB) {
   let pokedexDataHTML = ''
   for (let i = 0; i < pokemonDB.length; i++) {  
     pokedexDataHTML += `
-    <li class = "${pokemonDB[i].type[0]}">
+    <li class = "${pokemonDB[i].type[0]}" id= poketype>
       <img class = "card-image" src ="${pokemonDB[i].img}"/>
       <h2 class = "card-title">${pokemonDB[i].num}
       <br>${pokemonDB[i].name}</h2>
         <p class = "card-subtitle">
-          <div class="${pokemonDB[i].type[0]}Text">${pokemonDB[i].type[0]}</div>
+          <div class="${pokemonDB[i].type[0]}Text">${pokemonDB[i].type[0]}</div><br><br>
           <div class="${pokemonDB[i].type[1]}Text">${pokemonDB[i].type[1]}</div>
         </p>
     </li>
@@ -155,10 +155,10 @@ function loadTable(pokemonDB) {
         </td> 
         <td> 
           <div class="${pokemonDB[i].weaknesses[0]}Text">${pokemonDB[i].weaknesses[0]}</div>
-          <div class="${pokemonDB[i].weaknesses[1]}Text">${pokemonDB[i].weaknesses[1]}</div>
-          <div class="${pokemonDB[i].weaknesses[2]}Text">${pokemonDB[i].weaknesses[2]}</div>
-          <div class="${pokemonDB[i].weaknesses[3]}Text">${pokemonDB[i].weaknesses[3]}</div>
-          <div class="${pokemonDB[i].weaknesses[4]}Text">${pokemonDB[i].weaknesses[4]}</div>
+          <div class="${pokemonDB[i].weaknesses[1]}Text">${pokemonDB[i].weaknesses[1]}</div><br>
+          <div class="${pokemonDB[i].weaknesses[2]}Text">${pokemonDB[i].weaknesses[2]}</div><br>
+          <div class="${pokemonDB[i].weaknesses[3]}Text">${pokemonDB[i].weaknesses[3]}</div><br>
+          <div class="${pokemonDB[i].weaknesses[4]}Text">${pokemonDB[i].weaknesses[4]}</div><br>
           <div class="${pokemonDB[i].weaknesses[5]}Text">${pokemonDB[i].weaknesses[5]}</div>
         </td> 
         <td>
