@@ -2,7 +2,7 @@
 import data from './data/pokemon/pokemon.js';
 import dataFunctions from './data.js';
 
-
+// establece base de datos para su modificicacion
 let pokemonDB = data.pokemon
 
 
@@ -335,12 +335,13 @@ document.getElementById("nationaldex").addEventListener("click", function() {
   pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251);
   loadTable(pokemonDB)
   LoadCards(pokemonDB)
-});
+  // Render the reseted database
+}); 
 
 document.getElementById("johto").addEventListener("click", function() {
   pokemonDB = data.pokemon.filter(pokemon => pokemon.num <= 251)
   pokemonDB = pokemonDB.filter(pokemon => pokemon.num > 151);
   loadTable(pokemonDB)
   LoadCards(pokemonDB)
-  // Render the filtered kantoPokemon on the page
+  // Render the filtered johtoPokemon on the page
 });
