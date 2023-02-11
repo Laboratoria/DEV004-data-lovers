@@ -7,24 +7,28 @@
   font-family: 'Playfair Display', serif;
   font-size: 20px;
 }
+body{
+  background-color: #fef6e4;
+}
 .header{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
   width: 100%;
   height: 100%;
 }
 #boxBanner {
   display: flex;
-  justify-content: center;  
-  
+  justify-content: center; 
+  flex-direction: column;  
+  justify-items: center;
 }
 #boxBanner img{
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
   display: flex;
   justify-content: center;
-  filter: blue;
 }   
 @media screen and (min-width: 300px) {
   #totoro {
@@ -33,23 +37,22 @@
 }
 .boxNavegador{
   display:flex;
-  background-color: yellow;
-  justify-content: space-between;
+  background-color: #f3d2c1;
+  justify-content:space-around;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
 .icon{
-  width: 3em;
-  height:3em;
-  justify-content: center;  
-  
+  width: 2em;
+  height:2em;
 }
-
 a {
   text-decoration: none;
   display: flex;
-}
+  }
+  a:hover{
+    color: #001858;
+  }
 
 @media screen and (min-width: 300px) {
   .iconlabel {
@@ -61,11 +64,12 @@ a {
   width: 200px;
   height: 284px;
   align-self: center;
+  border-radius: 2em;
 }
 .posterTitle {
   display: flex;
   align-self: center;
-  font-size: 1.2em;
+  font-size: .8em;
 
 }
 .container-images{
@@ -76,23 +80,34 @@ a {
   row-gap: 100px;
   justify-content: space-between;
   align-items:center;
-  padding:2em;
+  padding:3em;
   
 
 
 }
 .container-images >div {
-  width: 250px;
-  height: 400px;
+  width: 225px;
+  height: 350px;
   display: flex;
-  background-color: lime;
+  background-color:#f3d2c1;
   flex-direction:column;
   align-items:center;
   justify-items:center;
   align-content: center;
   justify-content:space-between;
   padding: 1em;
-  
+  border-radius: 2em;
+}
+  footer{
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  justify-content: center;
+  background-color: #f3d2c1;
+}
+  .footer{
+    font-size: .7em;
+  }
 
 /* @media screen and (min-width: 300px) {
   .grid-container {
@@ -241,9 +256,7 @@ a:after{
   transition: all .35s;
 }
 
-a:hover{
-  color: #001858;
-}
+
 
 a:hover:after{
   width: 100%;
