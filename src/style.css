@@ -35,7 +35,7 @@ body{
   font-size: 2em; 
   text-align: center;
   }
-  
+}
 #boxBanner {
   display: flex;
   justify-content: center; 
@@ -74,6 +74,7 @@ a {
     .iconlabel {
       display: contents;
     }
+  }
   @media screen and (min-width: 300px) {
   .iconlabel {
     display: none;
@@ -300,4 +301,3 @@ padding-bottom:2em;
   /* font-family: 'Cinzel', serif;
 font-family: 'Libre Bodoni', serif;
 font-family: 'Playfair Display', serif; */
-  */
