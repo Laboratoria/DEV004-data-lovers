@@ -2,7 +2,7 @@
 import ghibli from './data/ghibli/ghibli.js';
 
 function showTitleImage() {
-  const principal = document.getElementById('grid');
+  const principal = document.getElementById('container');
 
   if (principal) {
     //este for es para recorrer el array films 
