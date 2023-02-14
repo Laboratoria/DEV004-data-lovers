@@ -19,23 +19,14 @@ body{
   height: 100%;
 }
 .subtitulo {
+  display: flex;
   text-align: center;
-  font-size: 15px; 
-  padding-bottom: 2em;
+  justify-content: space-around;
+  font-size: 3em; 
+  padding:1em;
+  background-color:#f3d2c1 ;
 }
-@media screen and (min-width: 700px) {
-  .subtitulo {
-  font-size: 6rem; 
-  text-align: center;
-  }
 
-}
-@media screen and (min-width: 300px) {
-  .subtitulo {
-  font-size: 2em; 
-  text-align: center;
-  }
-}
 #boxBanner {
   display: flex;
   justify-content: center; 
@@ -48,12 +39,7 @@ body{
   display: flex;
   justify-content:space-around;
   align-items: center;
-}   
-@media screen and (min-width: 300px) {
-  #totoro {
-    height: 50%;
-    width: 50%;
-  }
+
 } 
 .boxNavegador{
   display:flex;
@@ -65,21 +51,13 @@ body{
 .icon{
   width: 2em;
   height:2em;
+  
 }
 a {
   text-decoration: none;
   display: flex;
+  flex-direction: column;
   }
-  @media screen and (min-width: 750px) {
-    .iconlabel {
-      display: contents;
-    }
-  }
-  @media screen and (min-width: 300px) {
-  .iconlabel {
-    display: none;
-  }
-}
 .posterStyle {
   display: flex;
   width: 200px;
@@ -124,4 +102,17 @@ a {
 }
   .footer{
     font-size: .7em;
+  }
+  @media (min-width: 300px) {
+    .subtitulo {
+    display: flex;
+    font-size: 2em; 
+    text-align:center;
+    background-color: aqua;
+    justify-content: space-around;
+    }
+    #totoro {
+      height: 50%;
+      width: 50%;
+    }
   }
