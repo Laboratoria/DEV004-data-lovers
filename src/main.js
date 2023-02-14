@@ -34,5 +34,66 @@ function showTitleImage() {
 }
 showTitleImage()
 
+function ordenarReleaseDate() {
+  const copiaGhibli = [...ghibli.films]
+  
+  copiaGhibli.sort(function (a, b) {
+    if (a.release_date > b.release_date) {
+      return -1;
+    }
+    if (a.release_date < b.release_date) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+  return copiaGhibli
+}
 
-// console.log(ghibli);
+console.log(ordenarReleaseDate())
+
+
+
+function ordenarPuntuacionMayor() {
+  const copiaGhibli = [...ghibli.films]
+  
+  copiaGhibli.sort(function (a, b) {
+    if (a.rt_score > b.rt_score) {
+      return -1;
+    }
+    if (a.rt_score < b.rt_score) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+  return copiaGhibli
+}
+
+console.log(ordenarPuntuacionMayor())
+
+// function ordenarPuntuacionMenor() {
+ 
+//   const copiaGhibli = [...ghibli.films]
+  
+//   copiaGhibli.sort(function (comparacion)a, b {
+
+    
+//     if (a.rt_score > b.rt_score) {
+//       return 1;
+//     }
+//     if (a.rt_score < b.rt_score) {
+//       return -1;
+//     }
+//     // a must be equal to b
+//     return 0;
+//   });
+// return copiaGhibli
+// console.log(ordenarPuntuacionMenor())
+
+// function comparacion(a, b){
+//   return a - b
+// }
+// }
+
+
