@@ -1,6 +1,6 @@
 import ghibli from './data/ghibli/ghibli.js';
 
- function ordenarMasNueva() {
+ export function ordenarMasNueva() {
   const copiaGhibli = [...ghibli.films]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
@@ -15,7 +15,7 @@ import ghibli from './data/ghibli/ghibli.js';
 }
 console.log(ordenarMasNueva())
 
-function ordenarMasVieja() {
+export function ordenarMasVieja() {
   const copiaGhibli = [...ghibli.films]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
@@ -31,7 +31,7 @@ function ordenarMasVieja() {
 console.log(ordenarMasVieja())
 
 
- function ordenarPuntuacionMayor() {
+ export function ordenarPuntuacionMayor() {
   const copiaGhibli = [...ghibli.films]
   copiaGhibli.sort((a, b) => { 
     // parseInt(a.rt_score) - parseInt(b.rt_score)
@@ -53,7 +53,7 @@ console.log(ordenarMasVieja())
 }
 console.log(ordenarPuntuacionMayor());
 
- function ordenarPuntuacionMenor() {
+export function ordenarPuntuacionMenor() {
  
   const copiaGhibli = [...ghibli.films]
   
@@ -72,25 +72,5 @@ console.log(ordenarPuntuacionMayor());
 }
 console.log(ordenarPuntuacionMenor())
 
-const ordenar = document.querySelector('#ordenar');
 
-ordenar.addEventListener('change', (event) => {
-if (event.target.value === "masReciente"){
-  ordenarMasNueva();
-  console.log(ordenarMasNueva())
-}
-if (event.target.value === "menosReciente"){
-  ordenarMasVieja();
-  console.log(ordenarMasVieja())
-}
-if (event.target.value === "mayorRt"){
-  ordenarPuntuacionMayor();
-  console.log(ordenarPuntuacionMayor())
-}
-if (event.target.value === "menorRt"){
-  ordenarPuntuacionMenor();
-  console.log(ordenarPuntuacionMenor())
-}
 
-});
-export default function() {}
