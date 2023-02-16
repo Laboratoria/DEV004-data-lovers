@@ -28,5 +28,5 @@ function showTitleImage() {
     }
   }
 }
-showTitleImage()
+showTitleImage();
 
