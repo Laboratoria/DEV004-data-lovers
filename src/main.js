@@ -1,6 +1,6 @@
 
 import ghibli from './data/ghibli/ghibli.js';
-import _ from './data.js';
+import {ordenarMasNueva, ordenarMasVieja, ordenarPuntuacionMayor, ordenarPuntuacionMenor} from './data.js';
 
 function showTitleImage() {
   const principal = document.getElementById('container');
@@ -30,3 +30,24 @@ function showTitleImage() {
 }
 showTitleImage();
 
+const ordenar = document.querySelector('#ordenar');
+
+ordenar.addEventListener('change', (event) => {
+if (event.target.value === "masReciente"){
+  ordenarMasNueva();
+  console.log(ordenarMasNueva())
+}
+if (event.target.value === "menosReciente"){
+  ordenarMasVieja();
+  console.log(ordenarMasVieja())
+}
+if (event.target.value === "mayorRt"){
+  ordenarPuntuacionMayor();
+  console.log(ordenarPuntuacionMayor())
+}
+if (event.target.value === "menorRt"){
+  ordenarPuntuacionMenor();
+  console.log(ordenarPuntuacionMenor())
+}
+
+});
