@@ -75,10 +75,13 @@ const ordenar = document.querySelector('#ordenar');
 
 ordenar.addEventListener('change', (event) => {
   if (event.target.value === "masReciente"){
-    ordenarMasNueva();
+    const desplegadoMasReciente = document.getElementById("container");
+    const 
+    
     console.log(ordenarMasNueva())
   }
   if (event.target.value === "menosReciente"){
+   
     ordenarMasVieja();
     console.log(ordenarMasVieja())
   }
