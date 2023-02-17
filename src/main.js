@@ -25,12 +25,15 @@ showTitleImage();
 
 const ordenar = document.querySelector('#ordenar');
 ordenar.addEventListener('change', (event) => {
-  if (event.target.value === "masReciente"){
-    console.log(ordenarMasNueva())
-  }
   if (event.target.value === "menosReciente"){
     document.getElementById("container").innerHTML = "";
+    showTitleImage();
     console.log(ordenarMasVieja())
+  }
+  if (event.target.value === "masReciente"){
+    document.getElementById("container").innerHTML = "";
+    showTitleImage();
+    console.log(ordenarMasNueva())
   }
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
