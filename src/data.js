@@ -1,6 +1,6 @@
 import ghibli from './data/ghibli/ghibli.js';
 
- export function ordenarMasNueva() {
+export function ordenarMasNueva() {
   const copiaGhibli = [...ghibli.films]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
@@ -12,6 +12,8 @@ import ghibli from './data/ghibli/ghibli.js';
     return 0;
   });
   return copiaGhibli
+  
+  
 }
 console.log(ordenarMasNueva())
 
@@ -26,12 +28,14 @@ export function ordenarMasVieja() {
     }
     return 0;
   });
-  return copiaGhibli
+  return copiaGhibli 
+  
 }
+
 console.log(ordenarMasVieja())
 
 
- export function ordenarPuntuacionMayor() {
+export function ordenarPuntuacionMayor() {
   const copiaGhibli = [...ghibli.films]
   copiaGhibli.sort((a, b) => { 
     // parseInt(a.rt_score) - parseInt(b.rt_score)
@@ -54,7 +58,6 @@ console.log(ordenarMasVieja())
 console.log(ordenarPuntuacionMayor());
 
 export function ordenarPuntuacionMenor() {
- 
   const copiaGhibli = [...ghibli.films]
   
   copiaGhibli.sort((a,b) => {
