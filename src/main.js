@@ -2,17 +2,18 @@
 import ghibli from './data/ghibli/ghibli.js';
 import {ordenarMasNueva, ordenarMasVieja, ordenarPuntuacionMayor, ordenarPuntuacionMenor} from './data.js';
 
-function showTitleImage() {
+function showTitleImage(arrayGhibli) { // la fn recibe arreglo como parametro
   const principal = document.getElementById('container');
+  principal.innerHTML = '';
   if (principal) {
-    for (let i = 0; i < ghibli.films.length; i++) {
+    for (let i = 0; i <  arrayGhibli.length; i++) {
       const divColumna = document.createElement('div');
       const creaDiv = document.createElement('div');
       const creaimg = document.createElement('img');
       divColumna.setAttribute('class', 'columna');
-      creaDiv.innerHTML = ghibli.films[i].title;
+      creaDiv.innerHTML = arrayGhibli[i].title;
       creaDiv.classList.add("posterTitle");
-      creaimg.setAttribute('src', ghibli.films[i].poster)
+      creaimg.setAttribute('src', arrayGhibli[i].poster)
       creaimg.classList.add("posterStyle");
       divColumna.appendChild(creaDiv);
       divColumna.appendChild(creaimg);
@@ -21,27 +22,28 @@ function showTitleImage() {
     }
   }
 }
-showTitleImage();
+showTitleImage(ghibli.films); // enviamos arreglo como argumento
 
 const ordenar = document.querySelector('#ordenar');
 ordenar.addEventListener('change', (event) => {
   if (event.target.value === "menosReciente"){
     document.getElementById("container").innerHTML = "";
-    showTitleImage();
-    console.log(ordenarMasVieja())
+    const filmsOrdenadas = ordenarMasVieja(ghibli.films) //
+    showTitleImage(filmsOrdenadas);
+    //console.log(filmsOrdenadas)
   }
   if (event.target.value === "masReciente"){
-    document.getElementById("container").innerHTML = "";
-    showTitleImage();
-    console.log(ordenarMasNueva())
+    showTitleImage(ordenarMasNueva(ghibli.films))
+    console.log(ordenarMasNueva(ghibli.films))
   }
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
+    showTitleImage(ordenarPuntuacionMayor(ghibli.films))
     console.log(ordenarPuntuacionMayor())
   }
   if (event.target.value === "menorRt"){
     document.getElementById("container").innerHTML = "";
-    ordenarPuntuacionMenor();
+    showTitleImage(ordenarPuntuacionMenor(ghibli.films)) // envias argumento
     console.log(ordenarPuntuacionMenor())
   }
 });

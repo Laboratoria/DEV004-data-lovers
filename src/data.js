@@ -1,7 +1,7 @@
 import ghibli from './data/ghibli/ghibli.js';
 
-export function ordenarMasNueva() {
-  const copiaGhibli = [...ghibli.films]
+export function ordenarMasNueva(arrayFilms) { // recibe parametro
+  const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
       return -1;
@@ -15,10 +15,11 @@ export function ordenarMasNueva() {
   
   
 }
-console.log(ordenarMasNueva())
+//console.log(ordenarMasNueva())
 
-export function ordenarMasVieja() {
-  const copiaGhibli = [...ghibli.films]
+export function ordenarMasVieja(arrayFilms) {
+  //console.log(arrayFilms);
+  const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
       return 1;
@@ -32,7 +33,7 @@ export function ordenarMasVieja() {
   
 }
 
-console.log(ordenarMasVieja())
+//console.log(ordenarMasVieja())
 
 
 export function ordenarPuntuacionMayor() {
