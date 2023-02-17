@@ -1,7 +1,7 @@
 import ghibli from './data/ghibli/ghibli.js';
 
- export function ordenarMasNueva() {
-  const copiaGhibli = [...ghibli.films]
+export function ordenarMasNueva(arrayFilms) { // recibe parametro
+  const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
       return -1;
@@ -12,11 +12,14 @@ import ghibli from './data/ghibli/ghibli.js';
     return 0;
   });
   return copiaGhibli
+  
+  
 }
-console.log(ordenarMasNueva())
+//console.log(ordenarMasNueva())
 
-export function ordenarMasVieja() {
-  const copiaGhibli = [...ghibli.films]
+export function ordenarMasVieja(arrayFilms) {
+  //console.log(arrayFilms);
+  const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
       return 1;
@@ -26,12 +29,14 @@ export function ordenarMasVieja() {
     }
     return 0;
   });
-  return copiaGhibli
+  return copiaGhibli 
+  
 }
-console.log(ordenarMasVieja())
+
+//console.log(ordenarMasVieja())
 
 
- export function ordenarPuntuacionMayor() {
+export function ordenarPuntuacionMayor() {
   const copiaGhibli = [...ghibli.films]
   copiaGhibli.sort((a, b) => { 
     // parseInt(a.rt_score) - parseInt(b.rt_score)
@@ -54,7 +59,6 @@ console.log(ordenarMasVieja())
 console.log(ordenarPuntuacionMayor());
 
 export function ordenarPuntuacionMenor() {
- 
   const copiaGhibli = [...ghibli.films]
   
   copiaGhibli.sort((a,b) => {
