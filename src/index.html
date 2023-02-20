@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon</title>
+  <link rel="icon" href="./images/Icon.png" type="image/icon type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./media.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div id="superposicion">
+    <div id="modal">
+      <div class="modal-header">
+        <p id="res"></p>
+      </div>
+    </div>
+  </div>
+  <!-- INICIO -->
+  <div class="app">
+    <div class="menu-toggle">
+      <div class="hamburger">
+        <span></span>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+
+      <nav class="menu">
+        <div class="logo">
+          <img src="./images/logo.png" alt="">
+        </div>
+
+        <div class="filtro">
+          <label class="selector"></label>
+          <select class="selector-box" id="filterListType">
+            <option value="todos">Type</option>
+            <option value="normal">Normal</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+            <option value="ice">Ice</option>
+            <option value="fighting">Fighting</option>
+            <option value="poison">Poison</option>
+            <option value="ground">Ground</option>
+            <option value="flying">Flying</option>
+            <option value="psychic">Psychic</option>
+            <option value="bug">Bug</option>
+            <option value="rock">Rock</option>
+            <option value="ghost">Ghost</option>
+            <option value="dark">Dark</option>
+            <option value="dragon">Dragon</option>
+            <option value="steel">Steel</option>
+            <option value="fairy">Fairy</option>
+          </select>
+        </div>
+
+        <div class="filtro">
+          <label></label>
+          <select class="selector-box" id="filterListGeneration">
+            <option>Generation</option>
+            <option value="kanto">Kanto</option>
+            <option value="johto">Johto</option>
+          </select>
+        </div>
+
+        <div class="text">
+          <label for=""></label>
+          <h1>Find out if you're taller than pikachu!</h1>
+        </div>
+        <div class="img-container">
+          <img src="./images/ash pikachu.png" alt="">
+        </div>
+        <div class="talla-container">
+          <input type="text" id="idTalla" autocomplete="off">
+          <button id="btnModal">Click here</button>
+        </div>
+
+
+      </nav>
+
+    </aside>
+
+    <main class="content">
+
+      <div class="search-ordenar">
+        <input class="search-box" id="pokeSearch" type="text" placeholder="Search" />
+
+        <select class="order-box" id="order">
+          <option value="todos">Sort by</option>
+          <option value="a-z">A - Z</option>
+          <option value="z-a">Z - A</option>
+          <option value="ascending">Lowest Number</option>
+          <option value="descending">Highest Number</option>
+        </select>
+      </div>
+      <div class="lista-pokemon-todos" id="listaPokemon"></div>
+    </main>
+  </div>
+
+  <footer></footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

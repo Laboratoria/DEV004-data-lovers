@@ -1,0 +1,258 @@
+@media (max-width: 1440px) {
+    .search-box {
+        width: 778px;
+    }
+
+    .lista-pokemon-todos{
+        margin-left: 2%;
+    }
+    .sidebar .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .talla-container button{
+        top: 88.8%;
+    }
+} 
+
+@media (max-width: 1366px) {
+    .img-p{
+        /* margin: 33% 1% 25% 18%; */
+    }
+    
+    .img-ball{
+        margin: 31% 5% 29% -10.5%;
+    }
+    
+    .cuadro-derecho{
+        margin: 1% 1% 24% 42.7%;
+    }
+    .cuadro-izquierdo{
+        margin: 1% 1% 24% -1.61%;
+    }
+    .sidebar .menu{
+        gap: .22rem;
+    }
+}
+
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+
+    .search-box{
+        width: 463px;
+        margin-left: 10%;
+    }
+
+    .img-p{
+        margin: 33% 1% 25% 18%;
+    }
+    
+    .img-ball{
+        margin: 31% 5% 28% -14%;
+    }
+    
+    .cuadro-derecho{
+        margin: 1% 1% 33% 56.27%;
+    }
+    .cuadro-izquierdo{
+        margin: 1% 1% 33% -2.15%;
+    }
+    .sidebar .menu {
+        gap: 1.24rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .search-box{
+        width: 52%;
+        flex-direction: column;
+        margin-left: 3%;
+
+    }
+    .order-box{
+        width: 30%;
+        flex-wrap: wrap;
+    }
+
+    .search-ordenar{
+        flex-wrap: wrap;
+    }
+
+	.menu-toggle {
+		display: block;
+        z-index: 1;
+	}
+	.content {
+		padding-top: 8rem;
+        margin: 0 auto
+	}
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -300px;
+		height: 100vh;
+		width: 100%;
+		max-width: 300px;
+		transition: 0.2s linear;
+	}
+
+	.sidebar.is-active {
+		left: 0;
+        z-index: 2;
+	}
+
+    .img-p{
+        margin: 33% 1% 25% 23.5%
+    }
+    
+    .img-ball{
+        clip-path: inset(30px 50px 46px 69px); /* para cortar la imagen */
+        margin: 27% 1% 25% -10%;
+    }
+    
+    .cuadro-derecho{
+        margin: 1% 1% 39.9% 75%;
+    }
+    .cuadro-izquierdo{
+        margin: 1% 1% 40% -2.88%;
+    }
+
+    .talla-container button {
+        top: 118.3%;
+    }
+}
+
+@media (max-width: 600px){
+    .search-box{
+        width: 180px;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 425px){
+    .search-ordenar{
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .order-box{
+        width: 180px;
+    }
+    .lista-pokemon-todos{   
+    padding: 2.4rem 2rem 0 3rem;
+    grid-template-columns: 1fr;
+
+    }
+
+    .img-p{
+        display: none;
+    }
+    
+    .img-ball{
+        display: none;
+    }
+    
+    .cuadro-derecho{
+        margin: 1% 1% 70% 82.5%;
+    }
+    .cuadro-izquierdo{
+        margin: 1% 1% 70% -5.1%;
+        z-index: 1;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1.5rem;
+        padding-bottom: 6%;
+    }
+
+    #modal-info h1{
+        font-size: 40px;
+        padding: 18rem 0 1.2rem 0;
+    }
+    #modal-info {
+        overflow-y: scroll; /* para hacer scroll en el modal */
+    }
+
+    .box-data-d {
+        text-align: center;
+        margin: 0;
+    }
+    .box-data-dd {
+        text-align: center;
+        margin: 0;
+    }
+    .box-data-iz {
+        text-align: center;
+    }
+
+    table th{
+        padding-left: 0%;
+    }
+
+    table td{
+        padding-right: 0;
+        padding-left: 19%;
+        text-align: right;
+    }
+
+
+    th, td {
+        padding: 2px 15px 5px 8px;
+    }
+
+    table{
+        margin: 0% ;
+    }
+
+}
+
+
+/* Media query para pokebolas */
+@media (min-width: 1024px) and (max-width: 1300px) {
+	.lista-pokemon-todos {
+        grid-template-columns: 0fr 0fr 0fr;
+        margin: 0% 8%;
+        gap: 1.5rem;
+    }
+    .pokeball{
+        width: 210px;
+        height: 200px;
+        margin: 4% 19% 6% 22%;
+    }
+
+    .pokemon{
+        margin: 1% 22% 1% 20%;
+    }
+    .img-container{
+        padding-inline: 0;
+    }
+}
+@media (max-width: 768px) {
+    .lista-pokemon-todos{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 9%;
+    }
+    .img-container{
+        padding-inline: 1rem;
+    }
+}
+@media (max-width: 425px) {
+    .lista-pokemon-todos{
+        grid-template-columns: 1fr;
+        margin-left: 9%;
+    }
+}
+
+
