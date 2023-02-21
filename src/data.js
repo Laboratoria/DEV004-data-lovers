@@ -1,4 +1,7 @@
-export const ordenarMasNueva = (arrayFilms) => { // recibe parametro
+
+
+
+export function ordenarMasNueva(arrayFilms) { // recibe parametro
   const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
     if (parseInt(a.release_date) > parseInt(b.release_date)) {
@@ -28,7 +31,9 @@ export const ordenarMasVieja = (arrayFilms)=> {
   return copiaGhibli 
 }
 //console.log(ordenarMasVieja())
-export const ordenarPuntuacionMayor = (arrayFilms) => {
+
+
+export function ordenarPuntuacionMayor(arrayFilms) {
   const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort((a, b) => { 
     // parseInt(a.rt_score) - parseInt(b.rt_score)
@@ -48,9 +53,11 @@ export const ordenarPuntuacionMayor = (arrayFilms) => {
   });
   return copiaGhibli
 }
-// console.log(ordenarPuntuacionMayor());
-export const ordenarPuntuacionMenor= (arrayFilms) => {
+// console.log(ordenarPuntuacionMayor(arrayFilms));
+
+export function ordenarPuntuacionMenor(arrayFilms) {
   const copiaGhibli = [...arrayFilms]
+  
   copiaGhibli.sort((a,b) => {
     if (parseInt(a.rt_score) > parseInt(b.rt_score)) {
       return 1;
@@ -63,10 +70,9 @@ export const ordenarPuntuacionMenor= (arrayFilms) => {
   return copiaGhibli
 }
 
-
-
-
-
-
+export const filtrarProductor = (arrayFilms, nombreProducer) =>{
+  const filtrado = arrayFilms.filter((film)=> film.producer === nombreProducer)
+  return filtrado
+}
 
 
