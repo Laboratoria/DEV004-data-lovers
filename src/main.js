@@ -39,11 +39,12 @@ ordenar.addEventListener('change', (event) => {
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
     showTitleImage(ordenarPuntuacionMayor(ghibli.films))
-    console.log(ordenarPuntuacionMayor())
+    console.log(ordenarPuntuacionMayor(ghibli.films))
   }
   if (event.target.value === "menorRt"){
     document.getElementById("container").innerHTML = "";
-    showTitleImage(ordenarPuntuacionMenor(ghibli.films)) // envias argumento
-    console.log(ordenarPuntuacionMenor())
+    ordenarPuntuacionMenor(ghibli.films); // envias argumento
+    showTitleImage(ordenarPuntuacionMenor(ghibli.films))
+    console.log(ordenarPuntuacionMenor(ghibli.films));
   }
 });
