@@ -1,4 +1,5 @@
-import ghibli from './data/ghibli/ghibli.js';
+
+
 
 export function ordenarMasNueva(arrayFilms) { // recibe parametro
   const copiaGhibli = [...arrayFilms]
@@ -36,8 +37,8 @@ export function ordenarMasVieja(arrayFilms) {
 //console.log(ordenarMasVieja())
 
 
-export function ordenarPuntuacionMayor() {
-  const copiaGhibli = [...ghibli.films]
+export function ordenarPuntuacionMayor(arrayFilms) {
+  const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort((a, b) => { 
     // parseInt(a.rt_score) - parseInt(b.rt_score)
     // a.rt_score > b.rt_score ? 1 : a.rt_score < b.rt_score ? -1 : 0
@@ -56,10 +57,10 @@ export function ordenarPuntuacionMayor() {
   });
   return copiaGhibli
 }
-console.log(ordenarPuntuacionMayor());
+// console.log(ordenarPuntuacionMayor(arrayFilms));
 
-export function ordenarPuntuacionMenor() {
-  const copiaGhibli = [...ghibli.films]
+export function ordenarPuntuacionMenor(arrayFilms) {
+  const copiaGhibli = [...arrayFilms]
   
   copiaGhibli.sort((a,b) => {
     if (parseInt(a.rt_score) > parseInt(b.rt_score)) {
@@ -74,7 +75,10 @@ export function ordenarPuntuacionMenor() {
   return copiaGhibli
   
 }
-console.log(ordenarPuntuacionMenor())
 
+export const filtrarProductor = (arrayFilms, nombreProducer) =>{
+  const filtrado = arrayFilms.filter((film)=> film.producer === nombreProducer)
+  return filtrado
+}
 
 
