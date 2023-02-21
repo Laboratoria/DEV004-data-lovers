@@ -1,5 +1,3 @@
-// import ghibli from './data/ghibli/ghibli.js';
-
 export const ordenarMasNueva = (arrayFilms) => { // recibe parametro
   const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
@@ -65,49 +63,10 @@ export const ordenarPuntuacionMenor= (arrayFilms) => {
   return copiaGhibli
 }
 
-// export const nombredelafuncion = (declaracion valida) (recibe data) => {lo que necesitas}
-//devuelve un array vacio
-// export const personajes = ghibliMadre.filter (personaje => personaje.human);
-// console.log(personajes);
-// no devuelve nada 
-// export const personajes = (ghibliMadre, human) => {
-//   const especiePersonaje =ghibliMadre.filter (ghibliMadre.people.includes(human));
-//   console.log(especiePersonaje);
-// }
-//Devuelve error, filter not defined.
-// export const ghibliMadre = ghibli.films.people
-// export const personajes = ghibliMadre.filter (people => people.human);
-// console.log(personajes);
-// devuelve un array vacío.
-// const nombrePersonajes = ghibliMadre.filter(nombre => nombre.name);
-// console.log(nombrePersonajes)
-//Devuelve array vacio 
-// const personajes = function(ghibliMadre) {
-//   return ghibliMadre.specie === "Human"; //use the argument here.
-// }
-// var filter = ghibliMadre.filter(personajes);
-// console.log(filter);
 
 
 
 
 
-// var cand = [{name: 'Kevin',alter: 19,},{name: 'Walter',alter: 22,},{name: 'Herbert',alter: 28,},{    name: 'Kristin',alter: 31,},{name: 'Obergine',alter: 39,},{name: 'Hailey',alter: 44,}];
-
-// // add argument to the filter function | element
-// var alter = function(element) {
-//   return element.alter < 30; //use the argument here.
-// }
-
-// var filter = cand.filter(alter);
-
-// console.log(filter);
 
 
-
-
-// export const filterEpisode = (data, value) => {
-//   const kindEpisode = data.filter(data => data.episode.includes(value));
-//   //console.log(filterSpecies);
-//   return kindEpisode;
-// };

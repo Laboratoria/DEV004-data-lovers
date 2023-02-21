@@ -2,7 +2,7 @@
 import ghibli from './data/ghibli/ghibli.js';
 import {ordenarMasNueva, ordenarMasVieja, ordenarPuntuacionMayor, ordenarPuntuacionMenor} from './data.js';
 
-function showTitleImage(arrayGhibli) { // la fn recibe arreglo como parametro
+const showTitleImage = (arrayGhibli) => { // la fn recibe arreglo como parametro
   const principal = document.getElementById('container');
   principal.innerHTML = '';
   if (principal) {
@@ -18,7 +18,6 @@ function showTitleImage(arrayGhibli) { // la fn recibe arreglo como parametro
       divColumna.appendChild(creaDiv);
       divColumna.appendChild(creaimg);
       principal.appendChild(divColumna);
-     
     }
   }
 }
