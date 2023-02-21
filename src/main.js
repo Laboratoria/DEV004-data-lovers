@@ -1,6 +1,12 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import data from "./data/pokemon/pokemon.js";
 
-console.log(example, data);
+const mostrarPoke = document.getElementById("mostrarPoke");
+
+ObtenerPokemon();
+
+function ObtenerPokemon() {
+  data.pokemon.forEach((pokemon) => {
+    mostrarPoke.innerHTML += `<span> ${pokemon.name} - <img src="${pokemon.img}"></img> </span>`
+    console.log(pokemon);
+  });
+}
