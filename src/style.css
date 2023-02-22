@@ -118,4 +118,12 @@ body{
   .footer{
   font-size: .7em;
   }
-
+  @media (min-width: 576px) { 
+    .container-images>div{
+      background-color: red;
+    }
+    .footer{
+      background-color: green;
+    }
+  
+  }
