@@ -92,7 +92,7 @@ body{
   gap: 100px; /* row-gap column gap */
   row-gap: 100px;
   justify-content: space-around;
-  align-items:center;overflow-x: ;
+  align-items:center; 
   padding:6.5em;  
 }
 .container-images >div {
