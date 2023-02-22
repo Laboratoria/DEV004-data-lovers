@@ -5,9 +5,10 @@ describe('filtrarProductor', () => {
   it ('deberia ser una funcion', () => {
     expect (typeof filtrarProductor ).toBe('function'); //toBe busca igualdad
   });
-  it ('filtrar por productor', () => {
-    expect (typeof filtrarProductor ).toBe('function'); 
-  });
+  // it ('filtrar la data por productor', () => {
+  //   const filtrado = filtrarProductor(ghibli.films, "producer",)
+  //   expect ("Hayao Miyasaki").toBe('"My Neighbor Totoro" '); 
+  // });
 });
 
 describe('funcion Sort', () => {
