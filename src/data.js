@@ -13,12 +13,10 @@ export function ordenarMasNueva(arrayFilms) { // recibe parametro
     return 0;
   });
   return copiaGhibli
-  
-  
 }
 //console.log(ordenarMasNueva())
 
-export function ordenarMasVieja(arrayFilms) {
+export const ordenarMasVieja = (arrayFilms)=> {
   //console.log(arrayFilms);
   const copiaGhibli = [...arrayFilms]
   copiaGhibli.sort(function (a, b) {
@@ -31,9 +29,7 @@ export function ordenarMasVieja(arrayFilms) {
     return 0;
   });
   return copiaGhibli 
-  
 }
-
 //console.log(ordenarMasVieja())
 
 
@@ -69,11 +65,9 @@ export function ordenarPuntuacionMenor(arrayFilms) {
     if (a.rt_score < b.rt_score) {
       return -1;
     }
-    // a must be equal to b
     return 0;
   });
   return copiaGhibli
-  
 }
 
 export const filtrarProductor = (arrayFilms, nombreProducer) =>{
