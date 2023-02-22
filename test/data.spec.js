@@ -1,5 +1,5 @@
 import {ordenarMasVieja,ordenarPuntuacionMayor,filtrarProductor,} from '../src/data.js';
-//solo importamos las funciones puras que utilizamos (las que NO ESTAN comentadas)
+//solo importamos las funciones puras que utilizamos (las que NO ESTAN comentada)
 
 describe('filtrarProductor', () => {
   it ('deberia ser una funcion', () => {

@@ -111,19 +111,32 @@ body{
   footer{
   display: flex;
   align-items: center;
-  padding: 2em;
   justify-content: center;
   background-color: #f3d2c1;
 }
-  .footer{
+  .marcaDerechos{
   font-size: .7em;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 5em;
   }
-  @media (min-width: 576px) { 
+    .totoroAnimado{
+      border: 0;
+      display: flex;
+      padding: 0;
+
+    }
+
+  /* cambie max por min y funciona mejor */
+  @media (max-width: 576px) { 
     .container-images>div{
       background-color: red;
     }
     .footer{
       background-color: green;
+      margin: 0;
     }
-  
+
   }
+  
