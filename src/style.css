@@ -22,9 +22,12 @@ body{
   display: flex;
   text-align: center;
   justify-content: space-around;
-  font-size: 3em; 
-  padding:1em;
+  font-size: 2em; 
+  padding:.3em;
   background-color:#f3d2c1 ;
+  color: #001858;
+  word-spacing: .4em;
+  letter-spacing: .1em;
 }
 
 #boxBanner {
@@ -69,12 +72,10 @@ body{
   touch-action: manipulation;
   margin-bottom:.5em;
 }
-
 .button-81:hover {
   background-color:#8bd3dd;
-  color: #fff;
+  color: #fff; 
 }
-
 .posterStyle {
   display: flex;
   width: 200px;
