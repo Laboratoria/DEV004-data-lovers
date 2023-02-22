@@ -49,6 +49,9 @@ body{
   flex-direction: row;
   flex-wrap: nowrap;
 }
+.label {
+  color: #001858;
+}
 .button-81 {
   background-color:#f582ae;
   border: 0 solid #f582ae;
@@ -94,12 +97,22 @@ body{
   justify-content: space-around;
   align-items:center; 
   padding:6.5em;  
+  /* background-image: url(https://wallpapers.com/images/high/aesthetic-ocean-waves-studio-ghibli-btgz9dq7d75joz7n.webp); */
+  /* background-image:url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700608720.jpg);  */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Studio-Ghibli-Wallpaper-Free-Download.jpg);  */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Cloud-Studio-Ghibli-Wallpaper-HD.jpg);  */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png); */
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png);
+  background-size:100% ;
+  background-attachment: fixed;
+  
 }
 .container-images >div {
   width: 225px;
   height: 350px;
   display: flex;
   background-color:#f3d2c1;
+  color: #001858;
   flex-direction:column;
   align-items:center;
   justify-items:center;
