@@ -1,6 +1,7 @@
 
 import ghibli from './data/ghibli/ghibli.js';
-import {filtrarProductor, ordenarMasNueva, ordenarMasVieja, ordenarPuntuacionMayor, ordenarPuntuacionMenor} from './data.js';
+import {filtrarProductor, ordenarMasVieja, ordenarPuntuacionMayor } from './data.js';
+//En el import se borraron las funciones que al final no utilizamos (ordenarMasNueva y ordenarPuntuacionMenor)
 
 const showTitleImage = (arrayGhibli) => { // la fn recibe arreglo como parametro
   const principal = document.getElementById('container');
@@ -27,13 +28,14 @@ const ordenar = document.querySelector('#ordenar');
 ordenar.addEventListener('change', (event) => {
   if (event.target.value === "menosReciente"){
     document.getElementById("container").innerHTML = "";
-    const filmsOrdenadas = ordenarMasVieja(ghibli.films) //
+    const filmsOrdenadas = ordenarMasVieja(ghibli.films) // [5,4,3].reverser() === [3,4,5]
     showTitleImage(filmsOrdenadas);
     //console.log(filmsOrdenadas)
   }
   if (event.target.value === "masReciente"){
-    showTitleImage(ordenarMasNueva(ghibli.films))
-    // console.log(ordenarMasNueva(ghibli.films))
+    const filmsOrdenadasReverse = ordenarMasVieja(ghibli.films).reverse()
+    showTitleImage(filmsOrdenadasReverse )
+    // console.log(ordenarMasNueva(ghibli.films),filmsOrdenadasReverse )
   }
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
@@ -42,13 +44,10 @@ ordenar.addEventListener('change', (event) => {
   }
   if (event.target.value === "menorRt"){
     document.getElementById("container").innerHTML = "";
-    console.log(ghibli.films)
-    showTitleImage(ordenarPuntuacionMenor(ghibli.films)) // envias argumento 
-    // console.log(ordenarPuntuacionMenor(ghibli.films))
+    const filmsMejorPuntuadasReverse = ordenarPuntuacionMayor(ghibli.films).reverse()
+    showTitleImage(filmsMejorPuntuadasReverse) // envias argumento 
   }
 });
-
-
 const filtrar = document.querySelector('#filtrar');
 filtrar.addEventListener('change', (event) => {
   if (event.target.value === 'Isao Takahata') {

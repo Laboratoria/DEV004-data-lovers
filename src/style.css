@@ -49,6 +49,9 @@ body{
   flex-direction: row;
   flex-wrap: nowrap;
 }
+.label {
+  color: #001858;
+}
 .button-81 {
   background-color:#f582ae;
   border: 0 solid #f582ae;
@@ -94,12 +97,24 @@ body{
   justify-content: space-around;
   align-items:center; 
   padding:6.5em;  
+  /* background-image: url(https://wallpapers.com/images/high/aesthetic-ocean-waves-studio-ghibli-btgz9dq7d75joz7n.webp); */
+  /* background-image:url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700608720.jpg);  */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Studio-Ghibli-Wallpaper-Free-Download.jpg);  */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Cloud-Studio-Ghibli-Wallpaper-HD.jpg);  */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png); */
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png); */
+  background-size:100% ;
+  background-attachment: fixed;
+
+  
+  
 }
 .container-images >div {
   width: 225px;
   height: 350px;
   display: flex;
   background-color:#f3d2c1;
+  color: #001858;
   flex-direction:column;
   align-items:center;
   justify-items:center;
@@ -111,11 +126,78 @@ body{
   footer{
   display: flex;
   align-items: center;
-  padding: 2em;
   justify-content: center;
   background-color: #f3d2c1;
 }
-  .footer{
+  .marcaDerechos{
   font-size: .7em;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 5em;
   }
+    .totoroAnimado{
+      border: 0;
+      display: flex;
+      padding: 0;
 
+    }
+
+  /* cambie max por min y funciona mejor */
+  @media (max-width: 375px) { 
+    .subtitulo {
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      font-size: 1em; 
+      padding:.3em;
+      background-color:#f3d2c1 ;
+      color: #001858;
+      word-spacing: .4em;
+      letter-spacing: .1em;
+    }
+    .boxNavegador{
+      display:flex;
+      background-color: #f3d2c1;
+      justify-content:space-between;
+      justify-items:space-between;
+      flex-direction: column;
+      
+    }
+      .button-81 {
+        background-color:#f582ae;
+        border: 0 solid #f582ae;
+        color: #001858;
+        border-radius: 5rem;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 1;
+        padding: .5rem .5rem;
+        text-align: center;
+        transition: all .1s cubic-bezier(.4, 0, .2, 1);
+        box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-bottom:.5em;
+        
+    
+    }
+    .label {
+    display:none;
+
+      
+    }
+    /* .container-images>div{
+      background-color: red;
+    }
+    .footer{
+      background-color: green;
+      margin: 0;
+    } */
+
+  }
+  
