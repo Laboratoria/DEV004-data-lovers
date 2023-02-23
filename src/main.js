@@ -33,18 +33,18 @@ ordenar.addEventListener('change', (event) => {
   }
   if (event.target.value === "masReciente"){
     showTitleImage(ordenarMasNueva(ghibli.films))
-    console.log(ordenarMasNueva(ghibli.films))
+    // console.log(ordenarMasNueva(ghibli.films))
   }
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
     showTitleImage(ordenarPuntuacionMayor(ghibli.films))
-    console.log(ordenarPuntuacionMayor(ghibli.films))
+    // console.log(ordenarPuntuacionMayor(ghibli.films))
   }
   if (event.target.value === "menorRt"){
     document.getElementById("container").innerHTML = "";
     console.log(ghibli.films)
     showTitleImage(ordenarPuntuacionMenor(ghibli.films)) // envias argumento 
-    console.log(ordenarPuntuacionMenor(ghibli.films))
+    // console.log(ordenarPuntuacionMenor(ghibli.films))
   }
 });
 

@@ -62,7 +62,7 @@ export function ordenarPuntuacionMenor(arrayFilms) {
     if (parseInt(a.rt_score) > parseInt(b.rt_score)) {
       return 1;
     }
-    if (a.rt_score < b.rt_score) {
+    if (parseInt(a.rt_score) < parseInt(b.rt_score)) {
       return -1;
     }
     return 0;
@@ -74,5 +74,3 @@ export const filtrarProductor = (arrayFilms, nombreProducer) =>{
   const filtrado = arrayFilms.filter((film)=> film.producer === nombreProducer)
   return filtrado
 }
-
-
