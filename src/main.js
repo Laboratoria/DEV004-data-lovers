@@ -40,7 +40,7 @@ ordenar.addEventListener('change', (event) => {
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
     showTitleImage(ordenarPuntuacionMayor(ghibli.films))
-    console.log(ordenarPuntuacionMayor(ghibli.films))
+    // console.log(ordenarPuntuacionMayor(ghibli.films))
   }
   if (event.target.value === "menorRt"){
     document.getElementById("container").innerHTML = "";
