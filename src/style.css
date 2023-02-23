@@ -102,9 +102,11 @@ body{
   /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Studio-Ghibli-Wallpaper-Free-Download.jpg);  */
   /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Cloud-Studio-Ghibli-Wallpaper-HD.jpg);  */
   /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png); */
-  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png);
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Studio-Ghibli-Wallpaper-HD.png); */
   background-size:100% ;
   background-attachment: fixed;
+
+  
   
 }
 .container-images >div {
@@ -142,14 +144,60 @@ body{
     }
 
   /* cambie max por min y funciona mejor */
-  @media (max-width: 576px) { 
-    .container-images>div{
+  @media (max-width: 375px) { 
+    .subtitulo {
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      font-size: 1em; 
+      padding:.3em;
+      background-color:#f3d2c1 ;
+      color: #001858;
+      word-spacing: .4em;
+      letter-spacing: .1em;
+    }
+    .boxNavegador{
+      display:flex;
+      background-color: #f3d2c1;
+      justify-content:space-between;
+      justify-items:space-between;
+      flex-direction: column;
+      
+    }
+      .button-81 {
+        background-color:#f582ae;
+        border: 0 solid #f582ae;
+        color: #001858;
+        border-radius: 5rem;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 1;
+        padding: .5rem .5rem;
+        text-align: center;
+        transition: all .1s cubic-bezier(.4, 0, .2, 1);
+        box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-bottom:.5em;
+        
+    
+    }
+    .label {
+    display:none;
+
+      
+    }
+    /* .container-images>div{
       background-color: red;
     }
     .footer{
       background-color: green;
       margin: 0;
-    }
+    } */
 
   }
   
