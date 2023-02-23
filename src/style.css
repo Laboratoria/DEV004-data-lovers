@@ -125,12 +125,6 @@ body{
   background-color:#8bd3dd;
   color: #001858; 
 }
-/* .container-images >div>img:hover {
-opacity: 0.7;
-} */
-
-
-
   footer{
   display: flex;
   align-items: center;
@@ -167,9 +161,11 @@ opacity: 0.7;
     .boxNavegador{
       display:flex;
       background-color: #f3d2c1;
-      justify-content:space-between;
-      justify-items:space-between;
-      flex-direction: column;
+      justify-content:center;
+      justify-items:center;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
       
     }
       .button-81 {
@@ -179,11 +175,11 @@ opacity: 0.7;
         border-radius: 5rem;
         box-sizing: border-box;
         cursor: pointer;
-        display: inline-block;
+        display: flex;
         font-size: .8em;
         font-weight: 300;
         line-height: 1;
-        padding: .5rem .5rem;
+        padding: .2rem;
         text-align: center;
         transition: all .1s cubic-bezier(.4, 0, .2, 1);
         box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
@@ -191,14 +187,23 @@ opacity: 0.7;
         -webkit-user-select: none;
         touch-action: manipulation;
         margin-bottom:.5em;
-        
-    
     }
     .label {
     display:none;
-
-      
     }
+  footer {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+  justify-items:center;
+  }
+  .marcaDerechos {
+    font-size: .1em;
+    padding-top: 0;
+  }
+  }
+  
+  
     /* .container-images>div{
       background-color: red;
     }
@@ -206,6 +211,6 @@ opacity: 0.7;
       background-color: green;
       margin: 0;
     } */
-
-  }
+  
+  
   
