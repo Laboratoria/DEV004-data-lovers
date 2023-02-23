@@ -10,14 +10,14 @@ import {ordenarMasVieja,ordenarPuntuacionMayor,filtrarProductor} from "../src/da
 describe('ordenarMasVieja', () => {
   it('ordenarMasVieja', () => {
     const arrayFilms = [{"release_date": "1988"}, {"release_date": "1986"}, {"release_date": "1989"}]
-    expect(ordenarMasVieja(arrayFilms)).toMatchObject([{"release_date": "1986"}, {"release_date": "1988"}, {"release_date": "1989"}]);
+    expect(ordenarMasVieja(arrayFilms)).toEqual([{"release_date": "1986"}, {"release_date": "1988"}, {"release_date": "1989"}]);
   });
 });
 
 describe('ordenarPuntuacionMayor', () => {
   it('ordenarPuntuacionMayor', () => {
     const arrayFilms = [{"rt_score": "96"}, {"rt_score": "97"}, {"rt_score": "100"}]
-    expect(ordenarPuntuacionMayor(arrayFilms)).toMatchObject([{"rt_score": "100"}, {"rt_score": "97"}, {"rt_score": "96"}]);
+    expect(ordenarPuntuacionMayor(arrayFilms)).toEqual([{"rt_score": "100"}, {"rt_score": "97"}, {"rt_score": "96"}]);
   });
 });
 
@@ -33,7 +33,7 @@ describe('filtrarProductor', () => {
   it('filtrarProductor', () => {
     const arrayFilms = [{"producer": "Hayao Miyazaki"}, {"producer": "Toshio Suzuki"}, {"producer": "Toru Hara"}]
     const nombreProductor="Hayao Miyazaki"
-    expect(filtrarProductor(arrayFilms, nombreProductor)).toMatchObject([{"producer": "Hayao Miyazaki"}]);
+    expect(filtrarProductor(arrayFilms, nombreProductor)).toEqual([{"producer": "Hayao Miyazaki"}]);
   });
 });
 
