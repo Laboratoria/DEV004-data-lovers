@@ -81,12 +81,88 @@ filtrar.addEventListener('change', (event) => {
   }
 });
 
-// console.log(ghibli.films[0].people)
-
 // definir funcion 
 //input --codigo ---output 
-ghibli.films.forEach(function (film) {
+//hacer que el código se vuelva un objeto 
+function printImages (arreglo){
+  console.log(arreglo)
+}
+//for tradicional recorre cada pelicula, nos permite acceder a un primer nivel de propiedades .film
+function showPersonajes (title) {
+  const arrOriginal =ghibli.films;
+  for (let i = 0; i < arrOriginal.length; i++){
+    const film = arrOriginal[i];{
+      // console.log(film.people) 
+      if (film.title === title){
+        printImages(film.people)
+      }
+
+    }
+  }
+  
+  //const arrayPrueba = [];
+
+  /*
   film.people.forEach(function (personaje,) {
-   console.log (film.title, personaje.name, personaje.img);
-  });
-});
+    // console.log ([film.id,film.title, personaje.name, personaje.img]);
+    const nuevoObjeto = {film.id,film.title, personaje.name, personaje.img};
+    console.log (nuevoObjeto); 
+    arrayPrueba.push(nuevoObjeto)
+  });*/
+}
+
+
+
+// let greaterTen2 = numbers.filter(number => number > 10 );
+
+
+
+//     
+//   
+// 
+// método de iteración map
+
+
+
+
+//forma de acceder, muy rudimentariamente, los datos son string puros.
+// console.log(ghibli.films[0].people)
+
+//asi llegas a los datos puros en forma string: 
+// ghibli.films.forEach(function (film) {
+//   film.people.forEach(function (personaje,) {
+//     console.log ([film.title, personaje.name, personaje.img]);
+//   });
+// });
+
+// const showSelect = (arrayGhibli) => { // la fn recibe arreglo como parametro
+//   const select = document.getElementById('personajes');
+//   if (select) {
+//     for (let i = 0; i <  arrayGhibli.length; i++) {
+//       const creaDiv = document.createElement('div');
+//       creaDiv.innerHTML = arrayGhibli[i].title;
+//       creaDiv.classList.add("movieTitle");
+      
+      
+//     }
+//   }
+// 
+// showSelect(ghibli.films) 
+
+const values = (ghibli.films)
+const $select = document.getElementById("personajes")
+//empty option
+const $option = document.createElement("option")
+$option.value = ""
+$option.innerHTML = "Por Pelicula"
+$select.appendChild($option)
+values.forEach(values => {
+  const $option = document.createElement("option")
+  $option.value = values.title
+  $option.innerHTML = values.title
+  $select.appendChild($option)
+})
+$select.addEventListener('change',function(){
+  console.log($select.value)
+  showPersonajes($select.value)
+})
