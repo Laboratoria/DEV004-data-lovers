@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif; 
+    
+}
+body{
+    background-color: #fcd44c;
 }
 h4{
     text-transform: uppercase;
@@ -10,6 +14,10 @@ h4{
 }
 p{
     padding: 10px;
+    
+}
+#banner{
+    background-color: #8dcac1;
 }
 .cardImg{
     margin-top: 10px;
@@ -23,14 +31,13 @@ p{
 
 .container{
 
-    background-color: #c0bfbf;
-    width: 230px;
-    height: 350px;
+    background-color: #f2e17d;
+    width: 260px;
+    height: 380px;
     text-align: center;
-    border: 10px solid #efcc1c;
     margin: 30px;
-    box-shadow: 0 20px 30px Reba (0, 0, 0, 0.15);
-    border-radius: 10px;
+    box-shadow: 0 20px 30px Rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
     float: left;
 }
 
