@@ -80,3 +80,4 @@ filtrar.addEventListener('change', (event) => {
     showTitleImage(ghibli.films);
   }
 });
+
