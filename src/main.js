@@ -165,4 +165,37 @@ values.forEach(values => {
 $select.addEventListener('change',function(){
   console.log($select.value)
   showPersonajes($select.value)
-})
+});
+
+// / funcion peronajes
+const showPersonajes2 = (personajes) => { // la fn recibe arreglo como parametro
+  const principal = document.getElementById('container');
+  
+  if (principal) {
+    for (let i = 0; i < personajes.length; i++) {
+      const divColumna = document.createElement('div');
+      const creaDiv = document.createElement('div');
+      const creaimg = document.createElement('img');
+      divColumna.setAttribute('class', 'columna');
+      creaDiv.innerHTML =personajes[i].name;
+      creaDiv.classList.add("posterTitle");
+      creaimg.setAttribute('src',personajes[i].img)
+      creaimg.classList.add("posterStyle");
+      divColumna.appendChild(creaDiv);
+      divColumna.appendChild(creaimg);
+      principal.appendChild(divColumna);
+    }
+  }
+}
+showPersonajes2(ghibli.films[0].people);
+
+
+
+
+
+
+
+
+
+
+
