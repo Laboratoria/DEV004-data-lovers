@@ -81,3 +81,12 @@ filtrar.addEventListener('change', (event) => {
   }
 });
 
+// console.log(ghibli.films[0].people)
+
+// definir funcion 
+//input --codigo ---output 
+ghibli.films.forEach(function (film) {
+  film.people.forEach(function (personaje,) {
+   console.log (film.title, personaje.name, personaje.img);
+  });
+});
