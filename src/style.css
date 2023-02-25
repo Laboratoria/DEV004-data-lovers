@@ -1,24 +1,42 @@
-#mostrarPoke {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.card {
-  position: relative;
-  background-color: #fcd44c;
-  display: block;
-  border: 0px solid #413827;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.20) ;
-  margin: 20px;
-  padding: 30px;
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  border-radius: 10px;
+  font-family: "Poppins", sans-serif; 
+  
+}
+body{
+  background-color: #fcd44c;
+}
+h4{
+  text-transform: uppercase;
+  margin: 10px;
+}
+p{
+  padding: 10px;
+  
+}
+#banner{
+  background-color: #8dcac1;
+}
+.cardImg{
+  margin-top: 10px;
+}
+#mostrarpoke{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  
 }
 
-h4 {
-  display: block;
+.container{
+
+  background-color: #f2e17d;
+  width: 260px;
+  height: 380px;
   text-align: center;
   margin: 30px;
+  box-shadow: 0 20px 30px Rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  float: left;
 }
-
