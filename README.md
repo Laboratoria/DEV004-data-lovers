@@ -319,6 +319,17 @@ solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
 iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
 `README.md`.
 
+
+
+
+
+![boceto lol](https://user-images.githubusercontent.com/107730198/221445011-8315bb43-d0a9-4143-9ae9-5325c9a93c11.jpeg)
+
+
+
+![boceto pantalla inicio lol](https://user-images.githubusercontent.com/107730198/221445022-f68773e2-a727-4f27-b533-4661ea47b426.jpeg)
+
+
 #### Prototipo de alta fidelidad
 
 Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
