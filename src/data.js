@@ -5,6 +5,7 @@ export const filtrarPokemon = (tipo, data) => {
   //aqui filter
   return "example";
 };
+console.log(ObtenerPokemon)
 
 export const anotherExample = () => {
   return "OMG";
