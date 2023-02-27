@@ -131,6 +131,7 @@ $select.addEventListener('change',function(){
 // / funcion peronajes
 const showPersonajes2 = (personajes) => { // la fn recibe arreglo como parametro
   const principal = document.getElementById('container');
+  // const numeroDePersonajes = document.getElementById('numero-de-personajes');
   console.log(personajes)
   if (principal) {
     for (let i = 0; i < personajes.length; i++) {
