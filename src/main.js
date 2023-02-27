@@ -1,13 +1,14 @@
 import pokemon from "./data/pokemon/pokemon.js";
+// DIFERENCIA ENTRE EXPORT Y EXPORT DEFAULT
 import data from "./data/pokemon/pokemon.js";
+import { filtrarPokemon } from "./data.js";
 
 //console.log(data);//
 const mostrarPoke = document.getElementById("mostrarPoke");
 
-ObtenerPokemon();
 //funcion para mostrar pokemon desde la data. nombre e imagen, que los divide en grupo
-function ObtenerPokemon() {
-  data.pokemon.forEach((pokemon) => {
+function ObtenerPokemon(data) {
+  data.forEach((pokemon) => {
     mostrarPoke.innerHTML += `<div class="container">
                           
     <div class="card">
@@ -21,11 +22,12 @@ function ObtenerPokemon() {
   });
 }
 
-const typePkm = [];
-const mostrartypePkm = typePkm.filter(checktype);
+ObtenerPokemon(data.pokemon); //argumento de tipo array
 
-function checktype(typePkm) {
-  return typePkm => water;
-}
-console.log(typePkm);
-
+const selectTipos = document.getElementById("tipos");
+selectTipos.addEventListener("change", function () {
+  console.log(selectTipos.value);
+  const tipo = selectTipos.value;
+  filtrarPokemon(tipo, data.pokemon); // invocación
+  // detonar filtro
+});
