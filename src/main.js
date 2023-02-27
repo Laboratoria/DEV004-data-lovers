@@ -1,6 +1,7 @@
+import pokemon from "./data/pokemon/pokemon.js";
 import data from "./data/pokemon/pokemon.js";
 
-console.log(data);
+//console.log(data);//
 const mostrarPoke = document.getElementById("mostrarPoke");
 
 ObtenerPokemon();
@@ -17,6 +18,13 @@ function ObtenerPokemon() {
         <p>${pokemon.about} </p>
     </div>
 </div>`;
-    console.log(pokemon);
   });
 }
+
+const typePkm = [];
+const mostrartypePkm = typePkm.filter(checktype);
+
+function checktype(typePkm) {
+  return typePkm => water;
+}
+console.log(typePkm);

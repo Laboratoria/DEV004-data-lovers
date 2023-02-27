@@ -1,6 +1,9 @@
 // estas funciones son de ejemplo
 
-export const ObtenerPokemon = () => {
-  return 'ObtenerPokemon';
+export const example = () => {
+  return 'example';
 };
-console.log(mostrarPoke)
+
+export const anotherExample = () => {
+  return 'OMG';
+};
