@@ -28,3 +28,4 @@ function checktype(typePkm) {
   return typePkm => water;
 }
 console.log(typePkm);
+
