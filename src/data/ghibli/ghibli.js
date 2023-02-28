@@ -1,4 +1,5 @@
-export default {
+ 
+  const ghibli = {
   "studio": "Studio Ghibli Inc.",
   "films": [
     {
@@ -1865,7 +1866,7 @@ export default {
       "description": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items 'borrowed' from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
       "director": "Hiromasa Yonebayashi",
       "producer": "Toshio Suzuki",
-      "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg",
+      "poster": "https://i.ebayimg.com/images/g/SGkAAOSwEChhOVvq/s-l500.jpg",
       "release_date": "2010",
       "rt_score": "95",
       "people": [
@@ -2432,4 +2433,6 @@ export default {
       "vehicles": []
     }
   ]
-}
+  }
+
+export default ghibli;
