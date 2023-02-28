@@ -90,10 +90,13 @@ filtrar.addEventListener('change', (event) => {
 //for tradicional recorre cada pelicula, nos permite acceder a un primer nivel de propiedades .film
 function showPersonajes (title) {
   const arrOriginal = ghibli.films;
+
   for (let i = 0; i < arrOriginal.length; i++){
     const film = arrOriginal[i];{
       // console.log(film.people) 
       if (film.title === title){
+        // const llamado = ('La pelicula '+ (values[0].title)+ 'tiene '+ (values[0].people))
+        // console.log(llamado)
         showPersonajes2(film.people);
       }
     }
@@ -116,6 +119,8 @@ const selector = (arrayGhibli) =>{
     $option.value = values.title
     $option.innerHTML = values.title
     $select.appendChild($option)
+   
+    // console.log(values.title)
   })
 }
 selector(ghibli.films)
