@@ -19,16 +19,16 @@
         <p class="subtitulo"> スタジオジブリ </p>
         </div>
       <div class="boxNavegador">
-        <div>
+        <div class="btnGeneral">
           <label class="label" for="ordenar">Ordenar:</label>
           <select class="button-81" name="ordenar" id="ordenar">
-            <option value="menosReciente">Menos reciente</option>
-            <option value="masReciente">Más reciente</option>
-            <option value="mayorRt">Mayor puntuación</option>
-            <option value="menorRt">Menor puntuación</option>
+            <option value="menosReciente">Primeras Producciones</option>
+            <option value="masReciente">Últimas Producciones</option>
+            <option value="mayorRt">Mayor Calificación</option>
+            <option value="menorRt">Menor Calificación</option>
           </select>
         </div>
-        <div>
+        <div class="btnGeneral">
           <label class="label" for="filtrar">Filtrar:</label>
           <select class="button-81" name="filtrar" id="filtrar">
             <option value="todas">Productor</option> 
@@ -39,14 +39,13 @@
             <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option> 
           </select>
         </div>
-        <div>
+        <div class="btnGeneral">
           <label class="label" for="personajes">Personajes:</label>
           <select class="button-81" name="personajes" id="personajes">
           </select>
         </div>
       </div>
     </header>
-    
     <p id="numero-de-personajes"></p>
     <div class="container-images" id="container"></div> 
     <script src="main.js" type="module"></script>
