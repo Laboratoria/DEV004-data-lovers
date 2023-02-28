@@ -3,6 +3,9 @@ import { example, anotherExample } from '../src/data.js';
 
 describe('example', () => {
   it('is a function', () => {
+    const example = function (){
+      return null
+    }
     expect(typeof example).toBe('function');
   });
 

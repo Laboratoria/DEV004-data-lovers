@@ -1,9 +1,9 @@
-// estas funciones son de ejemplo
+/*// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const pokemon = ( ) => {
+  return 'pokemon';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+//export const anotherExample = () => {
+  //return 'OMG';
+//};*/
