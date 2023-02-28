@@ -227,7 +227,7 @@
         {
           "id": "d5df3c04-f355-4038-833c-83bd3502b6b9",
           "name": "Mei Kusakabe",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/b/b5/God_Jul_Mei_%C3%B6nskar_fr%C3%A5n_Tomten.jpg",
+          "img": "https://i.pinimg.com/originals/32/b0/8b/32b08bb45a0ffc9d2fc688af00d1f735.png",
           "gender": "Female",
           "age": "4",
           "eye_color": "Brown",
@@ -277,7 +277,7 @@
         {
           "id": "d39deecb-2bd0-4770-8b45-485f26e1381f",
           "name": "Totoro",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/df/Totoro_in_the_rain.png",
+          "img": "https://i.pinimg.com/564x/ca/84/a9/ca84a9b144a936fcfe05524355a587b9.jpg",
           "gender": "Male",
           "age": "1300",
           "eye_color": "Grey",
@@ -297,7 +297,7 @@
         {
           "id": "c491755a-407d-4d6e-b58a-240ec78b5061",
           "name": "Chibi Totoro",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c5/Little_Totoro_spirit_moving.gif",
+          "img": "https://i.pinimg.com/564x/a5/92/2e/a5922e26290a5610c5c9a65929654907.jpg",
           "gender": "NA",
           "age": "",
           "eye_color": "Black",
@@ -307,7 +307,7 @@
         {
           "id": "f467e18e-3694-409f-bdb3-be891ade1106",
           "name": "Catbus",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/30/Catbus.jpg",
+          "img": "https://i.pinimg.com/564x/86/e1/2a/86e12a498c80c5409f3c2206f26ba521.jpg",
           "gender": "Male",
           "age": "NA",
           "eye_color": "Yellow",
@@ -511,7 +511,7 @@
         {
           "id": "227c01a6-4e29-4582-bc4b-35106a704ab0",
           "name": "Mrs. Yokokawa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/39/SeitaMother.png",
+          "img": "https://cdn.myanimelist.net/images/characters/6/423031.jpg",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Black",
@@ -521,7 +521,7 @@
         {
           "id": "023306e3-9fc6-4d1d-b681-d4649dcbfff9",
           "name": "Kiyoshi Yokokawa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/f6/SeitaFather3.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Male",
           "age": "40",
           "eye_color": "Black",
@@ -531,7 +531,7 @@
         {
           "id": "0e18b23d-1f21-4a83-a6de-f01147624875",
           "name": "Seita's Aunt",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/SeitaAunt.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Black",
@@ -575,7 +575,7 @@
         {
           "id": "52ed5cad-2464-481f-9786-8533b8de95ff",
           "name": "Mr. Okajima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/58/Mr._Okajima.png",
+          "img": "https://cdn.personalitylist.com/avatars/215189.png",
           "gender": "Male",
           "age": "Middle age",
           "eye_color": "Black",
@@ -711,7 +711,7 @@
         {
           "id": "4a2e2cee-08ca-4d44-9564-2b3e5421bafb",
           "name": "Fio Piccolo",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/16/Fio_%282%29.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Female",
           "age": "17",
           "eye_color": "Brown",
@@ -1022,7 +1022,7 @@
         {
           "id": "34277bec-7401-43fa-a00a-5aee64b45b08",
           "name": "Eboshi",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9f/Eboshi.png",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Hazel",
@@ -1260,7 +1260,7 @@
         {
           "id": "cf0a2a1b-8b65-4794-98ae-bd89de49fa62",
           "name": "Lin",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/35/Lin-HBO_Max.png",
+          "img": "https://i.pinimg.com/564x/10/be/dd/10bedd5bd21f9d525a6b004085f7fee0.jpg",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Brown",
@@ -1743,7 +1743,7 @@
         {
           "id": "0cb26464-3416-4490-8f42-cd9d7276884e",
           "name": "Kōichi",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/4/49/Sosuke%27s_Father.png",
+          "img": "https://i.pinimg.com/564x/eb/21/15/eb2115c7a7b9f75b0cf98b251d04e7a8.jpg",
           "gender": "Male",
           "age": "30",
           "eye_color": "Dark brown",
@@ -2225,7 +2225,7 @@
         {
           "id": "a21fbdd5-16bc-4931-80d0-3ce89ffce778",
           "name": "Sutemaru",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/37/Sutemaru.PNG",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -2235,7 +2235,7 @@
         {
           "id": "4c697b7d-4f64-4ac9-ae29-e155eb1693f3",
           "name": "Ishitsukuri",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5c/Ghibli-kaguya-ishitsukuri.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -2275,7 +2275,7 @@
         {
           "id": "942fb1029-b51f-4100-8bee-86547c09b0ff",
           "name": "Inbe no Akita",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/1c/Ghibli-kaguya-akita.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Male",
           "age": "Elder",
           "eye_color": "Black",
@@ -2331,7 +2331,7 @@
         {
           "id": "28d07ace-c309-48c6-b48e-ae2ece3a238c",
           "name": "Anna Sasaki",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ae/Anna.png",
+          "img": "https://i.pinimg.com/564x/6a/4a/f4/6a4af4d903473c4475a246aa676b30e9.jpg",
           "gender": "Female",
           "age": "12",
           "eye_color": "Blue",
@@ -2361,7 +2361,7 @@
         {
           "id": "66bca178-9920-4ec3-91e9-0d5b8a76dba1",
           "name": "Setsu Oiwa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6e/Setsu.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Female",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2371,7 +2371,7 @@
         {
           "id": "5b8e4413-f943-40ba-8f9f-0ba059a401f0",
           "name": "Hisako",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/93/Hisako.png",
+          "img": "https://i.pinimg.com/564x/3b/a4/41/3ba441e7a3dfa2e31abd98a56c1a0a5a.jpg",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Dark brown",
@@ -2401,7 +2401,7 @@
         {
           "id": "31b49ef6-ee60-4603-b983-e67fa0718aa9",
           "name": "Kiyomasa Ōiwa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d7/Kiyomasa.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Male",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2411,7 +2411,7 @@
         {
           "id": "5d52d16f-ce72-41bd-8d88-436e206d9449",
           "name": "Doctor Yamashita",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8a/Yamashita.jpg",
+          "img": "https://i.pinimg.com/564x/0c/8b/3c/0c8b3cd6bba48655228bce814642c879.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
