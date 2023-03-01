@@ -161,7 +161,7 @@ body{
     }
 
   /* cambie max por min y funciona mejor */
-  @media (max-width: 375px) { 
+  @media (max-width: 414px) { 
     .subtitulo {
       display: flex;
       text-align: center;
