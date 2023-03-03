@@ -30,17 +30,17 @@ ordenar.addEventListener('change', (event) => {
     document.getElementById("container").innerHTML = "";
     const filmsOrdenadas = ordenarMasVieja(ghibli.films) // [5,4,3].reverser() === [3,4,5]
     showTitleImage(filmsOrdenadas);
-    //console.log(filmsOrdenadas)
+ 
   }
   if (event.target.value === "masReciente"){
     const filmsOrdenadasReverse = ordenarMasVieja(ghibli.films).reverse()
     showTitleImage(filmsOrdenadasReverse )
-    // console.log(ordenarMasNueva(ghibli.films),filmsOrdenadasReverse )
+   
   }
   if (event.target.value === "mayorRt"){
     document.getElementById("container").innerHTML = "";
     showTitleImage(ordenarPuntuacionMayor(ghibli.films))
-    // console.log(ordenarPuntuacionMayor(ghibli.films))
+   
   }
   if (event.target.value === "menorRt"){
     document.getElementById("container").innerHTML = "";
@@ -95,10 +95,10 @@ function showPersonajes (title) {
 
   for (let i = 0; i < arrOriginal.length; i++){
     const film = arrOriginal[i];{
-      // console.log(film.people) 
+      
       if (film.title === title){
         // const llamado = ('La pelicula '+ (values[0].title)+ 'tiene '+ (values[0].people))
-        // console.log(llamado)
+  
         const totalPersonajes = document.getElementById ("numero-de-personajes");
         // pase esto para aca para poder acceer a todos los datos que requiero, osea el titulo y los personajes.
         totalPersonajes.innerHTML = "En la pelicula "+ film.title + " existen " + film.people.length + " personajes";
@@ -124,8 +124,7 @@ const selector = (arrayGhibli) =>{
     $option.value = values.title
     $option.innerHTML = values.title
     $select.appendChild($option)
-   
-    // console.log(values.title)
+
   })
 }
 selector(ghibli.films)
@@ -150,7 +149,7 @@ const showPersonajes2 = (personajes) => { // la fn recibe arreglo como parametro
   const principal = document.getElementById('container');
   // const totalPersonajes = document.getElementById ("numero-de-personajes");
   // totalPersonajes.innerHTML = "Esta película tiene un total de" + " " + personajes.length + " "+ "personajes";
-  console.log(personajes.length) 
+
   if (principal) {
     for (let i = 0; i < personajes.length; i++) {
       const divColumna = document.createElement('div');

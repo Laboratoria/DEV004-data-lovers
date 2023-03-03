@@ -9,8 +9,8 @@ import {ordenarMasVieja,ordenarPuntuacionMayor,filtrarProductor} from "../src/da
 
 describe('ordenarMasVieja', () => {
   it('ordenarMasVieja', () => {
-    const arrayFilms = [{"release_date": "1988"}, {"release_date": "1986"}, {"release_date": "1989"}]
-    expect(ordenarMasVieja(arrayFilms)).toEqual([{"release_date": "1986"}, {"release_date": "1988"}, {"release_date": "1989"}]);
+    const arrayFilms = [{"release_date": "1988"}, {"release_date": "1986"}, {"release_date": "1989"}, {"release_date": "1989"}]
+    expect(ordenarMasVieja(arrayFilms)).toEqual([{"release_date": "1986"}, {"release_date": "1988"}, {"release_date": "1989"},{"release_date": "1989"}]);
   });
 });
 
@@ -23,8 +23,8 @@ describe('ordenarMasVieja con un array distinto y simplificado', () => {
 
 describe('ordenarPuntuacionMayor', () => {
   it('ordenarPuntuacionMayor', () => {
-    const arrayFilms = [{"rt_score": "96"}, {"rt_score": "97"}, {"rt_score": "100"}, {"rt_score": "1000"}]
-    expect(ordenarPuntuacionMayor(arrayFilms)).toEqual([{"rt_score": "1000"},{"rt_score": "100"}, {"rt_score": "97"}, {"rt_score": "96"}]);
+    const arrayFilms = [{"rt_score": "96"}, {"rt_score": "97"}, {"rt_score": "100"}, {"rt_score": "1000"}, {"rt_score": "1000"}]
+    expect(ordenarPuntuacionMayor(arrayFilms)).toEqual([{"rt_score": "1000"}, {"rt_score": "1000"}, {"rt_score": "100"}, {"rt_score": "97"}, {"rt_score": "96"}]);
   });
 });
 
