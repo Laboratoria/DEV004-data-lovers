@@ -17,7 +17,7 @@ const data = {
         "base-defense": "143",
         "base-stamina": "155",
         "max-cp": "1699",
-        "max-hp": "134"
+        "max-hp": "134",
       },
     },
     {
@@ -30,7 +30,7 @@ const data = {
         "base-defense": "189",
         "base-stamina": "190",
         "max-cp": "2720",
-        "max-hp": "162"
+        "max-hp": "162",
       },
     },
     {
@@ -43,7 +43,7 @@ const data = {
         "base-defense": "93",
         "base-stamina": "118",
         "max-cp": "980",
-        "max-hp": "105"
+        "max-hp": "105",
       },
     },
     {
@@ -56,7 +56,7 @@ const data = {
         "base-defense": "126",
         "base-stamina": "151",
         "max-cp": "1653",
-        "max-hp": "131"
+        "max-hp": "131",
       },
     },
     {
@@ -69,7 +69,7 @@ const data = {
         "base-defense": "173",
         "base-stamina": "186",
         "max-cp": "2889",
-        "max-hp": "158"
+        "max-hp": "158",
       },
     },
   ],
@@ -104,7 +104,7 @@ describe("filtrarTipos", () => {
             "base-defense": "93",
             "base-stamina": "118",
             "max-cp": "980",
-            "max-hp": "105"
+            "max-hp": "105",
           },
         },
         {
@@ -117,7 +117,7 @@ describe("filtrarTipos", () => {
             "base-defense": "126",
             "base-stamina": "151",
             "max-cp": "1653",
-            "max-hp": "131"
+            "max-hp": "131",
           },
         },
         {
@@ -130,7 +130,7 @@ describe("filtrarTipos", () => {
             "base-defense": "173",
             "base-stamina": "186",
             "max-cp": "2889",
-            "max-hp": "158"
+            "max-hp": "158",
           },
         },
       ],
@@ -158,7 +158,7 @@ describe("buscarPorNombre", () => {
             "base-defense": "93",
             "base-stamina": "118",
             "max-cp": "980",
-            "max-hp": "105"
+            "max-hp": "105",
           },
         },
         {
@@ -171,7 +171,7 @@ describe("buscarPorNombre", () => {
             "base-defense": "126",
             "base-stamina": "151",
             "max-cp": "1653",
-            "max-hp": "131"
+            "max-hp": "131",
           },
         },
         {
@@ -184,7 +184,7 @@ describe("buscarPorNombre", () => {
             "base-defense": "173",
             "base-stamina": "186",
             "max-cp": "2889",
-            "max-hp": "158"
+            "max-hp": "158",
           },
         },
       ],

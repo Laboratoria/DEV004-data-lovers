@@ -1,4 +1,3 @@
-
 export const tarjetas = (data) => {
   let tarjetaString = "";
   for (const pokemon of data.pokemon) {
@@ -30,8 +29,10 @@ export const filtrarTipos = (data, tipo) => {
 export const buscarPorNombre = (data, nombreBuscar) => {
   const withoutSpaces = nombreBuscar.trim();
   //const withoutSpaces = nombreBuscar.replace(/\s/g, '');
-  const dataFiltrada = data.pokemon.filter((pokemon) => pokemon.name.startsWith(withoutSpaces))
-  return { pokemon: dataFiltrada }
+  const dataFiltrada = data.pokemon.filter((pokemon) =>
+    pokemon.name.startsWith(withoutSpaces)
+  );
+  return { pokemon: dataFiltrada };
 };
 
 export function abcOrder(data, order) {
@@ -40,15 +41,14 @@ export function abcOrder(data, order) {
     const nameB = b.name;
     if (nameA < nameB) {
       return -1;
-    }
-    else {
+    } else {
       return 1;
     }
-  })
-  if (order === 'AZ') {
-    return {pokemon:orderArray}  
+  });
+  if (order === "AZ") {
+    return { pokemon: orderArray };
   } else {
     const inverso = orderArray.reverse();
-    return {pokemon:inverso}
+    return { pokemon: inverso };
   }
 }

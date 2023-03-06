@@ -12,12 +12,12 @@ const tipoPokemon = document.getElementsByClassName("tipoPokemon");
 const inputBuscar = document.getElementById("inputBuscar");
 const Ordenar = document.getElementsByClassName("Ordenar");
 
-const dropdownBtns = document.querySelectorAll('.dropbtn');
+const dropdownBtns = document.querySelectorAll(".dropbtn");
 dropdownBtns.forEach((button) => {
   const dropdownContent = document.getElementById(button.dataset.target);
-  const options = dropdownContent.querySelectorAll('a');
+  const options = dropdownContent.querySelectorAll("a");
   options.forEach((option) => {
-    option.addEventListener('click', () => {
+    option.addEventListener("click", () => {
       button.textContent = option.textContent.toUpperCase();
     });
     option.textContent = option.textContent.toUpperCase();
@@ -36,12 +36,15 @@ for (const tipo of tipoPokemon) {
 }
 
 inputBuscar.addEventListener("input", function () {
-  const FiltroNombre = buscarPorNombre(data, inputBuscar.value.trim().substring(0, 3));
-  
+  const FiltroNombre = buscarPorNombre(
+    data,
+    inputBuscar.value.trim().substring(0, 3)
+  );
+
   if (FiltroNombre.pokemon.length === 0) {
     alert("No se encontraron resultados");
   }
-  
+
   bloqueTarjetas.innerHTML = tarjetas(FiltroNombre);
 });
 
@@ -108,34 +111,33 @@ toggleTableBtn.addEventListener("click", () => {
     table.appendChild(row);
   }
 
-
   //   const canvas = document.getElementById("my-chart");
   //   const ctx = canvas.getContext("2d");
 
-//   const chart = new Chart(ctx, {
-//     type: "bar",
-//     data: {
-//       labels: arrayTotalTypes.map((item) => item.type.toUpperCase()),
-//       datasets: [
-//         {
-//           label: "TOTAL DE POKEMONES",
-//           data: arrayTotalTypes.map((item) => item.total),
-//           backgroundColor: "blue",
-//           borderColor: '#36A2EB',
-//         },
-//       ],
-//     },
-//     options: {
-//       scales: {
-//         yAxes: [
-//           {
-//             ticks: {
-//               beginAtZero: true,
-//             },
-//           },
-//         ],
-//       },
-//     },
-//   });
-// });
+  //   const chart = new Chart(ctx, {
+  //     type: "bar",
+  //     data: {
+  //       labels: arrayTotalTypes.map((item) => item.type.toUpperCase()),
+  //       datasets: [
+  //         {
+  //           label: "TOTAL DE POKEMONES",
+  //           data: arrayTotalTypes.map((item) => item.total),
+  //           backgroundColor: "blue",
+  //           borderColor: '#36A2EB',
+  //         },
+  //       ],
+  //     },
+  //     options: {
+  //       scales: {
+  //         yAxes: [
+  //           {
+  //             ticks: {
+  //               beginAtZero: true,
+  //             },
+  //           },
+  //         ],
+  //       },
+  //     },
+  //   });
+  // });
 });

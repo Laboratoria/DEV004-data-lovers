@@ -1,3 +1,11 @@
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
 /*Encabezado con banner al fondo*/
 .header{
   background-color:#230C2E ;
@@ -25,7 +33,8 @@ body{
 #bloqueTarjetas {
   display: flex;
   justify-content: center;
-  padding: 20px 30px;
+  /* top/botton left/right */
+  padding: 20px 30px; 
   flex-wrap: wrap;
   gap: 5%;
   z-index: 0;
@@ -34,10 +43,10 @@ body{
 /*Tarjeta de Pokemon con bordes*/
 .tarjeta {
   border-width: 10px;
-  padding: 10px;
+  padding: 2px;
   border:6px   double
   #230C2E;
-  margin: 30px 20px;
+  margin: 40px 20px;
   border-radius: 20px;
   gap: 15px;
   text-align: center;
@@ -59,9 +68,9 @@ body{
 
 /*Nombre y Num de Cada Pokemon*/  
 p{
-  margin-bottom: 5px;
+  margin-bottom: .1px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #230C2E;
 }
 
