@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <title>Bienvenidos a la Pokédex</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="banner">
-      <img src="./Imagenespkm/descarga-removebg-preview.png" alt="bannerPkm">
+      <img
+        src="./Imagenespkm/descarga-removebg-preview.png"
+        class="imagenpkm"
+        alt="bannerPkm"
+      />
     </header>
-   <!-- hacer un div del Dom Contenedor-->
-   
-
-
+    <!-- EJEMPLO -->
+    <!-- <button id="water">
+      Water
+    </button>
+    <button id="electric">Electric</button> -->
+    <select name="" id="tipos">
+      <option disabled selected>Selecciona algun tipo</option>
+      <option value="all">todos</option>
+      <option value="water">Water</option>
+      <option value="electric">Electric</option>
+      <option value="normal">normal</option>
+      <option value="ground">ground</option>
+      <option value="ghost">ghost</option>
+      <option value="poison">poison</option>
+      <option value="psychic">psychic</option>
+      <option value="rock">rock</option>
+      <option value="grass">grass</option>
+      <option value="flying">flying</option>
+      <option value="bug">bug</option>
+      <option value="fighting">fighting</option>
+      <option value="fire">fire</option>
+      <option value="ice">ice</option>
+      <option value="dragon">dragon</option>
+      <option value="fairy">fairy</option>
+      <option value="dark">dark</option>
+      <option value="steel">steel</option>
+    </select>
+    <select name="" id="ordenar">
+      <option disabled selected>Ordenar</option>
+      <option value="asc">Ordena de la A a la Z</option>
+      <option value="des">Ordena de la Z a la A</option>
+    </select>
     <div id="root"></div>
 
     <div id="mostrarPoke"></div>
