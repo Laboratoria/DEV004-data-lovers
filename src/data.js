@@ -1,12 +1,30 @@
 // estas funciones son de ejemplo
 
-export const filtrarPokemon = (tipo, data) => {
-  console.log("Aqui va el filtro con este tipo : ", tipo, "y la data ", data);
-  //aqui filter
-  return "example";
+import pokemon from "./data/pokemon/pokemon.js";
+import { ObtenerPokemon } from "./main.js";
+export const filtrarPokemon = (tipo) => {
+  //IF != all else ObtenerPokemon
+  if (tipo !== "all") {
+    const pokemonTipos = pokemon.pokemon.filter((poke) => poke.type === tipo);
+    return pokemonTipos;
+  } else {
+    ObtenerPokemon(pokemon.pokemon);
+  }
 };
-console.log(ObtenerPokemon)
 
-export const anotherExample = () => {
-  return "OMG";
-};
+export function ordenarpoke(order) {
+  if (order === "asc") {
+    pokemon.pokemon.sort((a, b) => {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+    });
+  } else {
+    pokemon.pokemon.sort((a, b) => {
+      if (a.name > b.name) return -1;
+      if (a.name < b.name) return 1;
+      return 0;
+    });
+  }
+  ObtenerPokemon(pokemon.pokemon);
+}
