@@ -2,7 +2,7 @@
 import pokemon from "./data/pokemon/pokemon.js";
 // DIFERENCIA ENTRE EXPORT Y EXPORT DEFAULT
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon } from "./data.js";
+import { filtrarPokemon,ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
 
 
 //console.log(data);//
@@ -12,21 +12,21 @@ const mostrarPoke = document.getElementById("mostrarPoke");
 export function ObtenerPokemon(data) {
   data.forEach((pokemon) => {
     mostrarPoke.innerHTML += `<div class="container">
-                          
     <div class="card">
-    <div class="numpkm">${pokemon.num} </div>
-        <img src="${pokemon.img}" class= "cardImg" alt="${pokemon.name}" ></img>
-        <h4>${pokemon.name} </h4>
-        <h5>${pokemon.type} </h5>
-        <p>${pokemon.about} </p>
-    </div>
-</div>`;
+      <div class="numpkm">${pokemon.num} </div>
+          <img src="${pokemon.img}" class= "cardImg" alt="${pokemon.name}" ></img>
+          <h4>${pokemon.name} </h4>
+          <h5>${pokemon.type} </h5>
+          <p>${pokemon.about} </p>
+      </div>
+    </div>`;
   });
 }
 
 ObtenerPokemon(data.pokemon); //argumento de tipo array
 
 const selectTipos = document.getElementById("tipos");
+
 selectTipos.addEventListener("change", function () {
   
   const verPokemones = document.getElementById("mostrarPoke");
