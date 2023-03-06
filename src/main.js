@@ -1,13 +1,15 @@
+// eslint-disable-next-line no-unused-vars
 import pokemon from "./data/pokemon/pokemon.js";
 // DIFERENCIA ENTRE EXPORT Y EXPORT DEFAULT
 import data from "./data/pokemon/pokemon.js";
 import { filtrarPokemon } from "./data.js";
 
+
 //console.log(data);//
 const mostrarPoke = document.getElementById("mostrarPoke");
 
 //funcion para mostrar pokemon desde la data. nombre e imagen, que los divide en grupo
-function ObtenerPokemon(data) {
+export function ObtenerPokemon(data) {
   data.forEach((pokemon) => {
     mostrarPoke.innerHTML += `<div class="container">
                           
@@ -26,8 +28,21 @@ ObtenerPokemon(data.pokemon); //argumento de tipo array
 
 const selectTipos = document.getElementById("tipos");
 selectTipos.addEventListener("change", function () {
-  console.log(selectTipos.value);
+  
+  const verPokemones = document.getElementById("mostrarPoke");
+  verPokemones.innerHTML = "";
+
   const tipo = selectTipos.value;
-  filtrarPokemon(tipo, data.pokemon); // invocación
-  // detonar filtro
+  const pokFiltrado = filtrarPokemon(tipo, data.pokemon); // invocación
+  ObtenerPokemon(pokFiltrado);
 });
+
+// Ordenar Alfabeticamente 
+
+const selectOrdenar = document.getElementById("ordenar");
+selectOrdenar.addEventListener ("change", function (){
+
+  const ordenarPoke = selectOrdenar.value
+  console.log(selectOrdenar);
+
+})
