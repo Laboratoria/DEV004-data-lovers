@@ -1,4 +1,4 @@
-import pokemon from "./data/pokemon/pokemon.js";
+//import pokemon from "./data/pokemon/pokemon.js";
 // DIFERENCIA ENTRE EXPORT Y EXPORT DEFAULT
 import data from "./data/pokemon/pokemon.js";
 import { filtrarPokemon,ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
@@ -30,7 +30,6 @@ selectTipos.addEventListener("change", function () {
   verPokemones.innerHTML = "";
 
   const tipo = selectTipos.value;
-  console.log(selectTipos.value);
 
   const pokFiltrado = filtrarPokemon(tipo);
   ObtenerPokemon(pokFiltrado);
