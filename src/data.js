@@ -1,29 +1,30 @@
-import pokemon from "./data/pokemon/pokemon.js";
-import { ObtenerPokemon } from "./main.js";
-export const filtrarPokemon = (tipo) => {
+// import pokemon from "./data/pokemon/pokemon.js";
+// import { ObtenerPokemon } from "./main.js";
+export const filtrarPokemon = (tipo, data) => {
+  if(tipo === '') {return false}
   //IF != all else ObtenerPokemon
   if (tipo !== "all") {
     // eslint-disable-next-line eqeqeq
-    const pokemonTipos = pokemon.pokemon.filter((poke) => poke.type == tipo);
+    const pokemonTipos = data.pokemon.filter((poke) => poke.type == tipo);
     return pokemonTipos;
   } else {
-    ObtenerPokemon(pokemon.pokemon);
+    return data.pokemon
   }
 };
 
-export function ordenarpoke(order) {
+export function ordenarpoke(order, data) {
   if (order === "asc") {
-    pokemon.pokemon.sort((a, b) => {
+    return data.pokemon.sort((a, b) => {
       if (a.name < b.name) return -1;
       if (a.name > b.name) return 1;
       return 0;
     });
   } else {
-    pokemon.pokemon.sort((a, b) => {
+    return data.pokemon.sort((a, b) => {
       if (a.name > b.name) return -1;
       if (a.name < b.name) return 1;
       return 0;
     });
   }
-  ObtenerPokemon(pokemon.pokemon);
+  
 }
