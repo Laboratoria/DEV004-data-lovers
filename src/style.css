@@ -37,8 +37,8 @@ p {
 }
 select{
   background-color: #8dcac1;
-  border: thin solid #D39D38;
-  border-radius: 4px;
+  border: thin solid #974845;
+  border-radius: 10px;
   display: inline-block;
   font: inherit;
   line-height: 1.5em;
@@ -65,7 +65,7 @@ select{
   height: 380px;
   text-align: center;
   margin: 30px;
-  box-shadow: 0 20px 30px Rgba(0, 0, 0, 0.50);
+  box-shadow: 0 10px 20px rgb(65, 56, 39);
   border-radius: 15px;
   float: left;
 }
