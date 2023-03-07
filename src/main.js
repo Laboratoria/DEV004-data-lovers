@@ -29,7 +29,7 @@ selectTipos.addEventListener("change", function () {
 
   const tipo = selectTipos.value;
 
-  const pokFiltrado = filtrarPokemon(tipo);
+  const pokFiltrado = filtrarPokemon(tipo, data);
   ObtenerPokemon(pokFiltrado);
 });
 
@@ -39,5 +39,6 @@ selectOrdenar.addEventListener("change", function () {
   //console.log("ver")
   mostrarPoke.innerHTML = "";
   const order = selectOrdenar.value;
-  ordenarpoke(order);
+  const pokOrdenado = ordenarpoke(order, data);
+  ObtenerPokemon(pokOrdenado);
 });
