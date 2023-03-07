@@ -1,5 +1,5 @@
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon,ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
+import { filtrarPokemon, ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
 
 const mostrarPoke = document.getElementById("mostrarPoke");
 
@@ -29,7 +29,7 @@ selectTipos.addEventListener("change", function () {
 
   const tipo = selectTipos.value;
 
-  const pokFiltrado = filtrarPokemon(tipo);
+  const pokFiltrado = filtrarPokemon(tipo, data);
   ObtenerPokemon(pokFiltrado);
 });
 
@@ -39,7 +39,8 @@ const selectOrdenar = document.getElementById("ordenar");
 selectOrdenar.addEventListener ("change", function (){
   mostrarPoke.innerHTML = "";
   const order = selectOrdenar.value ;
-  ordenarpoke(order);
+  const pokOrdenado = ordenarpoke(order, data);
+  ObtenerPokemon(pokOrdenado);
 
 
 })
