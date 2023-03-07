@@ -1,11 +1,10 @@
-// estas funciones son de ejemplo
-
 import pokemon from "./data/pokemon/pokemon.js";
 import { ObtenerPokemon } from "./main.js";
 export const filtrarPokemon = (tipo) => {
   //IF != all else ObtenerPokemon
   if (tipo !== "all") {
-    const pokemonTipos = pokemon.pokemon.filter((poke) => poke.type === tipo);
+    // eslint-disable-next-line eqeqeq
+    const pokemonTipos = pokemon.pokemon.filter((poke) => poke.type == tipo);
     return pokemonTipos;
   } else {
     ObtenerPokemon(pokemon.pokemon);

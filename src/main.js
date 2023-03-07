@@ -1,7 +1,5 @@
-//import pokemon from "./data/pokemon/pokemon.js";
-// DIFERENCIA ENTRE EXPORT Y EXPORT DEFAULT
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon,ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
+import { filtrarPokemon, ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
 
 //console.log(data);//
 const mostrarPoke = document.getElementById("mostrarPoke");
@@ -39,8 +37,7 @@ const selectOrdenar = document.getElementById("ordenar");
 
 selectOrdenar.addEventListener("change", function () {
   //console.log("ver")
-  mostrarPoke.innerHTML="";
+  mostrarPoke.innerHTML = "";
   const order = selectOrdenar.value;
   ordenarpoke(order);
-
 });
