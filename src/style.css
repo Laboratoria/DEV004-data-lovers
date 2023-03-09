@@ -5,10 +5,9 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: #4DA0B0;
-  background: -webkit-linear-gradient(to bottom, #D39D38, #4DA0B0);
-  background: linear-gradient(to bottom, #D39D38, #4DA0B0);
-
+  background: #4da0b0;
+  background: -webkit-linear-gradient(to bottom, #d39d38, #4da0b0);
+  background: linear-gradient(to bottom, #d39d38, #4da0b0);
 }
 h4 {
   text-transform: uppercase;
@@ -18,24 +17,34 @@ p {
   padding: 10px;
 }
 #banner {
-  background: -webkit-linear-gradient(to top, #D39D38, #4DA0B0);
-  background: linear-gradient(to top, #D39D38, #4DA0B0);
+  background: -webkit-linear-gradient(to top, #d39d38, #4da0b0);
+  background: linear-gradient(to top, #d39d38, #4da0b0);
   fallback: for old;
   text-align: center;
   width: 100%;
   height: 420px;
-
-
 }
+*.Titulo {
+  height: 100px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+}
+
 .imagenpkm {
   display: block;
   margin: auto;
+  position: relative;
+  top: -22px;
+  width: auto;
+  height: 323px;
 }
 #selectores {
   text-align: center;
   margin-top: 10px;
+  z-index: -1;
 }
-select{
+select {
   background-color: #8dcac1;
   border: thin solid #974845;
   border-radius: 10px;
@@ -69,4 +78,91 @@ select{
   border-radius: 15px;
   float: left;
 }
+@media (max-width: 412px) {
+  .container {
+    border-radius: 25px dashed;
+    width: auto;
+    height: 323px;
+  }
+  .banner {
+    background: -webkit-linear-gradient(to top, #d39d38, #4da0b0);
+    background: linear-gradient(to top, #d39d38, #4da0b0);
+    fallback: for old;
+    text-align: center;
+    width: 100%;
+    height: 215px;
+  }
+  .imagenpkm {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 0px;
+    width: auto;
+    height: 150px;
+  }
+  .Titulo {
+    height: 50px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+    display: flex;
+  }
 
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background: -webkit-linear-gradient(to top, #d39d38, #4da0b0);
+    background: linear-gradient(to top, #d39d38, #4da0b0);
+    fallback: for old;
+    text-align: center;
+    width: 100%;
+    height: 215px;
+  }
+  .imagenpkm {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 0px;
+    width: auto;
+    height: 300px;
+  }
+  .Titulo {
+    height: 107px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+    display: flex;
+  }
+
+}
+@media (max-width: 414px) {
+  #banner {
+    background: linear-gradient(to top, #d39d38, #4da0b0);
+    text-align: center;
+    width: 100%;
+    height: 235px;
+  }
+
+  #selectores {
+    text-align: center;
+    margin-left: -67px;
+    margin-right: 44px;
+  }
+  .imagenpkm {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 9px;
+    height: 170px;
+    width: 294px;
+  }
+  .Titulo {
+    height: 39px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+    display: flex;
+  }
+ 
+}
