@@ -10,7 +10,6 @@ import{
 
 import copyLol from './data/lol/lol.js';
 
-
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
 // console.log(allChampion);
