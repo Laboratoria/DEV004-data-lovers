@@ -61,11 +61,24 @@ select {
   display: flex;
   flex-direction: row;
 }
+.cardSuperior{
+  display: flex;
+}
+.puntosComb{
+  flex-direction: row;
+  text-align: left;
+  margin: 15px;
+  font-weight: bold;
+  color: #413827;
+  width: 150px;
+}
 .numpkm {
+  flex-direction: row-reverse;
   text-align: right;
   margin: 15px;
   font-weight: bold;
   color: #413827;
+  width: 150px;
 }
 
 .container {
