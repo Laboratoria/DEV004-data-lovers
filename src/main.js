@@ -7,6 +7,7 @@ import{
     sortData, filterData, averageData, averageName,
 } from './data.js';
 
+
 import copyLol from './data/lol/lol.js';
 
 const allChampion = data.data;
