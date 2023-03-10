@@ -1,7 +1,6 @@
 import data from "./data/pokemon/pokemon.js";
 import { filtrarPokemon, ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
 
-//console.log(data);//
 const mostrarPoke = document.getElementById("mostrarPoke");
 
 //funcion para mostrar pokemon desde la data. nombre e imagen, que los divide en grupo
@@ -9,7 +8,10 @@ export function ObtenerPokemon(data) {
   data.forEach((pokemon) => {
     mostrarPoke.innerHTML += `<div class="container">
     <div class="card">
+      <div class="cardSuperior">
+      <div class="puntosComb"> CP: ${pokemon.stats["max-cp"]} </div>
       <div class="numpkm">${pokemon.num} </div>
+      </div>
           <img src="${pokemon.img}" class= "cardImg" alt="${pokemon.name}" ></img>
           <h4>${pokemon.name} </h4>
           <h5>${pokemon.type} </h5>
@@ -24,6 +26,7 @@ ObtenerPokemon(data.pokemon); //argumento de tipo array
 const selectTipos = document.getElementById("tipos");
 
 selectTipos.addEventListener("change", function () {
+  
   const verPokemones = document.getElementById("mostrarPoke");
   verPokemones.innerHTML = "";
 
@@ -33,12 +36,14 @@ selectTipos.addEventListener("change", function () {
   ObtenerPokemon(pokFiltrado);
 });
 
-const selectOrdenar = document.getElementById("ordenar");
+// Ordenar Alfabeticamente 
 
-selectOrdenar.addEventListener("change", function () {
-  //console.log("ver")
+const selectOrdenar = document.getElementById("ordenar");
+selectOrdenar.addEventListener ("change", function (){
   mostrarPoke.innerHTML = "";
-  const order = selectOrdenar.value;
+  const order = selectOrdenar.value ;
   const pokOrdenado = ordenarpoke(order, data);
   ObtenerPokemon(pokOrdenado);
-});
+
+
+})
