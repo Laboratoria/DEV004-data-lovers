@@ -1,30 +1,11 @@
-import { miFuncionsita } from "./data.js";
-import otroObjeto from "./data.js";
-import personajes from "./data/lol/lol.js";
+/*La primera línea importa un objeto 
+llamado data desde un archivo llamado lol.js en un directorio llamado data/lol.*/
+import data from './data/lol/lol.js'; 
+/*La segunda línea importa varias funciones 
+llamadas sortData, filterData, averageData, y averageName desde un archivo llamado data.js.*/
+import{
+    sortData, filterData, averageData, averageName,
+} from './data.js';
 
-miFuncionsita()
+import copyLol from './data/lol/lol.js';
 
-console.log('otroObjeto.a: ', otroObjeto.a)
-console.log('otroObjeto["b"]: ', otroObjeto['b'])
-
-console.log('personakes: ', personajes)
-
-
-const AatroxPartye = personajes.data.Aatrox.partype
-console.log('AatroxPartye: ', AatroxPartye)
-
-const unH1 = document.createElement('h1')
-unH1.textContent = AatroxPartye
-document.body.append(unH1)
-
-
-for (let characterName in personajes.data) {
-    const partType = personajes.data[characterName].partype
-
-    const unH1 = document.createElement('h1')
-    unH1.textContent = partType
-    document.body.append(partType, document.createElement('br'))
-}
-
-
-console.log(example, data);

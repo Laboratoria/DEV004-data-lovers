@@ -1,34 +1,13 @@
-// estas funciones son de ejemplo
 
-/*export const example = () => {
-  return 'example';
+export const sortData = (data, sortBy, sortOrder) => {
+  const newArray = data;
+  if (sortBy === 'name' && sortOrder === 'ascending') {
+    newArray.sort((a, b) => ((a.name > b.name) ? 1 : -1));
+  }
+  if (sortBy === 'name' && sortOrder === 'descending') {
+    newArray.sort((a, b) => ((a.name < b.name) ? 1 : -1));
+  }
+  return newArray;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
-
-*/
-
-// estas funciones son de ejemplo
-
-//export const example = () => {
- // return 'example';
-//};
-
-//export const anotherExample = () => {
-  //return 'OMG';
-//};
-
-const miFuncionsita = () => console.log('ahroa si sirvo 2')
-
-miFuncionsita()
-
-export {
-  miFuncionsita
-}
-
-export default {
-  a: 1,
-  b: 2
-}
+  
