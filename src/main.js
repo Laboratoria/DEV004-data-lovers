@@ -33,3 +33,32 @@ const createTemplate = (arr) => {
     container.appendChild(newElement);
   });
 };
+
+reateTemplate(arrObject);
+
+const dataLol = (copyLol.data);
+const myModal = document.getElementById('myModal');
+
+container.addEventListener('click', (event) => {
+  const nombreSeleccionado = event.target.dataset.id;
+  const objCampeonSeleccionado = (dataLol[nombreSeleccionado]);
+  myModal.classList.remove('hide');
+  myModal.querySelector('#modalInfo').innerHTML = `
+    <p class= "modalName">${objCampeonSeleccionado.name} </p>
+   <p class="modalTitle">${objCampeonSeleccionado.title} </p>
+   <img src=${objCampeonSeleccionado.splash} class="imgSplash"/>
+   <p class="modalTags"> Rol: ${objCampeonSeleccionado.tags} </p>
+   <div class="info">
+   <p> Defensa:${objCampeonSeleccionado.info.defense} </p>
+   <p> Ataque:${objCampeonSeleccionado.info.attack} </p>
+   <p> Magia:${objCampeonSeleccionado.info.magic} </p>
+   <p> Dificultad:${objCampeonSeleccionado.info.difficulty} </p>
+   </div>
+   <div class="stats">
+   <p> Vida: ${objCampeonSeleccionado.stats.hp} </p>
+   <p> Mana: ${objCampeonSeleccionado.stats.mp} </p>
+   <p> Velocidad: ${objCampeonSeleccionado.stats.movespeed} </p>
+   <p> Ataque: ${objCampeonSeleccionado.stats.attackrange} </p>
+   </div>
+   `;
+});
