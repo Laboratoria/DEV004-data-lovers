@@ -7,5 +7,13 @@ import{
     sortData, filterData, averageData, averageName,
 } from './data.js';
 
+
 import copyLol from './data/lol/lol.js';
 
+const allChampion = data.data;
+const arrObject = Object.values(allChampion);
+// console.log(allChampion);
+// console.log(arrObject);
+
+// MOSTRAR DATA
+const container = document.getElementById('container');
