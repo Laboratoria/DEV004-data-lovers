@@ -8,7 +8,10 @@ export function ObtenerPokemon(data) {
   data.forEach((pokemon) => {
     mostrarPoke.innerHTML += `<div class="container">
     <div class="card">
+      <div class="cardSuperior">
+      <div class="puntosComb"> CP: ${pokemon.stats["max-cp"]} </div>
       <div class="numpkm">${pokemon.num} </div>
+      </div>
           <img src="${pokemon.img}" class= "cardImg" alt="${pokemon.name}" ></img>
           <h4>${pokemon.name} </h4>
           <h5>${pokemon.type} </h5>

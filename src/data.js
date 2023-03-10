@@ -13,6 +13,7 @@ export const filtrarPokemon = (tipo, data) => {
 };
 
 export function ordenarpoke(order, data) {
+  if(order === ''){return false}
   if (order === "asc") {
     return data.pokemon.sort((a, b) => {
       if (a.name < b.name) return -1;

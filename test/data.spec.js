@@ -1,4 +1,4 @@
-import { filtrarPokemon } from "../src/data.js";
+import { filtrarPokemon, ordenarpoke } from "../src/data.js";
 
 describe("filtrarPokemon", () => {
   // validar que la funcion existe
@@ -41,4 +41,82 @@ describe("filtrarPokemon", () => {
     expect(filtrarPokemon('', data)).toBeFalsy()
   })
 });
+
+
+// Test funcion ORDENAR:
+
+describe("ordenarPoke", () =>{
+
+  //validar
+  it("Es una funcion", () => {
+    expect(typeof filtrarPokemon).toBe("function");
+  })
+
+  //Verificar:
+  const data = {
+    pokemon: [
+      {
+        name: "bulbasaur",
+      },
+      {
+        name: "diglett",
+      },
+      {
+        name: "abra",
+      },
+      {
+        name: "charmander",
+      },
+    ],
+  }
+
+  const dataAZ = {
+    pokemon: [
+      {
+        name: "abra",
+      },
+      {
+        name: "bulbasaur",
+      },
+      {
+        name: "charmander",
+      },
+      {
+        name: "diglett"
+      },
+    ],
+  }
+  const dataZA = {
+    pokemon: [
+      {
+        name: "diglett",
+      },
+      {
+        name: "charmander",
+      },
+      {
+        name: "bulbasaur",
+      },
+      {
+        name: "abra"
+      },
+    ],
+  }
+
+
+  it("Ordenar", ()=>{
+    expect(ordenarpoke(data,"asc")).toStrictEqual(dataAZ);
+    expect(ordenarpoke(data,"des")).toStrictEqual(dataZA);
+  })
+  
+  //Estresar:
+  it("retorna falsa cuando", ()=> {
+    expect(ordenarpoke(data, "")).toBeFalsy();
+    //  expect(ordenarPokemon(aOrdenar, "")).toBeFalsy()
+
+  })
+
+}
+
+)
 
