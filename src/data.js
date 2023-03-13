@@ -1,6 +1,6 @@
+export const lol = (data)
 
-export const sortData = (data, sortBy, sortOrder) => {
-  const newArray = data;
+const newArray = data;
   if (sortBy === 'name' && sortOrder === 'ascending') {
     newArray.sort((a, b) => ((a.name > b.name) ? 1 : -1));
   }
@@ -9,4 +9,3 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
   return newArray;
 };
-
