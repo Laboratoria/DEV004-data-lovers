@@ -1,0 +1,8 @@
+#root{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lolChampion{
+    width: 100px;
+    height: 100;
+}
