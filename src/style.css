@@ -1,8 +1,29 @@
 #root{
     display: flex;
     flex-wrap: wrap;
+    
 }
+
+
 .lolChampion{
     width: 100px;
     height: 100;
 }
+
+body {
+
+    background-image: url(./img/Image1.png);
+}
+
+header { 
+width: 100%;
+margin-top: 20px;/*distancia del titulo "leage of leguend" con la pantalla parte de arriba*/
+}
+
+/*estilo de img letras del titulo "leage of leguend"*/
+.logo {
+  width: 63%;
+  margin: 8px 10% 5px 18%;
+}
+
+
