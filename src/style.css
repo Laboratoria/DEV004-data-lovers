@@ -1,25 +1,22 @@
-
-
 #root{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     
 }
 
-
-.lolChampion{
-    width: 100px;
-    height: 100;
+.lolChampion {
+  width: 100px;
+  height: 100;
 }
 
 body {
 
-    background-image: url(./img/Image1.png);
+  background-image: url(./img/Image1.png);
 }
 
-header { 
-width: 100%;
-margin-top: 20px;/*distancia del titulo "leage of leguend" con la pantalla parte de arriba*/
+header {
+  width: 100%;
+  margin-top: 20px; /*distancia del titulo "leage of leguend" con la pantalla parte de arriba*/
 }
 
 /*estilo de img letras del titulo "leage of leguend"*/
@@ -35,12 +32,12 @@ ul {
   
 }
 li {
-font-family: "popins", sans-serif;
-flex-grow: 1; 
-text-align: center;
-line-height: 2.0;
-font-size: 1em;
-color: rgb(255, 0, 106);
+  font-family: "popins", sans-serif;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 2;
+  font-size: 1em;
+  color: rgb(255, 0, 106);
 }
 
 
