@@ -29,3 +29,13 @@ export function ordenarpoke(order, data) {
   }
   
 }
+
+export function calcularCP(calcular, data) {
+  if (calcular === "max") {
+    return data.pokemon.sort((a, b) => {
+      if (Number(a.stats["max-cp"]) > Number(b.stats["max-cp"])) return -1;
+      if (Number(a.stats["max-cp"]) < Number(b.stats["max-cp"])) return 1;
+      return a - b;
+    }).slice(0, 7);
+  }
+}
