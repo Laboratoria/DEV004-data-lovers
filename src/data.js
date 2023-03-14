@@ -8,4 +8,3 @@ const newArray = data;
     newArray.sort((a, b) => ((a.name < b.name) ? 1 : -1));
   }
   return newArray;
-};
