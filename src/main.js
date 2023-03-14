@@ -1,5 +1,6 @@
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon, ordenarpoke } from "./data.js"; //se agrega la funcion ordenarpoke
+import { filtrarPokemon, ordenarpoke, calcularCP } from "./data.js"; //se agrega la funcion ordenarpoke
+// import pokemon from "./data/pokemon/pokemon.js";
 
 const mostrarPoke = document.getElementById("mostrarPoke");
 
@@ -44,6 +45,21 @@ selectOrdenar.addEventListener ("change", function (){
   const order = selectOrdenar.value ;
   const pokOrdenado = ordenarpoke(order, data);
   ObtenerPokemon(pokOrdenado);
+
+
+})
+
+
+// maximo y minimo cp
+
+const selectCalcular = document.getElementById("calcular");
+selectCalcular.addEventListener ("change", function(){
+  mostrarPoke.innerHTML = "";
+
+  const calcular = selectCalcular.value ;
+  const calcularPokeCP = calcularCP(calcular,data);
+  ObtenerPokemon(calcularPokeCP);
+
 
 
 })
