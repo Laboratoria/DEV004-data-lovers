@@ -1,19 +1,21 @@
-// import pokemon from "./data/pokemon/pokemon.js";
-// import { ObtenerPokemon } from "./main.js";
 export const filtrarPokemon = (tipo, data) => {
-  if(tipo === '') {return false}
+  if (tipo === "") {
+    return false;
+  }
   //IF != all else ObtenerPokemon
   if (tipo !== "all") {
     // eslint-disable-next-line eqeqeq
     const pokemonTipos = data.pokemon.filter((poke) => poke.type == tipo);
     return pokemonTipos;
   } else {
-    return data.pokemon
+    return data.pokemon;
   }
 };
 
 export function ordenarpoke(order, data) {
-  if(order === ''){return false}
+  if (order === "") {
+    return false;
+  }
   if (order === "asc") {
     return data.pokemon.sort((a, b) => {
       if (a.name < b.name) return -1;
@@ -27,7 +29,18 @@ export function ordenarpoke(order, data) {
       return 0;
     });
   }
-  
+}
+
+export function calcularCP(calcular, data) {
+  if (calcular === "max") {
+    return data.pokemon
+      .sort((a, b) => {
+        if (Number(a.stats["max-cp"]) > Number(b.stats["max-cp"])) return -1;
+        if (Number(a.stats["max-cp"]) < Number(b.stats["max-cp"])) return 1;
+        return a - b;
+      })
+      .slice(0, 7);
+  }
 }
 
 export function calcularCP(calcular, data) {

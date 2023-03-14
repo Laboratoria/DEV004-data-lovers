@@ -16,7 +16,7 @@ describe("filtrarPokemon", () => {
       },
       {
         num: "029",
-        name: "nidoran ♀ (female)",
+        name: "nidoran ♀️ (female)",
         type: ["poison"],
       },
       {
@@ -44,7 +44,6 @@ describe("filtrarPokemon", () => {
 });
 
 // Test funcion ORDENAR:
-
 describe("ordenarPoke", () => {
   //validar
   it("Es una funcion", () => {
@@ -103,6 +102,7 @@ describe("ordenarPoke", () => {
     expect(ordenarpoke("asc", data)).toStrictEqual(dataAZ);
     expect(ordenarpoke("des", data)).toStrictEqual(dataZA);
   });
+
 
   //Estresar:
   it("retorna falsa cuando", () => {
@@ -210,19 +210,16 @@ describe("calcularCP", () => {
           "max-cp": "832",
         },
       },
-    ]
+    ],
+
   };
 
   it("Calcular", () => {
     expect(calcularCP("max", dataCPMAX)).toStrictEqual(dataCPMAX);
-
-    //expect(calcularCP("des", data)).toStrictEqual(dataZA);
   });
 
   //Estresar:
   it("retorna falsa cuando", () => {
-    // expect(ordenarpoke(data, "")).toBeFalsy();
     expect(calcularCP("", cpOtros)).toBeFalsy();
-    //expect(calcularCP(aOrdenar, "")).toBeFalsy()
   });
 });
