@@ -2,7 +2,6 @@ import data from "./data/pokemon/pokemon.js";
 import { filtrarPokemon, ordenarpoke, calcularCP } from "./data.js"; //se agrega la funcion ordenarpoke
 
 const mostrarPoke = document.getElementById("mostrarPoke");
-
 //funcion para mostrar pokemon desde la data. nombre e imagen, que los divide en grupo
 export function ObtenerPokemon(data) {
   data.forEach((pokemon) => {

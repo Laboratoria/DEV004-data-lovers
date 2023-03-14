@@ -41,11 +41,6 @@ describe("filtrarPokemon", () => {
     // expect(filtrarPokemon('', data)).toBe(false)
     expect(filtrarPokemon("", data)).toBeFalsy();
   });
-  // estresar la funcion
-  it("retorna false cuando falta parametro", () => {
-    // expect(filtrarPokemon('', data)).toBe(false)
-    expect(filtrarPokemon("", data)).toBeFalsy();
-  });
 });
 
 // Test funcion ORDENAR:
@@ -108,6 +103,7 @@ describe("ordenarPoke", () => {
     expect(ordenarpoke("des", data)).toStrictEqual(dataZA);
   });
 
+
   //Estresar:
   it("retorna falsa cuando", () => {
     // expect(ordenarpoke(data, "")).toBeFalsy();
@@ -124,7 +120,7 @@ describe("calcularCP", () => {
 
   //Verificar:
   const dataCPMAX = {
-    pokemon: [
+    "pokemon" : [
       {
         name: "MEWTWO",
         stats: {
@@ -215,12 +211,11 @@ describe("calcularCP", () => {
         },
       },
     ],
+
   };
 
   it("Calcular", () => {
     expect(calcularCP("max", dataCPMAX)).toStrictEqual(dataCPMAX);
-
-    //expect(calcularCP("des", data)).toStrictEqual(dataZA);
   });
 
   //Estresar:
