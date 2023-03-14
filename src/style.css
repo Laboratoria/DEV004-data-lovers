@@ -1,46 +1,78 @@
-
-
-#root{
+#root {
     display: flex;
     flex-wrap: wrap;
+}
+
+:root { /* aquí declaramos las variables de los colores que utilizareos*/
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dorado: #937341;
+    --color-fondo-div: rgb(6, 28, 37);
+    --color-hover-div: rgba(243, 168, 5, 0.842);
+    --color-hover-li: #eeda6718;
+    --color-active-dark: #2d2e2e;
+    --color-active-rol: #cca05a;
+}
+
+.lolChampion { /* esto es la medida de cada una de las imagenes de los campeones que tenemos en la lista*/
+    width: 200px;
+    height: 150px;
+    margin-left: 60px;
+    margin-right: 40px;
     
 }
 
-
-.lolChampion{
-    width: 100px;
-    height: 100;
-}
-
-body {
-
+body { /* esta es la imagen de fondo de nuestra pagina*/
     background-image: url(./img/Image1.png);
 }
 
-header { 
-width: 100%;
-margin-top: 20px;/*distancia del titulo "leage of leguend" con la pantalla parte de arriba*/
+header {
+    width: 100%;
+    margin-top: 50px;
+    /*distancia del titulo "leage of leguend" con la pantalla parte de arriba*/
 }
 
 /*estilo de img letras del titulo "leage of leguend"*/
 .logo {
-  width: 63%;
-  margin: 8px 10% 5px 18%;
+    width: 63%;
+    margin: 8px 10% 5px 18%;
 }
+
+
 
 ul {
     display: flex;
-    background-color: rgb(0, 0, 0.507);    
-    
+     margin-top: 30px;
+    /* margin-top: para poder separar la lista del header con la img del texto "league of leyends*/
+    flex-wrap: wrap;
+    /*envoltura flexibe*/
+    border: 1px solid var(--color-dorado);
+    box-shadow: 0 0 2px rgba(12, 207, 93, 0.726);
+}
+
+nav ul {
+    display: flex;
+    background-color: rgb(0, 0, 0.507); /* cambia el color del fondo del box que tiene los textos "champions, assasins, figther, etc"  */
+
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+}
+
+
+
+li {
+    font-family: "popins", sans-serif; /*  font-family:  elige el tipo de letra a usar en los textos "champions, assasins, figther, etc"  */
+    flex-grow: 1; /* flex-grow: 1;  organiza los textos para que no esten desordenados "champions, assasins, figther, etc"   */
+    text-align: center; /* text-align: centra los textos "champions, assasins, figther, etc"  */
+    line-height: 2;  /*  line-height es la distancia entre el box y los textos "champions, assasins, figther, etc"  */
+   
   
 }
-li {
-font-family: "popins", sans-serif;
-flex-grow: 1; 
-text-align: center;
-line-height: 2.0;
-font-size: 1em;
-color: rgb(255, 0, 106);
+
+li a {
+    color: var(--color-dorado);
+    /*  color: var(--color-dorado); da color de las letras "champions, assasins, figther, etc"*/
+    font-size: 1.1em;  /*  font-size: es el tamaño de las "champions, assasins, figther, etc"*/
 }
 
 
