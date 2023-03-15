@@ -27,3 +27,5 @@ function printChampion(lol) {
 // Invocar funcion
 printChampion(lol);
 
+
+
