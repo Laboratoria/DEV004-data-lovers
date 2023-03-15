@@ -17,7 +17,7 @@ function printChampion(lol) {
   for (const element in lol) {
     console.log(lol[element]);
     // template string
-    root.innerHTML += `<section>
+    root.innerHTML += `<section class="container">
     <h3>${lol[element].name}</h3>
     <img src="${lol[element].splash}" alt="" class = 'lolChampion'>
   </section>`;

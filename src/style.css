@@ -74,7 +74,10 @@ li a {
     /*  color: var(--color-dorado); da color de las letras "champions, assasins, figther, etc"*/
     font-size: 1.1em;  /*  font-size: es el tamaño de las "champions, assasins, figther, etc"*/
 }
-
+ 
+h3 {
+    color: red;
+}
 
 
 
