@@ -24,6 +24,7 @@
 
 body { /* esta es la imagen de fondo de nuestra pagina*/
     background-image: url(./img/Image1.png);
+    margin: 6%;
 }
 
 header {
@@ -54,7 +55,7 @@ nav ul {
     display: flex;
     background-color: rgb(0, 0, 0.507); /* cambia el color del fondo del box que tiene los textos "champions, assasins, figther, etc"  */
 
-    list-style-type: none;
+       list-style-type: none;
     /* Elimina los puntos de la lista */
 }
 
@@ -75,9 +76,18 @@ li a {
     font-size: 1.1em;  /*  font-size: es el tamaño de las "champions, assasins, figther, etc"*/
 }
  
-h3 {
-    color: red;
-}
 
 
+/* dandole estilo al ID de la seccion dentro del main*/
+.container {
+
+    margin: 25px 1% 1px 1%;
+    border: 1px solid var(--color-dorado);
+    text-align: center; 
+    text-transform: uppercase;
+    color: var(--color-dorado)
+    /*z-index: -1100; /* aqui nunca iba a funcionar, imag todavia superponen al main-nav*/
+  }
+
+  
 
