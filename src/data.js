@@ -41,4 +41,6 @@ export function calcularCP(calcular, data) {
       })
       .slice(0, 7);
   }
+
 }
+
