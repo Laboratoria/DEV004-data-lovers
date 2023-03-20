@@ -83,3 +83,6 @@ Para finalizar nuestro proyecto, quisimos utilizar un efecto gradient a nuestra 
 
 ![image](https://user-images.githubusercontent.com/91422024/226403148-4f9ba73c-b190-47c4-b5ae-98db9e321f39.png)
 
+## Git hub pages
+
+https://macarenapazg.github.io/Pokedex-DataLovers/src/
