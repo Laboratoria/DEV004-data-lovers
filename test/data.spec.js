@@ -166,63 +166,22 @@ describe("calcularCP", () => {
     ],
   };
 
-  const cpOtros = {
-    pokemon: [
-      {
-        name: "MAGMAR",
-        stats: {
-          "max-cp": "2394",
-        },
-      },
-      {
-        name: "PINSIR",
-        stats: {
-          "max-cp": "2959",
-        },
-      },
-      {
-        name: "TAUROS",
-        stats: {
-          "max-cp": "2620",
-        },
-      },
-      {
-        name: "MAGIKARP",
-        stats: {
-          "max-cp": "274",
-        },
-      },
-      {
-        name: "GYARADOS",
-        stats: {
-          "max-cp": "3391",
-        },
-      },
-      {
-        name: "LAPRAS",
-        stats: {
-          "max-cp": "2641",
-        },
-      },
-      {
-        name: "DITTO",
-        stats: {
-          "max-cp": "832",
-        },
-      },
-    ]
-  };
+  const cpOtros = [
+    { name: "MEWTWO", stats: { "max-cp": "4178" } },
+    { name: "HO-OH", stats: { "max-cp": "3863" } },
+    { name: "TYRANTAR", stats: { "max-cp": "3834" } },
+    { name: "DRAGONITE", stats: { "max-cp": "3792" } },
+    { name: "LUGIA", stats: { "max-cp": "3703" } },
+    { name: "ZAPDOS", stats: { "max-cp": "3527" } },
+    { name: "ENTEI", stats: { "max-cp": "3473" } },
+  ];
 
   it("Calcular", () => {
-    expect(calcularCP("max", dataCPMAX)).toStrictEqual(dataCPMAX);
-
-    //expect(calcularCP("des", data)).toStrictEqual(dataZA);
+    expect(calcularCP("max", dataCPMAX)).toStrictEqual(cpOtros);
   });
 
   //Estresar:
   it("retorna falsa cuando", () => {
-    // expect(ordenarpoke(data, "")).toBeFalsy();
     expect(calcularCP("", cpOtros)).toBeFalsy();
-    //expect(calcularCP(aOrdenar, "")).toBeFalsy()
   });
 });
