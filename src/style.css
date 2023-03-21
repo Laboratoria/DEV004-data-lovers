@@ -1,0 +1,196 @@
+header {
+  background-color: #00796b;
+  color: #fdfffd;
+  font-size: 300%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  font-family: "Phudu";
+}
+#subtitulo-general{
+  font-size: 200%;
+  margin:2%;
+}
+header img {
+  width: 350px;
+  height: 300px;
+}
+h2 {
+  font-family: "Abel";
+  text-align: center;
+  margin-top: 2%;
+}
+
+#Encabezado{
+  font-family: "Abel";
+  text-align: center;
+  font-size: 35px;
+  background-image: linear-gradient(rgb(77, 139, 95), rgb(33, 22, 30));
+  width:85%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+ color: white;
+ text-shadow: 2px 2px 5px rgb(28, 80, 8);
+
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #C7DFDF;
+  font-family: "Abel";
+  
+}
+
+
+.peliculas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;;
+  align-items: center;
+  /*padding-top: 100px;*/
+  font-family: "Rubik";
+  margin: 4%;
+}
+.pelicula {
+  position: relative;
+  text-align: center;
+  
+}
+
+.pelicula-img-container {
+  position: relative;
+}
+
+.pelicula-img-container img {
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
+
+.pelicula-img-container .info {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  background-color: rgba(14, 18, 17, 0.8);
+  display: none;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding: 30px;
+}
+.personajes-img-container {
+  position: relative;
+}
+.personajes-img-container .info{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  background-color: rgba(14, 18, 17, 0.8);
+  display: none;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding-top: 8em;
+
+}
+.pelicula-img-container .info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pelicula-img-container .info p span {
+  font-weight: bold;
+}
+.btnpersonajes{
+ 
+  background: #ff69b4;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 50px;
+  width: 120px;
+  align-items: flex-start;
+  margin: 10px 20px;
+  height: 50px;
+  font-family: "Phudu";
+
+}
+
+.personajes-img-container .info p{
+  margin: 0;
+  line-height: 1.5;
+}
+.personajes-img-container .info p span{
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  header {
+    font-size: 200%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-family: "Phudu";
+  }
+  header img {
+    width: 200px;
+    height: 220px;
+  }
+  #pelicula img {
+    width: 250px;
+    height: 100px;
+    width: calc(80%);
+  }
+  .peliculas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-family: "Rubik";
+    margin: 10%;
+  }
+}
+@media (max-width: 991.98px) {
+  .peliculas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    font-family: "Rubik";
+    margin: 1%;
+  }
+}
+.personajeS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  font-family: "Rubik";
+  margin: 10%;
+}
+.personajes-img-container img {
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
+
+
