@@ -16,7 +16,8 @@ function printChampion(lol) {
   for (const element in lol) {
     console.log(lol[element]);
     // template string
-    root.innerHTML += `<section data-id="" class="container">
+    // buscar que va en data-id="" para que funcione codigo
+    root.innerHTML += `<section data-id ="container" class="container">
       <h3>${lol[element].name}</h3>
       <img src="${lol[element].splash}" alt="" class = 'lolChampion'>
     </section>`;
@@ -28,16 +29,14 @@ function printChampion(lol) {
 
 printChampion(lol);
 
-const root = document.getElementById("root");
+const myModal = document.getElementById("myModal");
 
 root.addEventListener("click", (event) => {
   const championSection = event.target.closest('.container');
   console.log(championSection)
   if (championSection)
-  
   {
-    
-    const id = championSection.getAttribute("data-id");
+     const id = championSection.getAttribute("data-container");
     console.log(id)
     const objSelectedChampio = lol[id];
     console.log(objSelectedChampio);
