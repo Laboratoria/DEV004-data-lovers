@@ -70,7 +70,7 @@ li {
   
 }
 
-li a {
+li {
     color: var(--color-dorado);
     /*  color: var(--color-dorado); da color de las letras "champions, assasins, figther, etc"*/
     font-size: 1.1em;  /*  font-size: es el tamaño de las "champions, assasins, figther, etc"*/
@@ -78,7 +78,7 @@ li a {
  
 
 
-/* dandole estilo al ID de la seccion dentro del main*/
+/* dandole estilo al ID de la seccion dentro del main, dandole estilo y forma a cada uno de los cuadritos de las imagenes de los campeones*/
 .container {
 
     margin: 25px 1% 1px 1%;
