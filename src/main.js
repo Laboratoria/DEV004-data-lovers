@@ -20,10 +20,11 @@ const container = document.getElementById('container');
 
 const createTemplate = (arr) => { //esta linea ordena de A-z
   arr.forEach((champion) => {
-    const newElement = document.createElement('div');
+    const newElement = document.createElement('section');
     const img = document.createElement('img');
     const p = document.createElement('p');
-    newElement.classList.add('class-div');
+    newElement.classList.add('class-section');
+    newElement.classList.add('hoverSection');
     img.classList.add('class-img');
     p.classList.add('class-name');
     img.src = `${champion.splash}`;
@@ -42,7 +43,7 @@ createTemplate(arrObject);
 const pElement = document.createElement('p');
 
 
-// document.getElementById("myDIV").className = "mystyle";
+// document.getElementById("mysection").className = "mystyle";
 
 // ORDER DATA
 const orderAz = document.getElementById('orderAz');
@@ -58,12 +59,13 @@ orderAz.addEventListener('click', () => {
 
 const showFilter = (arr) => {
   arr.forEach((champion) => {
-    const newElement = document.createElement('div');
+    const newElement = document.createElement('section');
     const img = document.createElement('img');
     const p = document.createElement('h3');
     const pTags = document.createElement('p');
     const pAvg = document.createElement('p');
-    newElement.classList.add('class-div');
+    newElement.classList.add('class-section');
+    newElement.classList.add('hoverSection');
     p.classList.add('class-name');
     pTags.classList.add('class-avg');
     img.classList.add('class-img');

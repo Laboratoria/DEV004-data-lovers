@@ -34,12 +34,7 @@
     width: 63%;
     margin: 8px 10% 5px 18%;
   }
-  
-  /*input checkbox*/
-  #btn-menu { 
-    display: none;/*para que no se vea el input en la pagina*/
-  }
-  
+
   /* dimensiones del label que contiene la img icono-menu */
   header label {
     display: flex;
@@ -157,7 +152,7 @@
   }
   
   /*agregando hover al div de los campeones*/
-  div:hover{
+  .hoverSection:hover{
    transform: scale(0.96);
    background:var(--color-hover-div);
     /*background-color: rgb(6, 95, 131);*/
@@ -242,33 +237,8 @@
     /*background:rgba(243, 168, 5, 0.842);*/
   }
   
-  /*ESTILO DEL FOOTER*/
-  footer{
-    margin-top: 12px;
-    border-top: inset 1px; /*borde solo a la parte superior*/
-    color: var(--color-white);
-    text-align: center;
-    height: 100px;
-  }
+ 
   
-  /*iconos de redes sociales*/
-  .icons_redes{
-    margin-top: 15px;
-  }
-  
-  .fa-facebook-square{
-    font-size: 35px;
-  }
-  
-  .fa-twitter-square{
-    font-size: 35px;
-  }
-  
-  .fa-youtube{
-    font-size: 35px;
-  }
-  
-  /* Estilo de la etiqueta p que contiene el texto del footer*/
   .text{
     color: var(--color-white);
     font-size: 1em;   
