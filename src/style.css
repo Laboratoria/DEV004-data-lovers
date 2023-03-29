@@ -12,26 +12,21 @@
   
   /*VALORES POR DEFECTO*/
   * {
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     text-decoration: none;
     list-style: none;
   }
   
-  /*CONTENEDOR GENERAL/TRABAJANDO CON EL FONDO DE PANTALLA*/
+  /*FONDO DE PANTALLA*/
   body {
-    background-image: url(img/fondo.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Arial;
-  }
+    background-image: url(./data/img2/fondo.png);
+     }
   
-  /*TRABAJANDO CON EL HEADER*/
+  /* HEADER*/
   header { 
   width: 100%;
-  margin-top: 20px;/*distancia del logo con la pantalla parte de arriba*/
+  margin-top: 80px;/*distancia del logo con la pantalla parte de arriba*/
   }
   
   /*estilo de img logo*/
