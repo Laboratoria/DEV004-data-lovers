@@ -8,18 +8,17 @@ import {
   sortData, filterData, averageData, averageName,
 } from './data.js';
 
-// Modal
-import copyLol from './data/lol/lol.js';
 
-const allChampion = data.data;
-const arrObject = Object.values(allChampion);
-// console.log(allChampion);
+
+const lol = data.data;
+const arrObject = Object.values(lol);
+// console.log(lol);
 // console.log(arrObject);
 
 // MOSTRAR DATA
 const container = document.getElementById('container');
 
-const createTemplate = (arr) => {
+const createTemplate = (arr) => { //esta linea ordena de A-z
   arr.forEach((champion) => {
     const newElement = document.createElement('div');
     const img = document.createElement('img');
@@ -36,40 +35,12 @@ const createTemplate = (arr) => {
 };
 createTemplate(arrObject);
 
-const dataLol = (copyLol.data);
-const myModal = document.getElementById('myModal');
 
-container.addEventListener('click', (event) => {
-  const nombreSeleccionado = event.target.dataset.id;
-  const objCampeonSeleccionado = (dataLol[nombreSeleccionado]);
-  myModal.classList.remove('hide');
-  myModal.querySelector('#modalInfo').innerHTML = `
-    <p class= "modalName">${objCampeonSeleccionado.name} </p>
-   <p class="modalTitle">${objCampeonSeleccionado.title} </p>
-   <img src=${objCampeonSeleccionado.splash} class="imgSplash"/>
-   <p class="modalTags"> Rol: ${objCampeonSeleccionado.tags} </p>
-   <div class="info">
-   <p> Defensa:${objCampeonSeleccionado.info.defense} </p>
-   <p> Ataque:${objCampeonSeleccionado.info.attack} </p>
-   <p> Magia:${objCampeonSeleccionado.info.magic} </p>
-   <p> Dificultad:${objCampeonSeleccionado.info.difficulty} </p>
-   </div>
-   <div class="stats">
-   <p> Vida: ${objCampeonSeleccionado.stats.hp} </p>
-   <p> Mana: ${objCampeonSeleccionado.stats.mp} </p>
-   <p> Velocidad: ${objCampeonSeleccionado.stats.movespeed} </p>
-   <p> Ataque: ${objCampeonSeleccionado.stats.attackrange} </p>
-   </div>
-   `;
-});
-// Evento cerrar Modal
-document.getElementById('close').addEventListener('click', () => {
-  document.getElementById('myModal').classList.add('hide');
-});
+
 
 // CREATE UN ELEMENTO P PARA MOSTRAR EL PROMEDIO
 const pElement = document.createElement('p');
-pElement.className = 'class-new';
+
 
 // document.getElementById("myDIV").className = "mystyle";
 
@@ -81,12 +52,7 @@ orderAz.addEventListener('click', () => {
   createTemplate(sortData(arrObject, 'name', 'ascending'));
 });
 
-const orderZa = document.getElementById('orderZa');
-orderZa.addEventListener('click', () => {
-  container.innerHTML = '';
-  pElement.innerHTML = '';
-  createTemplate(sortData(arrObject, 'name', 'descending'));
-});
+
 
 // FILTRAR DATA Y CALCULAR PROMEDIO
 
