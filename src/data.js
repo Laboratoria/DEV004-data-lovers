@@ -1,9 +1,16 @@
 // AQUI MANEJAMOS LAS FUNCIONES
 
 // ORDENAR ALFABETICAMENTE
-
+//Este es un fragmento de código de una función llamada sortData que toma tres argumentos: data, sortBy y sortOrder
+// La función devuelve una nueva matriz ordenada según los criterios especificados en sortBy y sortOrder.
+//La primera línea de la función asigna el argumento data a una nueva variable llamada newArray.
+/*hay dos condicionales if que verifican si el valor de sortBy es "name" y si el valor de sortOrder es "ascending" o "descending". 
+Si es así, entonces la función sort de JavaScript se utiliza para ordenar los elementos en newArray*/
+/*La función de ordenamiento toma dos elementos a y b y compara el valor de la propiedad name de ambos elementos. 
+Si a.name es mayor que b.name, se devuelve 1 (para que a se coloque después de b). Si a.name es menor que b.name, 
+se devuelve -1 (para que a se coloque antes de b). */
 export const sortData = (data, sortBy, sortOrder) => {
-  const newArray = data;
+  const newArray = data; 
   if (sortBy === 'name' && sortOrder === 'ascending') {
     newArray.sort((a, b) => ((a.name > b.name) ? 1 : -1));
   }
