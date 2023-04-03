@@ -44,7 +44,7 @@ Antes de iniciar una partida, ya que ellos primero eligen a los campeones para p
 ## 3. Historias de usuario
 En el Trello confeccionamos columnas que simulaban la metodologia agil(product backlog, sprint backlog, haciendo, bloqueado y concluido) y diseñamos las Historias de Usuarios (#4 H.U en total).
 
-Aquí el link : (https://trello.com/b/pyihIYEx/flujo-de-lol)
+Aquí el link : (https://trello.com/b/XOlvRbSQ/lol)
 
 Diseñamos distintos prototipos de baja fidelidad (con lapiz y papel) que testeamos con posibles usuarios mediante el testeo de usabilidad, recibiendo feedback que nos ayudo a afinar nuestras HU iniciales y es por ellos que a medida que se fue avanzando con la parte de la funcionalidad, el proyecto fue cambiando visualmente con respecto a como fue concebido inicialmente en los prototipos de baja fidelidad. En las ferias de proyecto obtuvimos feedback tecnico que contribuia a la mejora de la pagina web y ademas se continuo testeando con usuarios potenciales para conocer que tan intuitiva era la pagina web.Adicional al diseño de Interfaz de usuario nuestras historias contienen la implementación requerida(HTML/CSS/JS).
 Nuestro proyecto puede MOSTRAR, ORDENAR, FILTRAR y tiene un CÁLCULO.
