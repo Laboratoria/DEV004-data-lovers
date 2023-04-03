@@ -26,7 +26,7 @@
 Nuestro proceso de diseño hacia el producto final comenzo por entender los hallazgos de la investigacion UX.
 Primero debimos conocer y entender que era importante para nuestro usuario y de que manera les seria util nuestra pagina web.
 
-### INVESTIGACIÓN UX:
+### INVESTIGACIÓN :
 - ¿Quiénes son los principales usuarios del producto?
 Jugadores que ya conocen el concepto principal del juego , y estan interesados en conoceer cada vez mas a cada campeon para tomar decisiones correctas antes del juego.
 
@@ -42,7 +42,7 @@ Saber quienes son los campeones que pertenecen a determinado rol para poder ubic
 Antes de iniciar una partida, ya que ellos primero eligen a los campeones para poder definir su estilo de juego.
 
 ## 3. Historias de usuario
-En el Trello confeccionamos columnas que simulaban la metodologia agil(product backlog, sprint backlog, haciendo, bloqueado y concluido) y diseñamos las Historias de Usuarios (#4 H.U en total).
+En el Trello confeccionamos columnas que simulaban la metodologia agil(product backlog, sprint backlog, haciendo, bloqueado y concluido) y diseñamos las Historias de Usuarios (#2 H.U en total).
 
 Aquí el link : (https://trello.com/b/XOlvRbSQ/lol)
 
