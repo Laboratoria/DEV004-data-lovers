@@ -88,10 +88,12 @@ YO COMO: jugador de LOL, QUIERO: ver a todos los campeones (imagen y nombre)orde
 - Subir detalles al Readme.
 
 #### ✔ PROTOTIPO DE BAJA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.B2.png)
+![boceto pantalla inicio lol](https://user-images.githubusercontent.com/107730198/229388134-43579c2c-1dfb-47c8-a5a2-06044561f15b.jpeg)
+
 
 #### ✔ PROTOTIPO DE ALTA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.A2.png)
+![PROTOTIPO ](https://user-images.githubusercontent.com/107730198/229388211-f1bf12e9-70fb-4ee6-ad86-4558395f9460.PNG)
+
 
 
 ### 3° HISTORIA DE USUARIO
