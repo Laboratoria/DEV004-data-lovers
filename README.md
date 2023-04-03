@@ -138,18 +138,21 @@ YO COMO: jugador de LOL, QUIERO: ver a todos los campeones (imagen y nombre)orde
 
 ## 5. Checklist
 
-* [x] Usa VanillaJS.
-  [x] Pasa linter (npm run pretest)
-  [x] Pasa tests (npm test)
-  [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
-  [x] Incluye Definición del producto clara e informativa en README.md.
-  [x] Incluye historias de usuario en README.md.
-  [x] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
-  [x] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
-  [x] Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
-  [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-  [x] UI: Permite ordenar data por uno o más campos (asc y desc).
-  [x] UI: Permite filtrar data en base a una condición.
-  [x] UI: Es responsive.
-
+* [ ] Usa VanillaJS.
+* [ ] Pasa linter (`npm run pretest`)
+* [ ] Pasa tests (`npm test`)
+* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+  lines y branches.
+* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
+* [ ] Incluye historias de usuario en `README.md`.
+* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+  `README.md`.
+* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+  en `README.md`.
+* [ ] Incluye el listado de problemas que detectaste a través de tests de
+  usabilidad en el `README.md`.
+* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [ ] UI: Permite filtrar data en base a una condición.
+* [ ] UI: Es _responsive_.
 
