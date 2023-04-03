@@ -64,9 +64,11 @@ YO COMO: jugador de LOL, QUIERO: ver a todos los campeones (imagen y nombre), PA
 - Subir detalles al Readme.
 
 #### ✔ PROTOTIPO DE BAJA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.B1.png)
+![boceto](https://user-images.githubusercontent.com/107730198/229387771-4a933fa1-1c6a-492d-bafd-2458f1e1eaf0.jpeg)
+
 #### ✔ PROTOTIPO DE ALTA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.A1.png)
+![Captura](https://user-images.githubusercontent.com/107730198/229387800-d1539c9d-0904-431d-9bf8-ebb42a501487.PNG)
+
 
 
 ### 2° HISTORIA DE USUARIO
