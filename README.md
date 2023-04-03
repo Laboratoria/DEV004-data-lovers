@@ -95,59 +95,9 @@ YO COMO: jugador de LOL, QUIERO: ver a todos los campeones (imagen y nombre)orde
 ![PROTOTIPO ](https://user-images.githubusercontent.com/107730198/229388211-f1bf12e9-70fb-4ee6-ad86-4558395f9460.PNG)
 
 
-
-### 3° HISTORIA DE USUARIO
-
-YO COMO: jugador de LOL, QUIERO: filtrar por rol a cada campeón, PARA: poder conocer el estilo de juego de los campeones.
-
-#### ✔ CRITERIOS DE ACEPTACION:
-- El usuario observará las opciones que hay de cada rol en una barra superior de navegacion.
-- El usuario podrá filtrar el rol del campeón al pulsar una de las opciones.
-- El usuario podrá filtrar a los campeones por roles desde cualquier dispositivo.
-- El usuario podrá ver la página web en Internet (desplegado GitHub).
-
-#### ✔ DEFINICION DE TERMINADO:
-- Prototipo de alta definición en programa de diseño UX.
-- Crear una página Responsive
-- Publicación de proyecto en GitHub
-- Subir detalles al Readme.
-
-#### ✔ PROTOTIPO DE BAJA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.B3.png)
-
-#### ✔ PROTOTIPO DE ALTA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.A3.png)
-
-
-### 4° HISTORIA DE USUARIO
-
-YO COMO: jugador de LOL, QUIERO: conocer la estadística ofensiva de los campeones que pertenecen al rol que elija de manera global, PARA: para saber que tipo de daño físico pueden infligir al enemigo.
-
-#### ✔ CRITERIOS DE ACEPTACION:
-- El usuario al elegir el rol que desee podra ver el promedio general de Estadistica ofensiva.
-- El usuario solo podra ver esta informacion dentro deprototipo-baja estas opciones unicamente.
-- El usuario podrá realizar esta acción desde cualquier dispositivo.
-
-#### ✔ DEFINICION DE TERMINADO:
-- Prototipo de alta definición en programa de diseño UX.
-- Crear una página Responsive
-- Publicación de proyecto en GitHub
-- Subir detalles al Readme.
-
-#### ✔ PROTOTIPO DE BAJA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.B4.png)
-#### ✔ PROTOTIPO DE ALTA FIDELIDAD:
-![alt prototipoBaja](prototipos/P.A4.png)
  
 
-## 4. Objetivos de aprendizaje
 
-### UX
-
-- [X] Diseñar la aplicación pensando y entendiendo al usuario.
-- [X] Crear prototipos para obtener _feedback_ e iterar.
-- [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
-- [X] Planear y ejecutar _tests_ de usabilidad.
 
 ### HTML y CSS
 
@@ -184,28 +134,22 @@ YO COMO: jugador de LOL, QUIERO: conocer la estadística ofensiva de los campeon
 ### Buenas prácticas de desarrollo
 - [X] Organizar y dividir el código en módulos (Modularización).
 - [X] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
-- [X] Utilizar linter para seguir buenas prácticas (ESLINT).
+
 
 ## 5. Checklist
 
 * [x] Usa VanillaJS.
-* [x] No hace uso de `this`.
-* [ ] Pasa linter (`npm run pretest`)
-* [x] Pasa tests (`npm test`)
-* [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [x] Incluye historias de usuario en `README.md`.
-* [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [x] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [x] UI: Permite filtrar data en base a una condición.
-* [x] UI: Es _responsive_.
+  [x] Pasa linter (npm run pretest)
+  [x] Pasa tests (npm test)
+  [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
+  [x] Incluye Definición del producto clara e informativa en README.md.
+  [x] Incluye historias de usuario en README.md.
+  [x] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
+  [x] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
+  [x] Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
+  [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+  [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+  [x] UI: Permite filtrar data en base a una condición.
+  [x] UI: Es responsive.
 
 
