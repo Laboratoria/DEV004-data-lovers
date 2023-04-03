@@ -18,7 +18,8 @@
 
 # IMAGEN FINAL DEL PROYECTO.
 ✔ Diseño Responsive
-![alt prototipoBaja](prototipos/DiseñoResponsive.png)
+![Captura](https://user-images.githubusercontent.com/107730198/229387304-ace97a19-be2e-4c97-b7df-fdd568ec0d55.PNG)
+
 
 
 ## 2. Definición del producto
