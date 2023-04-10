@@ -1,0 +1,297 @@
+/*DEFINIENDO COLORES QUE SE USARÁN EN LA PAGINA*/
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dorado: #937341;
+    --color-fondo-div: rgb(6, 28, 37);
+    --color-hover-div: rgba(243, 168, 5, 0.842);
+    --color-hover-li:#eeda6718;
+    --color-active-dark: #2d2e2e;
+    --color-active-rol: #cca05a;
+  }
+  
+  /*VALORES POR DEFECTO*/
+  * {
+    margin: 20;
+    padding: 20;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /*FONDO DE PANTALLA*/
+  body {
+    background-image: url(./data/img2/fondo.png);
+     }
+  
+  /* HEADER*/
+  header { 
+  width: 100%;
+  margin-top: 80px;/*distancia del logo con la pantalla parte de arriba*/
+  }
+  
+  /*estilo de img logo*/
+  .logo {
+    width: 63%;
+    margin: 8px 10% 5px 18%;
+  }
+
+  /* dimensiones del label que contiene la img icono-menu */
+  header label {
+    display: flex;
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid var(--color-dorado);
+  }
+  
+  /* estilo al label:cambia de color al hacer hover */
+  header label:hover {
+    cursor: pointer;
+    background: var(--color-active-dark);
+  }
+  
+  /*PROPIEDADES DE UL PARA PODER TRABAJAR DINAMICAMENTE CON <LI>*/
+  ul{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.507);
+    margin-top: 17px; /*para poder separar la lista del header*/
+    flex-wrap: wrap;/*envoltura flexibe*/
+    border: 1px solid var(--color-dorado);
+    box-shadow: 0 0 2px rgba(173, 173, 173, 0.726);
+  }
+  
+  li{
+    font-family: 'Poppins', sans-serif;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 1em;
+  }
+  
+  /* estilo a los <li>/animacion*/
+  li:hover {
+    background: var(--color-hover-li);
+  }
+  
+  li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-dorado);
+    font-size: 1.1em;
+  }
+  
+  /*utilizando "active"/se trabajo tambien con main.js*/
+  li.active a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--color-active-rol);
+    background:#878a8a42;
+    /*text-shadow: 0 0 1.5px #fff;*/
+    transition: all 0.1s ease-in-out 0.1s;
+  }
+   /* estilo para que el banner de la img dentro del header se ajuste al ancho del padre*/
+  
+  /*RESPONSIVE MODO MOBIL/MENU HAMBURGUESA*/
+  @media (max-width:768px) {
+    header{
+      background: var(--color-black);
+      margin: 10px 0px 20px 0px;
+    }
+  
+    .logo {
+      width: 63%;
+      margin: 8px 10% -35px 18%;
+    }
+  
+    header label {
+      display: block;
+      margin-top: -8px;
+    }
+  
+    nav {
+      position:absolute;
+      background: var(--color-black);
+      width: 100%;
+      margin-left: -100%;
+      transition: all 0.5s;
+    }
+  
+    ul{
+      flex-direction: column;
+      z-index: 1100;
+    }
+  
+    li {
+      border-bottom: inset 0.5px var(--color-dorado); ; /*borde solo a la parte superior*/  
+    }
+  
+    #btn-menu:checked ~ nav {
+      margin: 0;
+      z-index: 1;
+    }
+  
+    #btn-menu:checked ~ main {
+          z-index: -1;
+    }
+  
+  }
+  
+  /*TRABAJANDO CON EL CONTENEDOR DE LAS IMAGENES Y NOMBRES*/
+  .class-div {
+    background-color: var(--color-fondo-div);
+    display: inline-block;
+    position: relative; /*estaba relative*/
+    margin-top: 1%;
+    transform-style: preserve-3d;/*animacion*/
+    transition: 1.5s;/*animacion*/
+    transition: all 0.3s linear;/*ease*/
+    cursor: pointer;
+    border: 1px solid var(--color-dorado);
+  }
+  
+  /*agregando hover al div de los campeones*/
+  .hoverSection:hover{
+   transform: scale(0.96);
+   background:var(--color-hover-div);
+    /*background-color: rgb(6, 95, 131);*/
+  }
+  
+  /* dandole estilo al ID de la seccion dentro del main*/
+  #container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /*z-index: -1100; /* aqui nunca iba a funcionar, imag todavia superponen al main-nav*/
+  }
+  
+  /*IMAGENES DE CAMPEONES*/
+  .class-img {
+    margin: 0;
+    width: 307px;
+    height: 200px;
+  }
+  
+  /*NOMBRES DE CAMPEONES*/
+  .class-name {
+    font-size: 1.2em;
+    font-family: 'Acme', sans-serif;/*lo menciono para que aqui se utilize la fuente*/
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -0.2em;
+    padding: 0.10em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 6% 8%;
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+  }
+  
+  /*ESTILO DE LA FUNCION CALCULO*/
+  .class-new{
+    font-size: 1.8em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: -0.2em;
+    padding: 0.10em;
+    text-transform: uppercase;
+    padding: 6% 8%;
+    padding-top: 1.5%;
+    padding-right: 8%;
+    padding-bottom: 0.5%;
+    padding-left: 8%;
+    font-weight: bold;
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-shadow: 0px 3px 2.3px rgba(255, 255, 255, 0.548),0px -1px 1px rgb(0, 0, 0);
+  }
+  
+  /*estilo a la estadistica ofensiva de cada campeon*/
+  .class-avg{
+    font-size: 1.1em;
+    font-family: 'Acme', sans-serif;/*lo menciono para que aqui se utilize la fuente*/
+    
+    text-align: center;
+    /*background-color: rgb(6, 28, 37);*/
+    margin-top: -0.2em;/*15*/
+    padding: 0.10em;
+    text-transform: capitalize;
+    color: var(--color-white);
+    padding: 6% 8%;
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+  }
+  
+  /*estilo de hover sobre el promedio para cada campeon*/
+  .class-avg:hover{
+    transform: scale(0.96);
+    color: var(--color-black);
+    /*background:rgba(243, 168, 5, 0.842);*/
+  }
+  
+ 
+  
+  .text{
+    color: var(--color-white);
+    font-size: 1em;   
+    margin-top: -0.2em;
+    padding: 0.76em;
+  }
+  
+  /* BOTON DE SCROLL DOWN*/
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  /* HOVER DEL BOTON DE SCROLL DOWN*/
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
+  /*BARRA LATERAL DE LA PAGINA*/
+  /* For the "inset" look only */
+  html {
+    overflow: auto;
+  }
+  
+  body {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    bottom: 3px;
+    right: 1px;
+    padding: 0; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  /* Let's get this party started */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#fffffe31;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }

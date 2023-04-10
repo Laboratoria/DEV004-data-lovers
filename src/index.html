@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <title>League of Legends</title>
+    <link rel = "icon" type = "image/png" href = "./img/icono.png" />
+    <script src="https://kit.fontawesome.com/163540ed8b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Marcellus+SC&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+  </head>  
+  <body class="body-container">
+    <header class="main-header">
+      <img src="img/league.png" alt="" class="logo"/> 
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img src="img/icono-menu.png" alt="">
+      </label>  
+      <nav>
+        <ul>                
+          <li id="orderAz" class="active" value="ascending "><a href="#">CHAMPIONS A-Z <i class="fas fa-long-arrow-alt-down"></i></a></li>
+          <li id="assassin"><a href="#">ASSASSIN</a></li>
+          <li id="fighter"><a href="#">FIGHTER</a></li>
+          <li id="mage"><a href="#">MAGE</a></li>
+          <li id="marksman"><a href="#">MARKSMAN</a></li>
+          <li id="support"><a href="#">SUPPORT</a></li>
+          <li id="tank"><a href="#">TANK</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="myModal" class="modal hide">
+      <section class="modalContent">
+        <span class="close" id="close"></span>
+        <section class="modalInfo" id="modalInfo">
+        </section>
+      </section>
+    </section>
+
+    <main>
+      <section id="average"></section>
+      <section id="container"></section>
+    </main>  
+    
+    <button id="myBtn" title="Go to top">Top</button>
+
+    
+    <script type="module" src="main.js"></script>
   </body>
 </html>
