@@ -14,8 +14,12 @@ import {
 } from "./data.js";
 // Se crea una funcion para mostrar las animaciones y para insertar sus informaciones
 const mostrarAnimaciones = (data) => {
+  const buttonTop10= document.getElementById("top-10");
+  buttonTop10.classList.remove("top10oculto");
   const volver = document.getElementById("btnvolver");
-  volver.classList.add("oculto"); //oculto gracias a la clase CSS "oculto".
+  volver.classList.add("volveroculto");
+  const selectvolver=document.getElementById("ordenar");
+  selectvolver.classList.remove("selectOculto");//select oculto gracias a la clase CSS "volveroculto".
   const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
   const h1 = document.getElementById("Anuncio");
@@ -44,7 +48,7 @@ const mostrarAnimaciones = (data) => {
     </div>
   `;
     peliculaElem.addEventListener("mouseenter", () => {
-      //agregamos un escuchador de eventos para agregar el evento mouseenter y mostrar lo que esta oculto
+      //agregamos un escuchador de eventos para agregar el evento mouseenter y mostrar lo que esta volveroculto
       peliculaElem.querySelector(".info").style.display = "block";
     });
     peliculaElem.addEventListener("mouseleave", () => {
@@ -53,17 +57,24 @@ const mostrarAnimaciones = (data) => {
     });
     peliculasContainer.appendChild(peliculaElem);
     // seleccionamos  todos los botones de las animaciones creadas y los recorremos.
+
+
+
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         // Por cada boton iterado se activara un addeventlis
-        volver.classList.remove("oculto"); //eliminamos la clase
+        volver.classList.remove("volveroculto"); //eliminamos la clase
+        selectvolver.classList.add("selectOculto");
         const characterContainer = document.querySelector(".main-container");
         characterContainer.innerHTML = "";
         const h1 = document.getElementById("Anuncio");
         h1.addEventListener("mouseenter", function () {
           document.getElementById("AnuncioPromedio").style.display = "none";
         });
+        //target se refiere al elemento que desencadenó el evento, es decir, el botón en sí mismo. 
+        //La propiedad id de e.target se utiliza para obtener el valor del atributo id del botón que se ha hecho clic.
         const personajes = filterOfdata(data, e.target.id); // Este filtro devuelve un nuevo arreglo de personajes
+        // e.target.id  para identificar qué película se ha seleccionado y obtener los datos asociados a ella.
         h1.textContent = "Personajes de la animación: " + pelicula.title;
         personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
@@ -91,14 +102,18 @@ const mostrarAnimaciones = (data) => {
       });
     });
 
+
+
     const buttonTop10 = document.getElementById("top-10"); // accedemos al boton para añadirle un evento click el cual desencadera una funcion
     buttonTop10.addEventListener("click", function () {
-      volver.classList.remove("oculto");
+      buttonTop10.classList.add("top10oculto");
+      volver.classList.remove("volveroculto");
+      selectvolver.classList.add("selectOculto");
       const h2 = document.getElementById("Anuncio"); //accedemos al elemnto vacio en el dom
       h2.innerHTML = //establecemos el contenido dentro del elemnto seleccionado
         "¿Sabías que Studio Ghibli es considerado uno de los <br>mejores estudios de animación en todo el mundo?";
       h2.addEventListener("mouseenter", function () {
-        //añadimos un evento al elemento para mostrar un elemento oculto al pasar el cursor
+        //añadimos un evento al elemento para mostrar un elemento volveroculto al pasar el cursor
         const h1 = document.getElementById("AnuncioPromedio");
         h1.innerHTML =
           "El promedio general de puntuación de las animaciones de Studio Ghibli es del " +
@@ -107,7 +122,7 @@ const mostrarAnimaciones = (data) => {
         document.getElementById("AnuncioPromedio").style.display = "block";
       });
       h2.addEventListener("mouseleave", () => {
-        //este evento hara que cuando saquemos el cursor del elemnto seleccionado ,el elemento anteriormente seleccionado vuelva a estar oculto
+        //este evento hara que cuando saquemos el cursor del elemnto seleccionado ,el elemento anteriormente seleccionado vuelva a estar volveroculto
         document.getElementById("AnuncioPromedio").style.display = "none";
       });
 
@@ -140,9 +155,13 @@ const mostrarAnimaciones = (data) => {
       });
     });
 
+
+
+
     peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
       button.addEventListener("click", function (e) {
-        volver.classList.remove("oculto");
+        volver.classList.remove("volveroculto");
+        selectvolver.classList.add("selectOculto");
         const containerLocations = document.querySelector(".main-container");
         containerLocations.innerHTML = "";
         const locaciones = filterOfdata3(data, e.target.id); // arreglo de locaciones
@@ -153,7 +172,7 @@ const mostrarAnimaciones = (data) => {
           <div class="contenedorInfo"> 
           <img src="https://i.pinimg.com/originals/bb/9d/ac/bb9dacf5825fc1596b2b7a3d4e8ada3d.gif">
           </div>
-          <p>"Lo siento, parece que no hay información disponible para este campo. Pero no te desanimes, sigue explorando y seguro que encontrarás lo que buscas.
+          <p>Lo siento, parece que no hay información disponible para este campo. Pero no te desanimes, sigue explorando y seguro que encontrarás lo que buscas.
           </p>
           </div>`;
         } else {
@@ -183,9 +202,13 @@ const mostrarAnimaciones = (data) => {
         }
       });
     });
+
+
+
     peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
       buttonTop10.addEventListener("click", function (e) {
-        volver.classList.remove("oculto");
+        volver.classList.remove("volveroculto");
+        selectvolver.classList.add("selectOculto");
         const animationContainer = document.querySelector(".main-container");
         animationContainer.innerHTML = "";
         const vehicles = filterOfdata2(data, e.target.id); // arreglo de vehiculos , el target es una propiedad del objeto de evento que hace referencia al elemento que desencadenó el evento
@@ -201,7 +224,6 @@ const mostrarAnimaciones = (data) => {
         } else {
           vehicles.forEach((vehicles) => {
             const vehiculosElem = document.createElement("section");
-            vehiculosElem.className = "contenedordeVehiculos";
             vehiculosElem.className = "contenedorHijo";
             vehiculosElem.innerHTML = `<h2 class="titulo">${vehicles.name}</h2>
         <article class="vehiculos-img-container">
@@ -227,7 +249,11 @@ const mostrarAnimaciones = (data) => {
     });
   }
 };
+
 mostrarAnimaciones(data.films); //llamamos la funcion y le pasamos como argumento la data que ha sido importada
+
+
+
 
 //Invocamos a las funciones importadas y las añadimos a las que coincidan con las opciones selecionadas.
 const select = document.querySelector("#ordenar");
